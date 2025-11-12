@@ -1,0 +1,2 @@
+[2025-11-12 06:49:16] (ERROR @ C:\xampp\htdocs\sr-transfers\core\cache\setup\smarty\713d6261508b02a8d5ef7a97d362aa4a94082b2d_0.file.complete.tpl.php : 30) PHP warning: Undefined array key "errors"
+[2025-11-12 06:49:16] (ERROR @ C:\xampp\htdocs\sr-transfers\core\cache\setup\smarty\713d6261508b02a8d5ef7a97d362aa4a94082b2d_0.file.complete.tpl.php : 30) PHP warning: Attempt to read property "value" on null
