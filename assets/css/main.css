@@ -748,7 +748,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 30px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -1884,7 +1884,6 @@ section,
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
 @media (max-width: 992px) {
@@ -8480,9 +8479,439 @@ section,
   }
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+/******************************************
+HEADER
+******************************************/
+
+.topbar a,
+.topbar p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.topbar .text-left p {
+    margin-top: 3px;
+}
+
+.topbar .text-left i {
+    padding-right: 3px;
+}
+
+.header {
+    position: absolute;
+    z-index: 111;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.header.without-topbar {
+    padding: 30px 0;
+}
+
+.header-normal {
+    position: relative;
+    padding: 0 0 24px;
+    background-color: #fff;
+}
+
+.header-normal .navbar-default .nav>li>a {
+    color: #848484 !important;
+}
+
+.header.affix {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #6262624d;
+    left: 0;
+    padding: 15px 0;
+    right: 0,
+}
+
+.header.header-normal.affix {
+    background-color: #ffffff;
+}
+
+.header.affix .topbar {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.navbar-default {
+    margin: 0;
+    background-color: transparent;
+    background: none;
+    border: 0;
+}
+
+.navbar-default .nav>li>a {
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+}
+
+.navbar-nav .has-submenu .dropdown-menu li a {
+    padding: 14px 20px;
+}
+
+.navbar-default .dropdown-menu {
+    box-shadow: none;
+}
+
+.navbar-default .dropdown-menu li a {
+    color: #222;
+    font-size: 14px;
+}
+
+.navbar-default .fa-angle-right {
+    position: absolute;
+    right: 30px;
+}
+
+.navbar-brand img {
+    margin: 0 !important;
+    width: 100px;
+
+}
+
+.social a {
+    font-size: 12px;
+    color: #fff !important;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 25px;
+    text-align: center;
+    border-radius: 1px;
+    margin-left: 2px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.social a:hover {
+    opacity: 0.8;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background-color: #000 !important;
+}
+
+.navbar-brand {
+    padding: 0 10px 0 0;
+}
+
+.social a.facebook {
+    background-color: #3b5998;
+}
+
+.social a.pinterest {
+    background-color: #bd081c;
+}
+
+.social a.twitter {
+    background-color: #1da1f2;
+}
+
+.social a.google {
+    background-color: #34a853;
+}
+
+.social a.linkedin {
+    background-color: #0077b5;
+}
+
+.modal {
+    top: 40%;
+    margin: -20px auto;
+}
+
+.modal-backdrop.in {
+    opacity: 1;
+    background: url(images/pattern.png) repeat center center rgba(0, 0, 0, 1);
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding: 15px;
+    background: none;
+}
+
+.modal-content {
+    background-clip: padding-box;
+    background-color: transparent;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: none !important;
+    outline: 0 none;
+    position: relative;
+}
+
+.modal .close {
+    font-size: 13px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    right: 14px;
+    top: 27px;
+    width: 40px;
+    z-index: 111;
+    transform: rotate(315deg);
+}
+
+.close,
+.close:focus,
+.close:hover {
+    color: #ffffff;
+    opacity: 1;
+    text-shadow: none;
+}
+
+.modal .form-control {
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    font-family: "cambria", sans-serif;
+    box-shadow: none;
+    color: #555;
+    display: block;
+    font-size: 16px;
+    line-height: 1.42857;
+    font-style: italic;
+    padding: 6px 12px;
+    width: 100%;
+    border-bottom: 4px solid #222;
+    height: 70px;
+    padding-left: 0;
+}
+
+.iconitem a {
+    padding-left: 8px !important;
+}
+
+
+/******************************************
+MEGA MENU
+******************************************/
+
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+    position: static;
+}
+
+.yamm .dropdown.yamm-fw {
+    position: static;
+}
+
+.yamm .container {
+    position: relative;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {}
+
+.yamm .dropdown {
+    position: relative;
+}
+
+.hassubmenu .dropdown-menu,
+.yamm .dropdown.yamm-fw.yamm-half .dropdown-menu {
+    left: auto;
+    right: auto;
+}
+
+.yamm h4 {
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.yamm .dropdown-menu ul {
+    padding: 0 !important;
+    list-style: none;
+}
+
+.yamm .dropdown-menu li {
+    padding: 0px;
+  
+}
+
+.yamm .dropdown-menu li a {
+    padding: 0 !important;
+    color: #848484;
+}
+
+.yamm .dropdown-menu li:hover a {
+    padding-left: 10px !important;
+    background-color: transparent;
+}
+
+.yamm-fw .dropdown-menu li:hover a {
+    padding-left: 0 !important;
+}
+
+.yamm .dropdown .dropdown-menu {
+    border-radius: 0;
+    margin-top: 30px;
+    min-width: 200px;
+}
+
+.yamm .dropdown .dropdown-menu {
+    border-radius: 0;
+    border-top: 3px solid #ddd;
+    background-color:#00000083 !important;
+    margin-top: 24px;
+    padding: 20px 30px;
+}
+
+.header.affix .yamm .dropdown .dropdown-menu {
+    margin-top: 15px !important;
+}
+
+.yamm .dropdown .dropdown-menu .show-left {
+    margin-top: 0
+}
+
+.yamm ul {
+    padding: 0;
+}
+
+.menu-widget {
+    padding: 0 10px;
+}
+
+.menu-widget img {
+    border-radius: 6px 6px 0 0;
+}
+
+.menu-widget small {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-widget h5,
+.menu-widget h5 a {
+    font-size: 16px !important;
+    font-weight: 700;
+    margin: 0 !important;
+    padding: 10px 0 5px !important;
+    color: #000 !important;
+}
+
+.yamm .dropdown-menu li:hover .menu-button,
+.yamm .dropdown-menu li .menu-button {
+    border-radius: 0 !important;
+    font-size: 13px !important;
+    border: 1px solid #fff;
+    font-weight: bold;
+    color: #ffffff !important;
+    display: block;
+    background-color: #111;
+    padding: 5px 20px !important;
+    max-width: 140px;
+    margin: 10px auto 0;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    .shop-extra .nav-tabs>li>a,
+    .shop-extra .nav-tabs>li {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .shop-extra {
+        padding: 30px 10px;
+    }
+    .home-message p {
+        font-size: 28px;
+    }
+    .topbar .text-left {
+        text-align: center;
+    }
+    .authorbox img {
+        float: none;
+        margin: 0 0 30px !important;
+        min-width: 100px;
+    }
+    .media-left,
+    .media>.pull-left {
+        display: block;
+        float: none;
+        margin: 0 0 30px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 468px) {
+    .blog-meta h3 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .yamm-fw {
+        position: relative;
+    }
+    .hassubmenu:hover>ul,
+    .yamm-fw:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        top: 100%;
+    }
+    .hassubmenu ul,
+    .navbar-nav .yamm-fw ul {
+        -webkit-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -moz-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        -o-transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+        transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out, top 0.35s ease-in-out, bottom 0.35s ease-in-out, left 0.35s ease-in-out, right 0.35s ease-in-out;
+    }
+    .yamm-fw .dropdown-menu {
+        min-width: 240px;
+        padding: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+    }
+    .hassubmenu>ul,
+    .yamm-fw>ul {
+        position: absolute;
+        top: 160%;
+        visibility: hidden;
+        display: block;
+        opacity: 0;
+    }
+    .yamm-fw>ul li {
+        position: relative;
+    }
+    .yamm-fw>ul li:hover>ul {
+        visibility: visible;
+        opacity: 1;
+        left: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nav>li>a {
+        padding: 1em 0.7em;
+    }
 }

@@ -12,7 +12,7 @@
         </div>
 
         <div class="container position-relative">
-            <div class="row justify-content-end">
+            <div class="row">
                 <div class="col-lg-7 col-xl-5">
                     <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
                         <div class="booking-form">
@@ -107,6 +107,7 @@
     </section>
     <!-- Travel Hero Section -->
 
+
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
 
@@ -145,6 +146,56 @@
             </div>
           </div>
         </div><!-- End About Us Content -->
+
+        <div id="call-to-action" class="call-to-action section light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="content-wrapper">
+                    <div class="badge-wrapper">
+                        <p class="mb-0 text-danger">**Space to add flash deals</p>
+                    <span class="promo-badge">Limited Time Offer</span>
+                    </div>
+                    <h2>Discover Your Next Adventure</h2>
+                    <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
+
+                    <div class="action-section">
+                    <div class="main-actions">
+                        <a href="destinations.html" class="btn btn-explore">
+                        <i class="bi bi-compass"></i>
+                        Explore Now
+                        </a>
+                        <a href="deals.html" class="btn btn-deals">
+                        <i class="bi bi-percent"></i>
+                        View Deals
+                        </a>
+                    </div>
+
+                    <div class="quick-contact">
+                        <span class="contact-label">Need help choosing?</span>
+                        <a href="tel:+1555123456" class="contact-link">
+                        <i class="bi bi-telephone"></i>
+                        Call +1 (555) 123-456
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
+                    <div class="image-overlay">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Why Choose Us -->
         <div class="why-choose-section">
@@ -221,6 +272,7 @@
       </div>
 
     </section><!-- /Why Us Section -->
+
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section">
@@ -680,52 +732,6 @@
     <section id="call-to-action" class="call-to-action section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-          <div class="content-wrapper">
-            <div class="badge-wrapper">
-              <span class="promo-badge">Limited Time Offer</span>
-            </div>
-            <h2>Discover Your Next Adventure</h2>
-            <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
-
-            <div class="action-section">
-              <div class="main-actions">
-                <a href="destinations.html" class="btn btn-explore">
-                  <i class="bi bi-compass"></i>
-                  Explore Now
-                </a>
-                <a href="deals.html" class="btn btn-deals">
-                  <i class="bi bi-percent"></i>
-                  View Deals
-                </a>
-              </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Need help choosing?</span>
-                <a href="tel:+1555123456" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Call +1 (555) 123-456
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="visual-element">
-            <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
-            <div class="image-overlay">
-              <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Destinations</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Happy Travelers</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
           <div class="newsletter-card">
             <div class="newsletter-content">

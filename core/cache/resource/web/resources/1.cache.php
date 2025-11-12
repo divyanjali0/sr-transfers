@@ -29,7 +29,7 @@
         </div>
 
         <div class="container position-relative">
-            <div class="row justify-content-end">
+            <div class="row">
                 <div class="col-lg-7 col-xl-5">
                     <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
                         <div class="booking-form">
@@ -124,6 +124,7 @@
     </section>
     <!-- Travel Hero Section -->
 
+
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
 
@@ -162,6 +163,56 @@
             </div>
           </div>
         </div><!-- End About Us Content -->
+
+        <div id="call-to-action" class="call-to-action section light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="content-wrapper">
+                    <div class="badge-wrapper">
+                        <p class="mb-0 text-danger">**Space to add flash deals</p>
+                    <span class="promo-badge">Limited Time Offer</span>
+                    </div>
+                    <h2>Discover Your Next Adventure</h2>
+                    <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
+
+                    <div class="action-section">
+                    <div class="main-actions">
+                        <a href="destinations.html" class="btn btn-explore">
+                        <i class="bi bi-compass"></i>
+                        Explore Now
+                        </a>
+                        <a href="deals.html" class="btn btn-deals">
+                        <i class="bi bi-percent"></i>
+                        View Deals
+                        </a>
+                    </div>
+
+                    <div class="quick-contact">
+                        <span class="contact-label">Need help choosing?</span>
+                        <a href="tel:+1555123456" class="contact-link">
+                        <i class="bi bi-telephone"></i>
+                        Call +1 (555) 123-456
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
+                    <div class="image-overlay">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Why Choose Us -->
         <div class="why-choose-section">
@@ -238,6 +289,7 @@
       </div>
 
     </section><!-- /Why Us Section -->
+
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section">
@@ -697,52 +749,6 @@
     <section id="call-to-action" class="call-to-action section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-          <div class="content-wrapper">
-            <div class="badge-wrapper">
-              <span class="promo-badge">Limited Time Offer</span>
-            </div>
-            <h2>Discover Your Next Adventure</h2>
-            <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
-
-            <div class="action-section">
-              <div class="main-actions">
-                <a href="destinations.html" class="btn btn-explore">
-                  <i class="bi bi-compass"></i>
-                  Explore Now
-                </a>
-                <a href="deals.html" class="btn btn-deals">
-                  <i class="bi bi-percent"></i>
-                  View Deals
-                </a>
-              </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Need help choosing?</span>
-                <a href="tel:+1555123456" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Call +1 (555) 123-456
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="visual-element">
-            <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
-            <div class="image-overlay">
-              <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Destinations</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Happy Travelers</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
           <div class="newsletter-card">
             <div class="newsletter-content">
@@ -839,7 +845,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 1,
-    'editedon' => 1762944718,
+    'editedon' => 1762950494,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -914,39 +920,190 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
+<header class="header">
+  <!-- Topbar -->
+  <div class="topbar text-center">
+    <p>
+      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+      &nbsp;|&nbsp;
+      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+    </p>
+  </div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt=""> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.php?id=1" class="active">Home</a></li>
-          <li><a href="index.php?id=2">About</a></li>
-          <li><a href="index.php?id=3">Destinations</a></li>
-          <li><a href="index.php?id=4">Gallery</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="index.php?id=6">FAQ</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="destination-details.html">Destination Details</a></li>
-              <li><a href="tour-details.html">Tour Details</a></li>
-              <li><a href="booking.html">Booking</a></li>
-              <li><a href="testimonials">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-            </ul>
-          </li> -->
-          <li><a href="index.php?id=5">Contact</a></li>
+      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
+
+          <!-- Fleet Mega Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+            <div class="dropdown-menu p-3">
+              <div class="row">
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Standard Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Executive Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">Large People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Coach</p>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="destiantios.html">Get Started</a> -->
-
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
+
+<style>
+/* Topbar */
+.topbar {
+  background-color: #6c6c6c;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Mega Menu Background */
+.dropdown-menu {
+    background-color: #00000066;
+}
+
+/* Fixed header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 18px;
+  }
+
+  .dropdown-menu {
+    min-width: 560px;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
+
+/* Small / Medium screens */
+@media (max-width: 991px) {
+  .mobile-scrollable {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* Scrollbar */
+.dropdown-menu::-webkit-scrollbar,
+.mobile-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb,
+.mobile-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+.dropdown-menu img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.fleet-button {
+  background-image: linear-gradient(to right, #b30000, #808080);
+  border-color: transparent;
+  font-weight: 800;
+  width: 50%;
+}
+</style>
+
+<script>
+  // Change navbar background on scroll
+  window.addEventListener(\'scroll\', function() {
+    const navbar = document.getElementById(\'mainNavbar\');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
+    } else {
+      navbar.style.backgroundColor = \'transparent\'; // original color
+    }
+  });
+</script>
+
 <body class="index-page">
 
   <main class="main">
@@ -961,7 +1118,7 @@
         </div>
 
         <div class="container position-relative">
-            <div class="row justify-content-end">
+            <div class="row">
                 <div class="col-lg-7 col-xl-5">
                     <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
                         <div class="booking-form">
@@ -1056,6 +1213,7 @@
     </section>
     <!-- Travel Hero Section -->
 
+
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
 
@@ -1094,6 +1252,56 @@
             </div>
           </div>
         </div><!-- End About Us Content -->
+
+        <div id="call-to-action" class="call-to-action section light-background">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="content-wrapper">
+                    <div class="badge-wrapper">
+                        <p class="mb-0 text-danger">**Space to add flash deals</p>
+                    <span class="promo-badge">Limited Time Offer</span>
+                    </div>
+                    <h2>Discover Your Next Adventure</h2>
+                    <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
+
+                    <div class="action-section">
+                    <div class="main-actions">
+                        <a href="destinations.html" class="btn btn-explore">
+                        <i class="bi bi-compass"></i>
+                        Explore Now
+                        </a>
+                        <a href="deals.html" class="btn btn-deals">
+                        <i class="bi bi-percent"></i>
+                        View Deals
+                        </a>
+                    </div>
+
+                    <div class="quick-contact">
+                        <span class="contact-label">Need help choosing?</span>
+                        <a href="tel:+1555123456" class="contact-link">
+                        <i class="bi bi-telephone"></i>
+                        Call +1 (555) 123-456
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="visual-element">
+                    <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
+                    <div class="image-overlay">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Destinations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Travelers</span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Why Choose Us -->
         <div class="why-choose-section">
@@ -1170,6 +1378,7 @@
       </div>
 
     </section><!-- /Why Us Section -->
+
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section">
@@ -1629,52 +1838,6 @@
     <section id="call-to-action" class="call-to-action section light-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-          <div class="content-wrapper">
-            <div class="badge-wrapper">
-              <span class="promo-badge">Limited Time Offer</span>
-            </div>
-            <h2>Discover Your Next Adventure</h2>
-            <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
-
-            <div class="action-section">
-              <div class="main-actions">
-                <a href="destinations.html" class="btn btn-explore">
-                  <i class="bi bi-compass"></i>
-                  Explore Now
-                </a>
-                <a href="deals.html" class="btn btn-deals">
-                  <i class="bi bi-percent"></i>
-                  View Deals
-                </a>
-              </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Need help choosing?</span>
-                <a href="tel:+1555123456" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Call +1 (555) 123-456
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="visual-element">
-            <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
-            <div class="image-overlay">
-              <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Destinations</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Happy Travelers</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
           <div class="newsletter-card">
             <div class="newsletter-content">
@@ -1921,44 +2084,194 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>',
     '[[~1]]' => 'index.php?id=1',
-    '[[~2]]' => 'index.php?id=2',
     '[[~3]]' => 'index.php?id=3',
-    '[[~4]]' => 'index.php?id=4',
+    '[[~2]]' => 'index.php?id=2',
     '[[~6]]' => 'index.php?id=6',
     '[[~5]]' => 'index.php?id=5',
-    '[[$navbar?]]' => '  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
+    '[[$navbar?]]' => '<header class="header">
+  <!-- Topbar -->
+  <div class="topbar text-center">
+    <p>
+      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+      &nbsp;|&nbsp;
+      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+    </p>
+  </div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt=""> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.php?id=1" class="active">Home</a></li>
-          <li><a href="index.php?id=2">About</a></li>
-          <li><a href="index.php?id=3">Destinations</a></li>
-          <li><a href="index.php?id=4">Gallery</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="index.php?id=6">FAQ</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="destination-details.html">Destination Details</a></li>
-              <li><a href="tour-details.html">Tour Details</a></li>
-              <li><a href="booking.html">Booking</a></li>
-              <li><a href="testimonials">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-            </ul>
-          </li> -->
-          <li><a href="index.php?id=5">Contact</a></li>
+      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
+
+          <!-- Fleet Mega Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+            <div class="dropdown-menu p-3">
+              <div class="row">
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Standard Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Executive Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">Large People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Coach</p>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="destiantios.html">Get Started</a> -->
-
+      </div>
     </div>
-  </header>',
+  </nav>
+</header>
+
+<style>
+/* Topbar */
+.topbar {
+  background-color: #6c6c6c;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Mega Menu Background */
+.dropdown-menu {
+    background-color: #00000066;
+}
+
+/* Fixed header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 18px;
+  }
+
+  .dropdown-menu {
+    min-width: 560px;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
+
+/* Small / Medium screens */
+@media (max-width: 991px) {
+  .mobile-scrollable {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* Scrollbar */
+.dropdown-menu::-webkit-scrollbar,
+.mobile-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb,
+.mobile-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+.dropdown-menu img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.fleet-button {
+  background-image: linear-gradient(to right, #b30000, #808080);
+  border-color: transparent;
+  font-weight: 800;
+  width: 50%;
+}
+</style>
+
+<script>
+  // Change navbar background on scroll
+  window.addEventListener(\'scroll\', function() {
+    const navbar = document.getElementById(\'mainNavbar\');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
+    } else {
+      navbar.style.backgroundColor = \'transparent\'; // original color
+    }
+  });
+</script>
+',
     '[[$footer?]]' => '  <footer id="footer" class="footer position-relative dark-background">
 
     <div class="footer-newsletter">
@@ -2206,78 +2519,380 @@
           'editor_type' => 0,
           'category' => 0,
           'cache_type' => 0,
-          'snippet' => '  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
+          'snippet' => '<header class="header">
+  <!-- Topbar -->
+  <div class="topbar text-center">
+    <p>
+      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+      &nbsp;|&nbsp;
+      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+    </p>
+  </div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt=""> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="[[~1]]" class="active">Home</a></li>
-          <li><a href="[[~2]]">About</a></li>
-          <li><a href="[[~3]]">Destinations</a></li>
-          <li><a href="[[~4]]">Gallery</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="[[~6]]">FAQ</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="destination-details.html">Destination Details</a></li>
-              <li><a href="tour-details.html">Tour Details</a></li>
-              <li><a href="booking.html">Booking</a></li>
-              <li><a href="testimonials">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-            </ul>
-          </li> -->
-          <li><a href="[[~5]]">Contact</a></li>
+      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
+
+          <!-- Fleet Mega Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+            <div class="dropdown-menu p-3">
+              <div class="row">
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Standard Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Executive Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">Large People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Coach</p>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="destiantios.html">Get Started</a> -->
-
+      </div>
     </div>
-  </header>',
+  </nav>
+</header>
+
+<style>
+/* Topbar */
+.topbar {
+  background-color: #6c6c6c;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Mega Menu Background */
+.dropdown-menu {
+    background-color: #00000066;
+}
+
+/* Fixed header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 18px;
+  }
+
+  .dropdown-menu {
+    min-width: 560px;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
+
+/* Small / Medium screens */
+@media (max-width: 991px) {
+  .mobile-scrollable {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* Scrollbar */
+.dropdown-menu::-webkit-scrollbar,
+.mobile-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb,
+.mobile-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+.dropdown-menu img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.fleet-button {
+  background-image: linear-gradient(to right, #b30000, #808080);
+  border-color: transparent;
+  font-weight: 800;
+  width: 50%;
+}
+</style>
+
+<script>
+  // Change navbar background on scroll
+  window.addEventListener(\'scroll\', function() {
+    const navbar = document.getElementById(\'mainNavbar\');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
+    } else {
+      navbar.style.backgroundColor = \'transparent\'; // original color
+    }
+  });
+</script>
+',
           'locked' => false,
           'properties' => 
           array (
           ),
           'static' => false,
           'static_file' => '',
-          'content' => '  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="header-container container-fluid position-relative d-flex align-items-center justify-content-between">
+          'content' => '<header class="header">
+  <!-- Topbar -->
+  <div class="topbar text-center">
+    <p>
+      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+      &nbsp;|&nbsp;
+      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+      &nbsp;|&nbsp;
+      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+    </p>
+  </div>
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo.png" alt=""> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
       </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="[[~1]]" class="active">Home</a></li>
-          <li><a href="[[~2]]">About</a></li>
-          <li><a href="[[~3]]">Destinations</a></li>
-          <li><a href="[[~4]]">Gallery</a></li>
-          <!-- <li><a href="blog.html">Blog</a></li> -->
-          <li><a href="[[~6]]">FAQ</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="destination-details.html">Destination Details</a></li>
-              <li><a href="tour-details.html">Tour Details</a></li>
-              <li><a href="booking.html">Booking</a></li>
-              <li><a href="testimonials">Testimonials</a></li>
-              <li><a href="faq.html">Frequently Asked Questions</a></li>
-            </ul>
-          </li> -->
-          <li><a href="[[~5]]">Contact</a></li>
+      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
+
+          <!-- Fleet Mega Menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+            <div class="dropdown-menu p-3">
+              <div class="row">
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Standard Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Executive Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Cars</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                  <p class="mb-0">Large People Carrier</p>
+                </div>
+                <div class="col-6 col-md-4 text-center mb-3">
+                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                  <p class="mb-0">Luxury Coach</p>
+                </div>
+              </div>
+              <div class="text-center mt-3">
+                <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <!-- <a class="btn-getstarted" href="destiantios.html">Get Started</a> -->
-
+      </div>
     </div>
-  </header>',
+  </nav>
+</header>
+
+<style>
+/* Topbar */
+.topbar {
+  background-color: #6c6c6c;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Mega Menu Background */
+.dropdown-menu {
+    background-color: #00000066;
+}
+
+/* Fixed header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: background-color 0.3s;
+}
+
+/* Large screens */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    gap: 18px;
+  }
+
+  .dropdown-menu {
+    min-width: 560px;
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
+
+/* Small / Medium screens */
+@media (max-width: 991px) {
+  .mobile-scrollable {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/* Scrollbar */
+.dropdown-menu::-webkit-scrollbar,
+.mobile-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb,
+.mobile-scrollable::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
+
+.dropdown-menu img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.dropdown-menu p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.fleet-button {
+  background-image: linear-gradient(to right, #b30000, #808080);
+  border-color: transparent;
+  font-weight: 800;
+  width: 50%;
+}
+</style>
+
+<script>
+  // Change navbar background on scroll
+  window.addEventListener(\'scroll\', function() {
+    const navbar = document.getElementById(\'mainNavbar\');
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
+    } else {
+      navbar.style.backgroundColor = \'transparent\'; // original color
+    }
+  });
+</script>
+',
         ),
         'policies' => 
         array (
