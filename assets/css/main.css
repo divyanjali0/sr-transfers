@@ -7340,7 +7340,6 @@ section,
 .faq .faq-tabs .nav-pills {
   gap: 15px;
   border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  padding-bottom: 15px;
 }
 
 .faq .faq-tabs .nav-pills .nav-link {
@@ -7364,17 +7363,13 @@ section,
   color: var(--default-color);
 }
 
-.faq .faq-tabs .tab-content {
-  padding-top: 25px;
-}
-
 .faq .faq-item {
   position: relative;
   margin-bottom: 20px;
   background-color: var(--surface-color);
   border-radius: 14px;
   box-shadow: 0 3px 10px color-mix(in srgb, var(--default-color), transparent 95%);
-  padding: 25px 30px;
+  padding: 9px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -7416,6 +7411,21 @@ section,
   font-size: 18px;
   color: var(--accent-color);
   transition: transform 0.3s ease;
+}
+
+.accordion-header {
+  .accordion-button {
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 35px;
+    margin-bottom: 0;
+    transition: color 0.3s ease;
+    color: #1c4b56;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
 }
 
 .faq .faq-item.faq-active {

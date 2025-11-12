@@ -1,154 +1,183 @@
 <body class="faq-page">
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
-      <div class="container position-relative">
-        <h1>Frequently Asked Questions</h1>
-        <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="[[~1]]>Home</a></li>
-            <li class="current">Frequently Asked Questions</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-start gy-4">
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-sidebar">
-              <div class="faq-image">
-                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
-              </div>
-              <div class="contact-box">
-                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
-                <a href="[[~5]]" class="btn-contact">Connect with Support</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="faq-tabs">
-              <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Account Services</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Billing &amp; Payments</button>
-                </li>
-              </ul>
-
-              <div class="tab-content" id="faqTabsContent-faq">
-                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                  <div class="accordion" id="generalAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I create a new account?</h3>
-                      <div class="faq-content">
-                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>What are the system requirements?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I access my data offline?</h3>
-                      <div class="faq-content">
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                      <h3>How do I report a bug or issue?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                      <h3>What is your data privacy policy?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-                  </div>
-                </div>
-
-                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                  <div class="accordion" id="accountAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I reset my password?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>How to update account information?</h3>
-                      <div class="faq-content">
-                        <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-                  </div>
-                </div>
-
-                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                  <div class="accordion" id="paymentAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>What payment methods are accepted?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>When will my payment be processed?</h3>
-                      <div class="faq-content">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I get a refund for my purchase?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main class="main">
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
+        <div class="container position-relative">
+            <h1>Frequently Asked Questions</h1>
+            <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
+            <nav class="breadcrumbs">
+                <ol>
+                    <li><a href="[[~1]]">Home</a></li>
+                    <li class="current">Frequently Asked Questions</li>
+                </ol>
+            </nav>
+        </div>
         </div>
 
-      </div>
+        <!-- Faq Section -->
+        <section id="faq" class="faq section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-start gy-4">
+                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-sidebar">
+                            <div class="faq-image">
+                                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
+                            </div>
+                            <div class="contact-box">
+                                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
+                                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
+                                <a href="[[~5]]" class="btn-contact">Connect with Support</a>
+                            </div>
+                        </div>
+                    </div>
 
-    </section><!-- /Faq Section -->
+                    <div class="col-lg-7">
+                        <div class="faq-tabs">
+                            <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Booking & Reservations</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Payments & Policies</button>
+                                </li>
+                            </ul>
 
-  </main>
+                            <div class="tab-content" id="faqTabsContent-faq">
+                                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
+                                    <div class="accordion" id="generalAccordion-faq">
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                                            <h3 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                How do I book a transfer?
+                                            </button>
+                                            </h3>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    You can book a transfer easily through our website by selecting your pickup location, destination, date, and preferred vehicle type.
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                                            <h3 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    What types of vehicles are available?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
+                                            <div class="accordion-body">
+                                                We offer a range of vehicles including sedans, SUVs, vans, and luxury cars to suit your travel needs. You can choose your preferred vehicle when booking your transfer.
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                                            <h3 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Can I cancel or reschedule my booking?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#generalAccordion-faq">
+                                            <div class="accordion-body">
+                                                Yes, you can cancel or reschedule your booking. Please contact our support team at least 24 hours before your scheduled pickup to avoid any cancellation fees.
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                                            <h3 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                    Is my personal data safe with SR Transfers?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    Yes. We take data privacy seriously. Your personal and payment information is securely stored and used only for booking purposes. We never share your data with third parties.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                                            <h3 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                    How do I contact the driver or support team?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    Once your booking is confirmed, you will receive the driver’s contact details. For any assistance, our support team is available via phone, email, or the “Connect with Support” button on our website.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
+                                    <div class="accordion" id="accountAccordion-faq">
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                                            <h3 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    How far in advance should I book my transfer?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    We recommend booking your transfer at least 24 hours in advance to ensure vehicle availability and timely confirmation. However, same-day bookings are accepted based on availability.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                                            <h3 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Can I change my pickup time or location after booking?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    Yes, you can modify your pickup time or location by contacting our support team. Please inform us at least 12 hours before your scheduled pickup to update your booking without any extra charges.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
+                                    <div class="accordion" id="paymentAccordion-faq">
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                                            <h3 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    What payment methods do you accept?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    We currently accept <strong>cash payments only</strong>. Please make your payment directly to the driver at the end of your transfer.
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                                            <h3 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    What is your cancellation and refund policy?
+                                                </button>
+                                            </h3>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
+                                                <div class="accordion-body">
+                                                    You can cancel your booking at least <strong>24 hours before</strong> your scheduled pickup time with no charges. Since we accept cash payments only, no online refund process is required. If you cancel after the driver has been dispatched, a small service fee may apply.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
