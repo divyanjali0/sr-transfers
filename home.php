@@ -4,105 +4,108 @@
 
     <!-- Travel Hero Section -->
     <section id="travel-hero" class="travel-hero section dark-background">
-
-      <div class="hero-background">
-        <video autoplay="" muted="" loop="">
-          <source src="assets/img/travel/preview.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-      </div>
-
-      <div class="container position-relative">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
-              <h1 class="hero-title">Discover Your Perfect Journey</h1>
-              <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-              <div class="hero-buttons">
-                <a href="#" class="btn btn-primary me-3">Start Exploring</a>
-                <a href="#" class="btn btn-outline">Browse Tours</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
-              <div class="booking-form">
-                <h3 class="form-title">Plan Your Adventure</h3>
-                <form action="" class="">
-                  <div class="form-group mb-3">
-                    <label for="destination">Destination</label>
-                    <select name="destination" id="destination" class="form-select" required="">
-                      <option value="">Choose your destination</option>
-                      <option value="europe">Europe</option>
-                      <option value="asia">Asia</option>
-                      <option value="america">America</option>
-                      <option value="africa">Africa</option>
-                      <option value="oceania">Oceania</option>
-                    </select>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group mb-3">
-                        <label for="checkin">Departure Date</label>
-                        <input type="date" name="checkin" id="checkin" class="form-control" required="">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group mb-3">
-                        <label for="checkout">Return Date</label>
-                        <input type="date" name="checkout" id="checkout" class="form-control" required="">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group mb-3">
-                        <label for="adults">Adults</label>
-                        <select name="adults" id="adults" class="form-select" required="">
-                          <option value="1">1 Adult</option>
-                          <option value="2">2 Adults</option>
-                          <option value="3">3 Adults</option>
-                          <option value="4">4+ Adults</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group mb-3">
-                        <label for="children">Children</label>
-                        <select name="children" id="children" class="form-select">
-                          <option value="0">No Children</option>
-                          <option value="1">1 Child</option>
-                          <option value="2">2 Children</option>
-                          <option value="3">3+ Children</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="form-group mb-3">
-                    <label for="tour-type">Tour Type</label>
-                    <select name="tour_type" id="tour-type" class="form-select" required="">
-                      <option value="">Select tour type</option>
-                      <option value="adventure">Adventure</option>
-                      <option value="cultural">Cultural</option>
-                      <option value="relaxation">Relaxation</option>
-                      <option value="family">Family</option>
-                      <option value="luxury">Luxury</option>
-                    </select>
-                  </div>
-
-                  <button type="submit" class="btn btn-primary w-100">Find Your Perfect Trip</button>
-                </form>
-              </div>
-            </div>
-          </div>
+        <div class="hero-background">
+            <video autoplay="" muted="" loop="">
+                <source src="assets/img/travel/preview.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
         </div>
-      </div>
 
-    </section><!-- /Travel Hero Section -->
+        <div class="container position-relative">
+            <div class="row justify-content-end">
+                <div class="col-lg-7 col-xl-5">
+                    <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
+                        <div class="booking-form">
+                            <h3 class="form-title">Schedule Your Ride</h3>
+                            <form action="[[~3]]" class="">
+                                <!-- Pickup / Drop-off Row -->
+                                <div class="row g-2 align-items-center">
+                                    <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="pickupLocation" id="pickupLocation" class="form-control" placeholder="Arrival airport" required>
+                                    </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="dropoffLocation" id="dropoffLocation" class="form-control" placeholder="Going to" required>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Departure Date & Roundtrip Checkbox -->
+                                <div class="row g-2 align-items-center mb-3">
+                                    <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="datetime-local" name="date" id="date" class="form-control" required>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="roundtripCheck">
+                                        <label class="form-check-label" for="roundtripCheck">Roundtrip</label>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- Return Trip Fields (hidden by default) -->
+                                <div id="returnDetails" style="display:none;">
+                                    <div class="row g-2 align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                            <input type="text" name="returnPickup" id="returnPickup" class="form-control" placeholder="Return Pickup Location">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group mb-3">
+                                            <input type="text" name="returnDropoff" id="returnDropoff" class="form-control" placeholder="Return Drop-off Location">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <div class="form-group mb-3">
+                                        <input type="datetime-local" name="returnDate" id="returnDate" class="form-control">
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100">Find Your Transfer</button>
+                            </form>
+
+                            <!-- Google Maps Autocomplete + Roundtrip -->
+                            <script>
+                            const pickupInput = document.getElementById('pickupLocation');
+                            const dropoffInput = document.getElementById('dropoffLocation');
+                            const returnPickup = document.getElementById('returnPickup');
+                            const returnDropoff = document.getElementById('returnDropoff');
+                            const roundtripCheck = document.getElementById('roundtripCheck');
+                            const returnDetails = document.getElementById('returnDetails');
+
+                            // Show/hide return details
+                            roundtripCheck.addEventListener('change', () => {
+                                returnDetails.style.display = roundtripCheck.checked ? 'block' : 'none';
+                            });
+
+                            function initAutocomplete() {
+                                const options = { componentRestrictions: { country: 'lk' } };
+                                new google.maps.places.Autocomplete(pickupInput, options);
+                                new google.maps.places.Autocomplete(dropoffInput, options);
+
+                                if(returnPickup) new google.maps.places.Autocomplete(returnPickup, options);
+                                if(returnDropoff) new google.maps.places.Autocomplete(returnDropoff, options);
+                            }
+
+                            window.initAutocomplete = initAutocomplete;
+                            </script>
+
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHmbwBrk0OKY0Nhp9FrR_zn8HKLGZ54OU&libraries=places&callback=initAutocomplete" async defer></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Travel Hero Section -->
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
