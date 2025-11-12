@@ -28,8 +28,8 @@
               </div>
               <div class="contact-box">
                 <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                <p>Donec rutrum congue leo eget malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
-                <a href="[[~5]" class="btn-contact">Connect with Support</a>
+                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
+                <a href="[[~5]]" class="btn-contact">Connect with Support</a>
               </div>
             </div>
           </div>

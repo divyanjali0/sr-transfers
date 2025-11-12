@@ -2,12 +2,12 @@
   'resourceClass' => 'MODX\\Revolution\\modDocument',
   'resource' => 
   array (
-    'id' => 6,
+    'id' => 2,
     'type' => 'document',
-    'pagetitle' => 'FAQ',
+    'pagetitle' => 'About',
     'longtitle' => '',
     'description' => '',
-    'alias' => 'faq',
+    'alias' => 'about',
     'link_attributes' => '',
     'published' => 1,
     'pub_date' => 0,
@@ -15,146 +15,248 @@
     'parent' => 0,
     'isfolder' => 0,
     'introtext' => '',
-    'content' => '<body class="faq-page">
+    'content' => '<body class="about-page">
+
+
+
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
       <div class="container position-relative">
-        <h1>Frequently Asked Questions</h1>
-        <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
+        <h1>About</h1>
+        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="[[~1]]>Home</a></li>
-            <li class="current">Frequently Asked Questions</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    <!-- Travel About Section -->
+    <section id="travel-about" class="travel-about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-start gy-4">
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-sidebar">
-              <div class="faq-image">
-                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
-              </div>
-              <div class="contact-box">
-                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
-                <a href="[[~5]]" class="btn-contact">Connect with Support</a>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <div class="intro-content" data-aos="fade-up" data-aos-delay="200">
+              <h2>Redefining Travel,<br>One Adventure at a Time</h2>
+              <p class="lead">Born from a love of exploration and discovery, we\'ve spent the last decade turning wanderlust into life-changing experiences for adventurous souls around the globe.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
+            <div class="hero-image">
+              <img src="assets/img/travel/showcase-7.webp" class="img-fluid" alt="Travel Adventure">
+              <div class="floating-stats">
+                <div class="stat-item">
+                  <span class="number">50+</span>
+                  <span class="label">Countries</span>
+                </div>
+                <div class="stat-item">
+                  <span class="number">15K</span>
+                  <span class="label">Happy Travelers</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <div class="faq-tabs">
-              <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Account Services</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Billing &amp; Payments</button>
-                </li>
-              </ul>
+          <div class="col-lg-6 offset-lg-1" data-aos="slide-left" data-aos-delay="400">
+            <div class="story-content">
+              <div class="story-badge">
+                <i class="bi bi-compass"></i>
+                <span>Our Story</span>
+              </div>
+              <h3>Where Passion Meets Purpose</h3>
+              <p>What started as weekend camping trips among college friends has evolved into a global network of travel enthusiasts dedicated to creating extraordinary journeys. We believe travel isn\'t just about seeing new places – it\'s about connecting with cultures, supporting communities, and discovering parts of yourself you never knew existed.</p>
+              <p>Every expedition we craft is infused with respect for local traditions and a commitment to leaving places better than we found them. Our team of cultural ambassadors and adventure specialists work hand-in-hand with indigenous guides to offer you authentic experiences that most tourists never see.</p>
 
-              <div class="tab-content" id="faqTabsContent-faq">
-                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                  <div class="accordion" id="generalAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I create a new account?</h3>
-                      <div class="faq-content">
-                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+              <div class="mission-box">
+                <div class="mission-icon">
+                  <i class="bi bi-globe-americas"></i>
+                </div>
+                <div class="mission-text">
+                  <h4>Our Vision</h4>
+                  <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>What are the system requirements?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-header text-center mb-5">
+                <h3>What Makes Us Different</h3>
+                <p>Six pillars that define every adventure we create</p>
+              </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I access my data offline?</h3>
-                      <div class="faq-content">
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-people"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                      <h3>How do I report a bug or issue?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                      <h3>What is your data privacy policy?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Local Partnerships</h4>
+                      <p>Direct collaboration with indigenous communities</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>We work exclusively with local guides who are passionate storytellers and cultural ambassadors, ensuring authentic experiences while supporting local economies.</p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                  <div class="accordion" id="accountAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I reset my password?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-heart-pulse"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>How to update account information?</h3>
-                      <div class="faq-content">
-                        <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Safety First</h4>
+                      <p>Comprehensive safety protocols and emergency support</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>From pre-trip safety briefings to 24/7 emergency response teams, your wellbeing is our top priority on every single adventure.</p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                  <div class="accordion" id="paymentAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>What payment methods are accepted?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-recycle"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Carbon Conscious</h4>
+                      <p>Offsetting 150% of travel emissions</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Through reforestation projects and renewable energy investments, we ensure every trip contributes positively to environmental restoration.</p>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>When will my payment be processed?</h3>
-                      <div class="faq-content">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-sliders"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Tailored Itineraries</h4>
+                      <p>Adventures designed around your interests</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>No cookie-cutter tours here. Every itinerary is customized based on your travel style, fitness level, and personal interests.</p>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I get a refund for my purchase?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Flexible Policies</h4>
+                      <p>Life happens, we understand</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Free cancellation up to 30 days before departure, easy date changes, and comprehensive travel insurance options give you peace of mind.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-star"></i>
+                      </div>
+                      <h4>Lifetime Memories</h4>
+                      <p>Experiences that transform perspectives</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Our travelers often say their journey with us changed their outlook on life. We create moments that become treasured memories for years to come.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="journey-timeline" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-header text-center mb-5">
+                <h3>Milestones in Our Adventure</h3>
+                <p>Key moments that shaped who we are today</p>
+              </div>
+
+              <div class="timeline-container">
+                <div class="timeline-track"></div>
+
+                <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
+                  <div class="milestone-marker">
+                    <span class="year">2014</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>The Beginning</h4>
+                    <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="400">
+                  <div class="milestone-marker">
+                    <span class="year">2017</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Global Expansion</h4>
+                    <p>Established partnerships with local guides in Southeast Asia and South America, bringing our authentic travel philosophy to new continents.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="500">
+                  <div class="milestone-marker">
+                    <span class="year">2020</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Community Impact</h4>
+                    <p>Launched our sustainable tourism initiative, directly supporting over 200 local families through employment and fair trade partnerships.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
+                  <div class="milestone-marker">
+                    <span class="year">2024</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Future Forward</h4>
+                    <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="cta-banner" data-aos="zoom-in" data-aos-delay="300">
+              <div class="cta-overlay">
+                <div class="cta-content">
+                  <h3>Your Next Adventure Awaits</h3>
+                  <p>Join thousands of travelers who\'ve discovered the difference authentic, responsible travel makes.</p>
+                  <div class="cta-buttons">
+                    <a href="destinations.html" class="btn btn-primary me-3">Explore Destinations</a>
+                    <a href="contact.html" class="btn btn-outline">Chat with an Expert</a>
                   </div>
                 </div>
               </div>
@@ -164,24 +266,24 @@
 
       </div>
 
-    </section><!-- /Faq Section -->
+    </section><!-- /Travel About Section -->
 
   </main>
 
 </body>',
     'richtext' => 1,
     'template' => 2,
-    'menuindex' => 5,
+    'menuindex' => 1,
     'searchable' => 1,
     'cacheable' => 1,
     'createdby' => 1,
-    'createdon' => 1762929996,
+    'createdon' => 1762927892,
     'editedby' => 1,
-    'editedon' => 1762933602,
+    'editedon' => 1762927966,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
-    'publishedon' => 1762930200,
+    'publishedon' => 1762927920,
     'publishedby' => 1,
     'menutitle' => '',
     'content_dispo' => 0,
@@ -284,146 +386,248 @@
 
     </div>
   </header>
-<body class="faq-page">
+<body class="about-page">
+
+
+
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
       <div class="container position-relative">
-        <h1>Frequently Asked Questions</h1>
-        <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
+        <h1>About</h1>
+        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.php?id=1>Home</a></li>
-            <li class="current">Frequently Asked Questions</li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
+    <!-- Travel About Section -->
+    <section id="travel-about" class="travel-about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row align-items-start gy-4">
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="faq-sidebar">
-              <div class="faq-image">
-                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
-              </div>
-              <div class="contact-box">
-                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
-                <a href="index.php?id=5" class="btn-contact">Connect with Support</a>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-5">
+            <div class="intro-content" data-aos="fade-up" data-aos-delay="200">
+              <h2>Redefining Travel,<br>One Adventure at a Time</h2>
+              <p class="lead">Born from a love of exploration and discovery, we\'ve spent the last decade turning wanderlust into life-changing experiences for adventurous souls around the globe.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="300">
+            <div class="hero-image">
+              <img src="assets/img/travel/showcase-7.webp" class="img-fluid" alt="Travel Adventure">
+              <div class="floating-stats">
+                <div class="stat-item">
+                  <span class="number">50+</span>
+                  <span class="label">Countries</span>
+                </div>
+                <div class="stat-item">
+                  <span class="number">15K</span>
+                  <span class="label">Happy Travelers</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-7">
-            <div class="faq-tabs">
-              <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Account Services</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Billing &amp; Payments</button>
-                </li>
-              </ul>
+          <div class="col-lg-6 offset-lg-1" data-aos="slide-left" data-aos-delay="400">
+            <div class="story-content">
+              <div class="story-badge">
+                <i class="bi bi-compass"></i>
+                <span>Our Story</span>
+              </div>
+              <h3>Where Passion Meets Purpose</h3>
+              <p>What started as weekend camping trips among college friends has evolved into a global network of travel enthusiasts dedicated to creating extraordinary journeys. We believe travel isn\'t just about seeing new places – it\'s about connecting with cultures, supporting communities, and discovering parts of yourself you never knew existed.</p>
+              <p>Every expedition we craft is infused with respect for local traditions and a commitment to leaving places better than we found them. Our team of cultural ambassadors and adventure specialists work hand-in-hand with indigenous guides to offer you authentic experiences that most tourists never see.</p>
 
-              <div class="tab-content" id="faqTabsContent-faq">
-                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                  <div class="accordion" id="generalAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I create a new account?</h3>
-                      <div class="faq-content">
-                        <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada. Vestibulum ac diam sit amet quam vehicula elementum. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+              <div class="mission-box">
+                <div class="mission-icon">
+                  <i class="bi bi-globe-americas"></i>
+                </div>
+                <div class="mission-text">
+                  <h4>Our Vision</h4>
+                  <p>"To make the world more connected and compassionate, one meaningful journey at a time."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>What are the system requirements?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-grid" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-header text-center mb-5">
+                <h3>What Makes Us Different</h3>
+                <p>Six pillars that define every adventure we create</p>
+              </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I access my data offline?</h3>
-                      <div class="faq-content">
-                        <p>Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-people"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                      <h3>How do I report a bug or issue?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                      <h3>What is your data privacy policy?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum. Sed porttitor lectus nibh.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Local Partnerships</h4>
+                      <p>Direct collaboration with indigenous communities</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>We work exclusively with local guides who are passionate storytellers and cultural ambassadors, ensuring authentic experiences while supporting local economies.</p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                  <div class="accordion" id="accountAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>How do I reset my password?</h3>
-                      <div class="faq-content">
-                        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-heart-pulse"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
-
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>How to update account information?</h3>
-                      <div class="faq-content">
-                        <p>Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                      </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Safety First</h4>
+                      <p>Comprehensive safety protocols and emergency support</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>From pre-trip safety briefings to 24/7 emergency response teams, your wellbeing is our top priority on every single adventure.</p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                  <div class="accordion" id="paymentAccordion-faq">
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                      <h3>What payment methods are accepted?</h3>
-                      <div class="faq-content">
-                        <p>Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum porta. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-recycle"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Carbon Conscious</h4>
+                      <p>Offsetting 150% of travel emissions</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Through reforestation projects and renewable energy investments, we ensure every trip contributes positively to environmental restoration.</p>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                      <h3>When will my payment be processed?</h3>
-                      <div class="faq-content">
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Quisque velit nisi, pretium ut lacinia in.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-sliders"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Tailored Itineraries</h4>
+                      <p>Adventures designed around your interests</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>No cookie-cutter tours here. Every itinerary is customized based on your travel style, fitness level, and personal interests.</p>
+                    </div>
+                  </div>
+                </div>
 
-                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                      <h3>Can I get a refund for my purchase?</h3>
-                      <div class="faq-content">
-                        <p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Donec sollicitudin molestie malesuada.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-shield-check"></i>
                       </div>
-                      <i class="bi bi-chevron-down faq-toggle"></i>
-                    </div><!-- End FAQ Item-->
+                      <h4>Flexible Policies</h4>
+                      <p>Life happens, we understand</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Free cancellation up to 30 days before departure, easy date changes, and comprehensive travel insurance options give you peace of mind.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                  <div class="feature-card">
+                    <div class="feature-front">
+                      <div class="feature-icon">
+                        <i class="bi bi-star"></i>
+                      </div>
+                      <h4>Lifetime Memories</h4>
+                      <p>Experiences that transform perspectives</p>
+                    </div>
+                    <div class="feature-back">
+                      <p>Our travelers often say their journey with us changed their outlook on life. We create moments that become treasured memories for years to come.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="journey-timeline" data-aos="fade-up" data-aos-delay="200">
+              <div class="timeline-header text-center mb-5">
+                <h3>Milestones in Our Adventure</h3>
+                <p>Key moments that shaped who we are today</p>
+              </div>
+
+              <div class="timeline-container">
+                <div class="timeline-track"></div>
+
+                <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="300">
+                  <div class="milestone-marker">
+                    <span class="year">2014</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>The Beginning</h4>
+                    <p>Three university friends turned their passion for exploration into a mission to share hidden wonders with fellow adventurers across the continent.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="400">
+                  <div class="milestone-marker">
+                    <span class="year">2017</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Global Expansion</h4>
+                    <p>Established partnerships with local guides in Southeast Asia and South America, bringing our authentic travel philosophy to new continents.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-right" data-aos-delay="500">
+                  <div class="milestone-marker">
+                    <span class="year">2020</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Community Impact</h4>
+                    <p>Launched our sustainable tourism initiative, directly supporting over 200 local families through employment and fair trade partnerships.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-milestone" data-aos="slide-left" data-aos-delay="600">
+                  <div class="milestone-marker">
+                    <span class="year">2024</span>
+                  </div>
+                  <div class="milestone-content">
+                    <h4>Future Forward</h4>
+                    <p>Achieved B-Corp certification and committed to becoming the first fully regenerative travel company by 2030.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-12">
+            <div class="cta-banner" data-aos="zoom-in" data-aos-delay="300">
+              <div class="cta-overlay">
+                <div class="cta-content">
+                  <h3>Your Next Adventure Awaits</h3>
+                  <p>Join thousands of travelers who\'ve discovered the difference authentic, responsible travel makes.</p>
+                  <div class="cta-buttons">
+                    <a href="destinations.html" class="btn btn-primary me-3">Explore Destinations</a>
+                    <a href="contact.html" class="btn btn-outline">Chat with an Expert</a>
                   </div>
                 </div>
               </div>
@@ -433,7 +637,7 @@
 
       </div>
 
-    </section><!-- /Faq Section -->
+    </section><!-- /Travel About Section -->
 
   </main>
 

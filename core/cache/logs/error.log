@@ -7,3 +7,8 @@
 [2025-11-12 06:46:30] (ERROR in xPDO\xPDOConnection::connect @ C:\xampp\htdocs\sr-transfers\core\vendor\xpdo\xpdo\src\xPDO\xPDOConnection.php : 89) SQLSTATE[HY000] [1049] Unknown database 'sr-transfers'
 [2025-11-12 06:46:30] (ERROR @ C:\xampp\htdocs\sr-transfers\core\vendor\xpdo\xpdo\src\xPDO\Om\xPDOObject.php : 250) Error preparing statement for query: SELECT `modSystemSetting`.`key` AS `modSystemSetting_key`, `modSystemSetting`.`value` AS `modSystemSetting_value`, `modSystemSetting`.`xtype` AS `modSystemSetting_xtype`, `modSystemSetting`.`namespace` AS `modSystemSetting_namespace`, `modSystemSetting`.`area` AS `modSystemSetting_area`, `modSystemSetting`.`editedon` AS `modSystemSetting_editedon` FROM `modx_system_settings` AS `modSystemSetting`  - 
 [2025-11-12 06:46:30] (FATAL) Could not load core MODX configuration!
+[2025-11-12 08:44:28] (ERROR @ C:\xampp\htdocs\sr-transfers\core\src\Revolution\modParser.php : 153) Encountered a parser error: [2] Backtrack limit exhausted
+[2025-11-12 08:44:28] (ERROR @ C:\xampp\htdocs\sr-transfers\core\src\Revolution\modParser.php : 153) Encountered a parser error: [2] Backtrack limit exhausted
+[2025-11-12 08:44:28] (ERROR @ C:\xampp\htdocs\sr-transfers\core\src\Revolution\modParser.php : 153) Encountered a parser error: [2] Backtrack limit exhausted
+[2025-11-12 08:44:38] (ERROR @ C:\xampp\htdocs\sr-transfers\core\src\Revolution\modParser.php : 153) Encountered a parser error: [2] Backtrack limit exhausted
+[2025-11-12 08:44:38] (ERROR @ C:\xampp\htdocs\sr-transfers\core\src\Revolution\modParser.php : 153) Encountered a parser error: [2] Backtrack limit exhausted
