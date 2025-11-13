@@ -227,7 +227,7 @@
     'createdby' => 1,
     'createdon' => 1762928116,
     'editedby' => 1,
-    'editedon' => 1763032125,
+    'editedon' => 1763033403,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -305,7 +305,7 @@
 <header class="header">
     <!-- Topbar -->
     <div class="topbar text-center">
-        <p>
+        <p class="mb-0">
             <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
                 &nbsp;|&nbsp;
             <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
@@ -761,7 +761,7 @@
     '[[$navbar?]]' => '<header class="header">
     <!-- Topbar -->
     <div class="topbar text-center">
-        <p>
+        <p class="mb-0">
             <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
                 &nbsp;|&nbsp;
             <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
@@ -1098,7 +1098,7 @@
           'snippet' => '<header class="header">
     <!-- Topbar -->
     <div class="topbar text-center">
-        <p>
+        <p class="mb-0">
             <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
                 &nbsp;|&nbsp;
             <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
@@ -1197,7 +1197,7 @@
           'content' => '<header class="header">
     <!-- Topbar -->
     <div class="topbar text-center">
-        <p>
+        <p class="mb-0">
             <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
                 &nbsp;|&nbsp;
             <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
