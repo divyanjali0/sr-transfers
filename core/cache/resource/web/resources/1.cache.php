@@ -921,188 +921,97 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 <header class="header">
-  <!-- Topbar -->
-  <div class="topbar text-center">
-    <p>
-      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-      &nbsp;|&nbsp;
-      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
-    </p>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
-
-          <!-- Fleet Mega Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
-            <div class="dropdown-menu p-3">
-              <div class="row">
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Standard Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Executive Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">Large People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Coach</p>
-                </div>
-              </div>
-              <div class="text-center mt-3">
-                <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
-        </ul>
-      </div>
+    <!-- Topbar -->
+    <div class="topbar text-center">
+        <p>
+            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+                &nbsp;|&nbsp;
+            <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+                &nbsp;|&nbsp;
+            <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+        </p>
     </div>
-  </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
+            </a>
+
+            <!-- Offcanvas Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">
+                        <img src="assets/img/logo.png" alt="Logo" style="width:100px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body mobile-scrollable">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+                            <div class="dropdown-menu fleet-menu p-3 bg-transparent border-0">
+                                <div class="fleet-container">
+                                    <!-- Fleet Items -->
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Standard Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Executive Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Large People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Coach</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<style>
-/* Topbar */
-.topbar {
-  background-color: #6c6c6c;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 0;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-/* Mega Menu Background */
-.dropdown-menu {
-    background-color: #00000066;
-}
-
-/* Fixed header */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-/* Large screens */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    gap: 18px;
-  }
-
-  .dropdown-menu {
-    min-width: 560px;
-    overflow-y: auto;
-    padding: 15px;
-  }
-}
-
-/* Small / Medium screens */
-@media (max-width: 991px) {
-  .mobile-scrollable {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .navbar-nav .nav-item {
-    display: block;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-/* Scrollbar */
-.dropdown-menu::-webkit-scrollbar,
-.mobile-scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.dropdown-menu::-webkit-scrollbar-thumb,
-.mobile-scrollable::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.dropdown-menu img {
-  max-height: 80px;
-  object-fit: contain;
-}
-
-.dropdown-menu p {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
-
-.fleet-button {
-  background-image: linear-gradient(to right, #b30000, #808080);
-  border-color: transparent;
-  font-weight: 800;
-  width: 50%;
-}
-</style>
-
 <script>
-  // Change navbar background on scroll
-  window.addEventListener(\'scroll\', function() {
-    const navbar = document.getElementById(\'mainNavbar\');
-    if (window.scrollY > 50) {
-      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
-    } else {
-      navbar.style.backgroundColor = \'transparent\'; // original color
-    }
-  });
+    window.addEventListener(\'scroll\', function() {
+        const header = document.querySelector(\'.header\');
+            if (window.scrollY > 50) {
+            header.classList.add(\'scrolled\');
+            } else {
+            header.classList.remove(\'scrolled\');
+        }
+    });
 </script>
+
 
 <body class="index-page">
 
@@ -2089,188 +1998,97 @@
     '[[~6]]' => 'index.php?id=6',
     '[[~5]]' => 'index.php?id=5',
     '[[$navbar?]]' => '<header class="header">
-  <!-- Topbar -->
-  <div class="topbar text-center">
-    <p>
-      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-      &nbsp;|&nbsp;
-      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
-    </p>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
-
-          <!-- Fleet Mega Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
-            <div class="dropdown-menu p-3">
-              <div class="row">
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Standard Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Executive Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">Large People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Coach</p>
-                </div>
-              </div>
-              <div class="text-center mt-3">
-                <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
-        </ul>
-      </div>
+    <!-- Topbar -->
+    <div class="topbar text-center">
+        <p>
+            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+                &nbsp;|&nbsp;
+            <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+                &nbsp;|&nbsp;
+            <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+        </p>
     </div>
-  </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
+            </a>
+
+            <!-- Offcanvas Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">
+                        <img src="assets/img/logo.png" alt="Logo" style="width:100px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body mobile-scrollable">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=1">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+                            <div class="dropdown-menu fleet-menu p-3 bg-transparent border-0">
+                                <div class="fleet-container">
+                                    <!-- Fleet Items -->
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Standard Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Executive Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Large People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Coach</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="index.php?id=3" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=3">DESTINATIONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=2">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=6">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.php?id=5">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<style>
-/* Topbar */
-.topbar {
-  background-color: #6c6c6c;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 0;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-/* Mega Menu Background */
-.dropdown-menu {
-    background-color: #00000066;
-}
-
-/* Fixed header */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-/* Large screens */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    gap: 18px;
-  }
-
-  .dropdown-menu {
-    min-width: 560px;
-    overflow-y: auto;
-    padding: 15px;
-  }
-}
-
-/* Small / Medium screens */
-@media (max-width: 991px) {
-  .mobile-scrollable {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .navbar-nav .nav-item {
-    display: block;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-/* Scrollbar */
-.dropdown-menu::-webkit-scrollbar,
-.mobile-scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.dropdown-menu::-webkit-scrollbar-thumb,
-.mobile-scrollable::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.dropdown-menu img {
-  max-height: 80px;
-  object-fit: contain;
-}
-
-.dropdown-menu p {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
-
-.fleet-button {
-  background-image: linear-gradient(to right, #b30000, #808080);
-  border-color: transparent;
-  font-weight: 800;
-  width: 50%;
-}
-</style>
-
 <script>
-  // Change navbar background on scroll
-  window.addEventListener(\'scroll\', function() {
-    const navbar = document.getElementById(\'mainNavbar\');
-    if (window.scrollY > 50) {
-      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
-    } else {
-      navbar.style.backgroundColor = \'transparent\'; // original color
-    }
-  });
+    window.addEventListener(\'scroll\', function() {
+        const header = document.querySelector(\'.header\');
+            if (window.scrollY > 50) {
+            header.classList.add(\'scrolled\');
+            } else {
+            header.classList.remove(\'scrolled\');
+        }
+    });
 </script>
+
 ',
     '[[$footer?]]' => '  <footer id="footer" class="footer position-relative dark-background">
 
@@ -2520,188 +2338,97 @@
           'category' => 0,
           'cache_type' => 0,
           'snippet' => '<header class="header">
-  <!-- Topbar -->
-  <div class="topbar text-center">
-    <p>
-      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-      &nbsp;|&nbsp;
-      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
-    </p>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
-
-          <!-- Fleet Mega Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
-            <div class="dropdown-menu p-3">
-              <div class="row">
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Standard Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Executive Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">Large People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Coach</p>
-                </div>
-              </div>
-              <div class="text-center mt-3">
-                <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
-        </ul>
-      </div>
+    <!-- Topbar -->
+    <div class="topbar text-center">
+        <p>
+            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+                &nbsp;|&nbsp;
+            <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+                &nbsp;|&nbsp;
+            <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+        </p>
     </div>
-  </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
+            </a>
+
+            <!-- Offcanvas Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">
+                        <img src="assets/img/logo.png" alt="Logo" style="width:100px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body mobile-scrollable">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+                            <div class="dropdown-menu fleet-menu p-3 bg-transparent border-0">
+                                <div class="fleet-container">
+                                    <!-- Fleet Items -->
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Standard Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Executive Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Large People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Coach</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<style>
-/* Topbar */
-.topbar {
-  background-color: #6c6c6c;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 0;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-/* Mega Menu Background */
-.dropdown-menu {
-    background-color: #00000066;
-}
-
-/* Fixed header */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-/* Large screens */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    gap: 18px;
-  }
-
-  .dropdown-menu {
-    min-width: 560px;
-    overflow-y: auto;
-    padding: 15px;
-  }
-}
-
-/* Small / Medium screens */
-@media (max-width: 991px) {
-  .mobile-scrollable {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .navbar-nav .nav-item {
-    display: block;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-/* Scrollbar */
-.dropdown-menu::-webkit-scrollbar,
-.mobile-scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.dropdown-menu::-webkit-scrollbar-thumb,
-.mobile-scrollable::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.dropdown-menu img {
-  max-height: 80px;
-  object-fit: contain;
-}
-
-.dropdown-menu p {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
-
-.fleet-button {
-  background-image: linear-gradient(to right, #b30000, #808080);
-  border-color: transparent;
-  font-weight: 800;
-  width: 50%;
-}
-</style>
-
 <script>
-  // Change navbar background on scroll
-  window.addEventListener(\'scroll\', function() {
-    const navbar = document.getElementById(\'mainNavbar\');
-    if (window.scrollY > 50) {
-      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
-    } else {
-      navbar.style.backgroundColor = \'transparent\'; // original color
-    }
-  });
+    window.addEventListener(\'scroll\', function() {
+        const header = document.querySelector(\'.header\');
+            if (window.scrollY > 50) {
+            header.classList.add(\'scrolled\');
+            } else {
+            header.classList.remove(\'scrolled\');
+        }
+    });
 </script>
+
 ',
           'locked' => false,
           'properties' => 
@@ -2710,188 +2437,97 @@
           'static' => false,
           'static_file' => '',
           'content' => '<header class="header">
-  <!-- Topbar -->
-  <div class="topbar text-center">
-    <p>
-      <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-      &nbsp;|&nbsp;
-      <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
-      &nbsp;|&nbsp;
-      <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
-    </p>
-  </div>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse mobile-scrollable" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
-
-          <!-- Fleet Mega Menu -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
-            <div class="dropdown-menu p-3">
-              <div class="row">
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Standard Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Executive Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Cars</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
-                  <p class="mb-0">Large People Carrier</p>
-                </div>
-                <div class="col-6 col-md-4 text-center mb-3">
-                  <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
-                  <p class="mb-0">Luxury Coach</p>
-                </div>
-              </div>
-              <div class="text-center mt-3">
-                <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
-        </ul>
-      </div>
+    <!-- Topbar -->
+    <div class="topbar text-center">
+        <p>
+            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
+                &nbsp;|&nbsp;
+            <i class="fa fa-phone" style="color:orange;"></i> +94 76 798 9878
+                &nbsp;|&nbsp;
+            <i class="fa fa-envelope" style="color:orange;"></i> transfers@srilankarentacar.com
+        </p>
     </div>
-  </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" alt="Logo" style="width:120px;">
+            </a>
+
+            <!-- Offcanvas Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="mobileMenu">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">
+                        <img src="assets/img/logo.png" alt="Logo" style="width:100px;">
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body mobile-scrollable">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="[[~1]]">HOME</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEET</a>
+                            <div class="dropdown-menu fleet-menu p-3 bg-transparent border-0">
+                                <div class="fleet-container">
+                                    <!-- Fleet Items -->
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/1.png" alt="Standard Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Standard Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/6.png" alt="Executive Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Executive Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/3.png" alt="Luxury Cars" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Cars</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/2.png" alt="People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/5.png" alt="Large People Carrier" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Large People Carrier</p>
+                                    </div>
+                                    <div class="fleet-item text-center">
+                                        <img src="assets/img/navbar/4.png" alt="Luxury Coach" class="img-fluid mb-2">
+                                        <p class="mb-0 text-white">Luxury Coach</p>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="[[~3]]" class="btn btn-primary fleet-button">Explore Our Fleet</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="[[~3]]">DESTINATIONS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~2]]">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~6]]">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="[[~5]]">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<style>
-/* Topbar */
-.topbar {
-  background-color: #6c6c6c;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 0;
-}
-
-/* Navbar Links */
-.navbar-nav .nav-link {
-  color: #fff !important;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-/* Mega Menu Background */
-.dropdown-menu {
-    background-color: #00000066;
-}
-
-/* Fixed header */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-/* Large screens */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav {
-    gap: 18px;
-  }
-
-  .dropdown-menu {
-    min-width: 560px;
-    overflow-y: auto;
-    padding: 15px;
-  }
-}
-
-/* Small / Medium screens */
-@media (max-width: 991px) {
-  .mobile-scrollable {
-    max-height: 80vh;
-    overflow-y: auto;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-
-  .navbar-nav .nav-item {
-    display: block;
-  }
-
-  .dropdown-menu {
-    position: static;
-    float: none;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-/* Scrollbar */
-.dropdown-menu::-webkit-scrollbar,
-.mobile-scrollable::-webkit-scrollbar {
-  width: 6px;
-}
-
-.dropdown-menu::-webkit-scrollbar-thumb,
-.mobile-scrollable::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-
-.dropdown-menu img {
-  max-height: 80px;
-  object-fit: contain;
-}
-
-.dropdown-menu p {
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-}
-
-.fleet-button {
-  background-image: linear-gradient(to right, #b30000, #808080);
-  border-color: transparent;
-  font-weight: 800;
-  width: 50%;
-}
-</style>
-
 <script>
-  // Change navbar background on scroll
-  window.addEventListener(\'scroll\', function() {
-    const navbar = document.getElementById(\'mainNavbar\');
-    if (window.scrollY > 50) {
-      navbar.style.backgroundColor = \'rgb(147 140 140 / 26%)\'; // new color when scrolled
-    } else {
-      navbar.style.backgroundColor = \'transparent\'; // original color
-    }
-  });
+    window.addEventListener(\'scroll\', function() {
+        const header = document.querySelector(\'.header\');
+            if (window.scrollY > 50) {
+            header.classList.add(\'scrolled\');
+            } else {
+            header.classList.remove(\'scrolled\');
+        }
+    });
 </script>
+
 ',
         ),
         'policies' => 
