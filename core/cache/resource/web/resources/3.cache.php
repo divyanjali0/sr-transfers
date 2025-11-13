@@ -54,7 +54,6 @@
             </ul> -->
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
               <!-- Colombo -->
               <div class="col-lg-4 col-md-6 destination-item isotope-item filter-urban">
                 <a href="[[~3]]" class="destination-tile">
@@ -150,6 +149,51 @@
                   </div>
                 </a>
               </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="[[~3]]" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/7.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag heritage">Sacred City</span>
+                      <div class="destination-info">
+                        <h4>Anuradhapura</h4>
+                        <p>Ancient stupas and royal ruins from Sri Lanka’s first kingdom.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="[[~3]]" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/8.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag scenic">Beach</span>
+                      <div class="destination-info">
+                        <h4>Trincomalee</h4>
+                        <p>Pristine beaches and vibrant marine life on the eastern coast.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="[[~3]]" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/9.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag ancient">Scenic</span>
+                      <div class="destination-info">
+                        <h4>Ella</h4>
+                        <p>Famous for the Nine Arches Bridge, tea trails, and breathtaking views.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
             <!-- End Destinations Container -->
           </div>
@@ -183,7 +227,7 @@
     'createdby' => 1,
     'createdon' => 1762928116,
     'editedby' => 1,
-    'editedon' => 1763030620,
+    'editedon' => 1763032125,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -390,7 +434,6 @@
             </ul> -->
 
             <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
-
               <!-- Colombo -->
               <div class="col-lg-4 col-md-6 destination-item isotope-item filter-urban">
                 <a href="index.php?id=3" class="destination-tile">
@@ -481,6 +524,51 @@
                       <div class="destination-info">
                         <h4>Galle</h4>
                         <p>Colonial architecture, a charming fort, and scenic beaches along the southern coast.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="index.php?id=3" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/7.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag heritage">Sacred City</span>
+                      <div class="destination-info">
+                        <h4>Anuradhapura</h4>
+                        <p>Ancient stupas and royal ruins from Sri Lanka’s first kingdom.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="index.php?id=3" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/8.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag scenic">Beach</span>
+                      <div class="destination-info">
+                        <h4>Trincomalee</h4>
+                        <p>Pristine beaches and vibrant marine life on the eastern coast.</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 destination-item isotope-item filter-coastal filter-historical">
+                <a href="index.php?id=3" class="destination-tile">
+                  <div class="tile-image">
+                    <img src="assets/img/destinations/9.jpg" alt="Galle, Sri Lanka" class="img-fluid" loading="lazy">
+                    <div class="overlay-content">
+                      <span class="destination-tag ancient">Scenic</span>
+                      <div class="destination-info">
+                        <h4>Ella</h4>
+                        <p>Famous for the Nine Arches Bridge, tea trails, and breathtaking views.</p>
                       </div>
                     </div>
                   </div>
