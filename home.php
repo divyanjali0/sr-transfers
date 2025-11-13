@@ -267,7 +267,7 @@
               <div class="destination-overlay">
                 <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
                 <div class="destination-info">
-                  <a href="destination-details.html" class="explore-btn">
+                  <a href="[[~3]]" class="explore-btn">
                     <span>Explore Now</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
