@@ -2421,7 +2421,7 @@ section,
 # Travel About Section
 --------------------------------------------------------------*/
 .travel-about .intro-content h2 {
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 800;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
@@ -2430,12 +2430,12 @@ section,
 
 @media (max-width: 768px) {
   .travel-about .intro-content h2 {
-    font-size: 2.2rem;
+    font-size: 30px;
   }
 }
 
 .travel-about .intro-content .lead {
-  font-size: 1.3rem;
+  font-size: 18px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   line-height: 1.6;
   font-weight: 400;
@@ -2457,16 +2457,16 @@ section,
 
 .travel-about .hero-image .floating-stats {
   position: absolute;
-  bottom: -30px;
-  right: -30px;
+  bottom: 0;
+  right: 0;
   display: flex;
   gap: 1rem;
 }
 
 @media (max-width: 768px) {
   .travel-about .hero-image .floating-stats {
-    bottom: -20px;
-    right: -20px;
+    bottom: 0;
+    right: 0;
     gap: 0.5rem;
   }
 }
@@ -2519,24 +2519,32 @@ section,
   border-radius: 25px;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 12px;
 }
 
 .travel-about .story-content .story-badge i {
   font-size: 1.1rem;
 }
 
-.travel-about .story-content h3 {
-  font-size: 2.5rem;
+/* .travel-about .story-content h3 {
+  font-size: 34px;
   color: var(--heading-color);
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
+} */
+
+.about-title {
+    font-size: 32px;
+    color: var(--heading-color);
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 @media (max-width: 768px) {
-  .travel-about .story-content h3 {
-    font-size: 2rem;
+  .about-title {
+    font-size: 24px;
+    margin-top: 12px;
   }
 }
 
@@ -2545,6 +2553,7 @@ section,
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 15%);
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 .travel-about .story-content .mission-box {
@@ -2584,19 +2593,6 @@ section,
   font-style: italic;
   font-size: 1rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.travel-about .features-grid .section-header h3 {
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .travel-about .features-grid .section-header h3 {
-    font-size: 2rem;
-  }
 }
 
 .travel-about .features-grid .section-header p {
@@ -2678,19 +2674,6 @@ section,
 
 .travel-about .features-grid .feature-card:hover .feature-back {
   transform: rotateY(0deg);
-}
-
-.travel-about .journey-timeline .timeline-header h3 {
-  font-size: 2.5rem;
-  color: var(--heading-color);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .travel-about .journey-timeline .timeline-header h3 {
-    font-size: 2rem;
-  }
 }
 
 .travel-about .journey-timeline .timeline-header p {
@@ -2790,7 +2773,7 @@ section,
 .travel-about .cta-banner {
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 10%), color-mix(in srgb, var(--heading-color), transparent 10%)), url("assets/img/travel/showcase-12.webp") center/cover;
   border-radius: 25px;
-  min-height: 400px;
+  min-height: 300px;
   position: relative;
   overflow: hidden;
 }
@@ -2817,19 +2800,6 @@ section,
 .travel-about .cta-banner .cta-content {
   text-align: center;
   color: var(--contrast-color);
-}
-
-.travel-about .cta-banner .cta-content h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--contrast-color);
-}
-
-@media (max-width: 768px) {
-  .travel-about .cta-banner .cta-content h3 {
-    font-size: 2rem;
-  }
 }
 
 .travel-about .cta-banner .cta-content p {
@@ -3032,8 +3002,18 @@ section,
   color: white;
 }
 
-.travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-tag.family {
-  background-color: #06b6d4;
+.travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-tag.scenic {
+  background-color: #d4af06ed;
+  color: white;
+}
+
+.travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-tag.wildlife {
+  background-color: #175701;
+  color: white;
+}
+
+.travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-tag.heritage {
+  background-color: #236583;
   color: white;
 }
 
@@ -3052,8 +3032,8 @@ section,
 .travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-info p {
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 16px;
   opacity: 0.9;
+  margin-bottom: 0;
 }
 
 .travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-info .destination-stats {
