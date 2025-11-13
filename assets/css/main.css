@@ -748,7 +748,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 30px 0;
+  padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -884,7 +884,7 @@ section,
 }
 
 .travel-hero .booking-form-wrapper .booking-form {
-  background-color: var(--surface-color);
+  background-color: #5b5a5a52;
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 85%);
@@ -908,7 +908,6 @@ section,
 
 .travel-hero .booking-form-wrapper .booking-form .form-control,
 .travel-hero .booking-form-wrapper .booking-form .form-select {
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
   border-radius: 8px;
   padding: 12px 15px;
   font-size: 14px;
