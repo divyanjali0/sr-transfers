@@ -199,117 +199,74 @@
 
         <!-- Why Choose Us -->
         <div class="why-choose-section">
-          <div class="row justify-content-center">
-            <div class="col-lg-8 text-center mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3>Why Choose Us for Your Next Adventure</h3>
-              <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-            </div>
-          </div>
-
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-people-fill"></i>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Why Choose Us</h3>
+                    <p>We pride ourselves on delivering reliable, comfortable, and affordable transfers across Sri Lanka. With professional drivers, well-maintained vehicles, and 24/7 customer support, we ensure your journey is smooth from start to finish.</p>
                 </div>
-                <h4>Local Experts</h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
-              </div>
             </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-shield-check"></i>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                          <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h4>Safe & Reliable</h4>
+                        <p>Your safety is our top priority with experienced, professional chauffeurs</p>
+                    </div>
                 </div>
-                <h4>Safe &amp; Secure</h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-              </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-cash"></i>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h4>Luxury Fleet</h4>
+                    <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
+                  </div>
                 </div>
-                <h4>Best Prices</h4>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit.</p>
-              </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-headset"></i>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="bi bi-cash"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Our friendly team is available around the clock for any assistance.</p>
+                  </div>
                 </div>
-                <h4>24/7 Support</h4>
-                <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi.</p>
-              </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-geo-alt-fill"></i>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                  <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="bi bi-headset"></i>
+                    </div>
+                    <h4>Meet & Greet Service</h4>
+                    <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>
+                  </div>
                 </div>
-                <h4>Global Destinations</h4>
-                <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
-              </div>
             </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="450">
-              <div class="feature-card">
-                <div class="feature-icon">
-                  <i class="bi bi-star-fill"></i>
-                </div>
-                <h4>Premium Experience</h4>
-                <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
-              </div>
-            </div>
-          </div><!-- End Features Grid -->
-        </div><!-- End Why Choose Us -->
-
+        </div>
       </div>
-
-    </section><!-- /Why Us Section -->
+    </section>
+    <!-- /Why Us Section -->
 
 
     <!-- Featured Destinations Section -->
-    <section id="featured-destinations" class="featured-destinations section">
-
-      <!-- Section Title -->
+    <section id="featured-destinations" class="featured-destinations section pt-0">
       <div class="container section-title" data-aos="fade-up">
         <h2>Featured Destinations</h2>
-        <div><span>Check Our</span> <span class="description-title">Featured Destinations</span></div>
-      </div><!-- End Section Title -->
+        <div><span>Most Popular</span> <span class="description-title">Destinations</span></div>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row">
-
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="featured-destination">
               <div class="destination-overlay">
-                <img src="assets/img/travel/destination-3.webp" alt="Tropical Paradise" class="img-fluid">
+                <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
                 <div class="destination-info">
-                  <span class="destination-tag">Popular Choice</span>
-                  <h3>Tropical Paradise</h3>
-                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Maldives</p>
-                  <p class="description">Pristine beaches, crystal-clear waters, and luxury overwater villas await in this tropical paradise destination.</p>
-                  <div class="destination-meta">
-                    <div class="tours-count">
-                      <i class="bi bi-collection"></i>
-                      <span>22 Packages</span>
-                    </div>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.9 (412)</span>
-                    </div>
-                  </div>
-                  <div class="price-info">
-                    <span class="starting-from">Starting from</span>
-                    <span class="amount">$2,150</span>
-                  </div>
                   <a href="destination-details.html" class="explore-btn">
                     <span>Explore Now</span>
                     <i class="bi bi-arrow-right"></i>
@@ -320,84 +277,67 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="row g-3">
-
-              <div class="col-12" data-aos="fade-left" data-aos-delay="300">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/destination-7.webp" alt="Mountain Adventure" class="img-fluid">
-                    <div class="badge-offer">Best Value</div>
-                  </div>
-                  <div class="destination-details">
-                    <h4>Mountain Adventure</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Nepal</p>
-                    <p class="brief">Breathtaking Himalayan peaks and ancient Buddhist temples create an unforgettable spiritual journey.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 16 Tours</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                      <span class="price">from $1,420</span>
+              <div class="row g-3">
+                <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                  <div class="compact-destination">
+                    <div class="destination-image">
+                      <img src="assets/img/travel/destination-7.jpg" alt="Mountain Adventure" class="img-fluid">
+                      <div class="badge-offer">Most Visited</div>
                     </div>
-                    <a href="destination-details.html" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    <div class="destination-details">
+                        <h4>Kandy</h4>
+                        <p class="location"><i class="bi bi-geo-alt"></i> Sri Lanka</p>
+                        <p class="brief">Nestled in lush hills, Kandy enchants visitors with its sacred Temple of the Tooth, serene lakes, and timeless cultural heritage.</p>
+                        <a href="[[~3]]" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12" data-aos="fade-left" data-aos-delay="400">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/destination-11.webp" alt="Cultural Heritage" class="img-fluid">
-                  </div>
-                  <div class="destination-details">
-                    <h4>Cultural Heritage</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Peru</p>
-                    <p class="brief">Discover ancient civilizations, colorful markets, and archaeological wonders in the heart of South America.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 9 Expeditions</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                      <span class="price">from $980</span>
+                <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                  <div class="compact-destination">
+                    <div class="destination-image">
+                      <img src="assets/img/travel/destination-11.jpg" alt="Cultural Heritage" class="img-fluid">
                     </div>
-                    <a href="destination-details.html" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    <div class="destination-details">
+                      <h4>Sigiriya</h4>
+                      <p class="location"><i class="bi bi-geo-alt"></i> Sri Lanka</p>
+                      <p class="brief">Climb the majestic Lion Rock and explore ancient frescoes, royal gardens, and the breathtaking legacy of a lost kingdom.</p>
+                      <a href="[[~3]]" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-12" data-aos="fade-left" data-aos-delay="500">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/destination-16.webp" alt="Safari Experience" class="img-fluid">
-                    <div class="badge-offer limited">Limited Spots</div>
-                  </div>
-                  <div class="destination-details">
-                    <h4>Safari Experience</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Kenya</p>
-                    <p class="brief">Witness the Big Five and experience the great migration in Africa's most spectacular wildlife reserves.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 11 Safaris</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                      <span class="price">from $2,750</span>
+                <div class="col-12" data-aos="fade-left" data-aos-delay="500">
+                  <div class="compact-destination">
+                    <div class="destination-image">
+                      <img src="assets/img/travel/destination-16.jpg" alt="Safari Experience" class="img-fluid">
+                      <div class="badge-offer limited">Scenic</div>
                     </div>
-                    <a href="destination-details.html" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    <div class="destination-details">
+                      <h4>Nuwara Eliya</h4>
+                      <p class="location"><i class="bi bi-geo-alt"></i> Sri Lanka</p>
+                      <p class="brief">Wander through lush tea plantations, misty hills, and charming colonial cottages in Sri Lanka’s “Little England.”</p>
+                      <a href="[[~3]]" class="quick-link">View Details <i class="bi bi-chevron-right"></i></a>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-            </div>
+              </div>
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Featured Destinations Section -->
+    </section>
+    <!-- /Featured Destinations Section -->
 
     <!-- Featured Tours Section -->
-    <section id="featured-tours" class="featured-tours section">
-
-      <!-- Section Title -->
+    <!-- <section id="featured-tours" class="featured-tours section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Featured Tours</h2>
         <div><span>Check Our</span> <span class="description-title">Featured Tours</span></div>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -434,7 +374,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="tour-card">
@@ -468,7 +408,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="tour-card">
@@ -502,7 +442,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="tour-card">
@@ -536,7 +476,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="tour-card">
@@ -570,7 +510,7 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
+          </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="tour-card">
@@ -604,218 +544,59 @@
                 </div>
               </div>
             </div>
-          </div><!-- End Tour Item -->
-
+          </div>
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
           <a href="tours.html" class="btn-view-all">View All Tours</a>
         </div>
-
       </div>
-
-    </section><!-- /Featured Tours Section -->
+    </section> -->
+    <!-- /Featured Tours Section -->
 
     <!-- Testimonials Home Section -->
     <section id="testimonials-home" class="testimonials-home section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Testimonials</h2>
-        <div><span>What Our Customers</span> <span class="description-title">Are Saying</span></div>
-      </div><!-- End Section Title -->
+        <div><span>What Customers</span> <span class="description-title">Say</span></div>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
                 },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
                 }
               }
-            }
-          </script>
-          <div class="swiper-wrapper">
+            </script>
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-f-12.webp" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-12.webp" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-                <img src="assets/img/person/person-m-13.webp" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
+            <div class="swiper-wrapper">
+              [[!GoogleReviews]]
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
       </div>
-
-    </section><!-- /Testimonials Home Section -->
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section light-background">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="newsletter-section" data-aos="fade-up" data-aos-delay="300">
-          <div class="newsletter-card">
-            <div class="newsletter-content">
-              <div class="newsletter-icon">
-                <i class="bi bi-envelope-heart"></i>
-              </div>
-              <div class="newsletter-text">
-                <h3>Stay in the Loop</h3>
-                <p>Get exclusive travel deals and destination guides delivered to your inbox</p>
-              </div>
-            </div>
-
-            <form class="php-email-form newsletter-form" action="forms/newsletter.php" method="post">
-              <div class="form-wrapper">
-                <input type="email" name="email" class="email-input" placeholder="Your email address" required="">
-                <button type="submit" class="subscribe-btn">
-                  <i class="bi bi-arrow-right"></i>
-                </button>
-              </div>
-
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Welcome aboard! Check your email for exclusive offers.</div>
-
-              <div class="trust-indicators">
-                <i class="bi bi-lock"></i>
-                <span>We protect your privacy. Unsubscribe anytime.</span>
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="benefits-showcase" data-aos="fade-up" data-aos-delay="400">
-          <div class="benefits-header">
-            <h3>Why Choose Our Adventures</h3>
-            <p>Experience the difference with our premium travel services</p>
-          </div>
-
-          <div class="benefits-grid">
-            <div class="benefit-card" data-aos="flip-left" data-aos-delay="450">
-              <div class="benefit-visual">
-                <div class="benefit-icon-wrap">
-                  <i class="bi bi-geo-alt"></i>
-                </div>
-                <div class="benefit-pattern"></div>
-              </div>
-              <div class="benefit-content">
-                <h4>Handpicked Destinations</h4>
-                <p>Every location is carefully selected by our travel experts for authentic experiences</p>
-              </div>
-            </div>
-
-            <div class="benefit-card" data-aos="flip-left" data-aos-delay="500">
-              <div class="benefit-visual">
-                <div class="benefit-icon-wrap">
-                  <i class="bi bi-award"></i>
-                </div>
-                <div class="benefit-pattern"></div>
-              </div>
-              <div class="benefit-content">
-                <h4>Award-Winning Service</h4>
-                <p>Recognized for excellence with 5-star ratings and industry awards</p>
-              </div>
-            </div>
-
-            <div class="benefit-card" data-aos="flip-left" data-aos-delay="550">
-              <div class="benefit-visual">
-                <div class="benefit-icon-wrap">
-                  <i class="bi bi-heart"></i>
-                </div>
-                <div class="benefit-pattern"></div>
-              </div>
-              <div class="benefit-content">
-                <h4>Personalized Care</h4>
-                <p>Tailored itineraries designed around your preferences and travel style</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
+    </section>
+    <!-- /Testimonials Home Section -->
   </main>
 
 </body>
