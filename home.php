@@ -145,56 +145,61 @@
               </div>
             </div>
           </div>
-        </div><!-- End About Us Content -->
+        </div>
+        <!-- End About Us Content -->
 
-        <div id="call-to-action" class="call-to-action section light-background">
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
-                <div class="content-wrapper">
-                    <div class="badge-wrapper">
-                        <p class="mb-0 text-danger">**Space to add flash deals</p>
-                    <span class="promo-badge">Limited Time Offer</span>
-                    </div>
-                    <h2>Discover Your Next Adventure</h2>
-                    <p>Unlock incredible destinations with our specially curated travel packages. From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
-
-                    <div class="action-section">
-                    <div class="main-actions">
-                        <a href="destinations.html" class="btn btn-explore">
-                        <i class="bi bi-compass"></i>
-                        Explore Now
-                        </a>
-                        <a href="deals.html" class="btn btn-deals">
-                        <i class="bi bi-percent"></i>
-                        View Deals
-                        </a>
-                    </div>
-
-                    <div class="quick-contact">
-                        <span class="contact-label">Need help choosing?</span>
-                        <a href="tel:+1555123456" class="contact-link">
-                        <i class="bi bi-telephone"></i>
-                        Call +1 (555) 123-456
-                        </a>
-                    </div>
-                    </div>
+        <div id="call-to-action" class="call-to-action section light-background" style="padding: 30px 0;">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+              <div class="content-wrapper">
+                <div class="badge-wrapper">
+                  <p class="mb-0 flash-alert">🔥 Flash Deal Alert!</p>
+                  <span class="promo-badge">Limited Time Offer</span>
                 </div>
 
-                <div class="visual-element">
-                    <img src="assets/img/travel/showcase-3.webp" alt="Travel Adventure" class="hero-image" loading="lazy">
-                    <div class="image-overlay">
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Destinations</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10K+</span>
-                        <span class="stat-label">Happy Travelers</span>
-                    </div>
-                    </div>
+                <h2>Save Big on Airport Transfers!</h2>
+                <p>
+                  Book your ride now and enjoy exclusive discounts on airport and city transfers across Sri Lanka. 
+                  Fast, reliable, and affordable — your next trip starts with savings!
+                </p>
+
+                <div class="action-section">
+                  <div class="main-actions">
+                    <!-- <a href="deals.html" class="btn btn-deals">
+                      <i class="bi bi-percent"></i>
+                      View Flash Deals
+                    </a> -->
+                    <a href="[[~2]]" class="btn btn-explore">
+                      <i class="bi bi-calendar-check"></i>
+                      Book Now
+                    </a>
+                  </div>
+
+                  <div class="quick-contact">
+                    <span class="contact-label">Need assistance?</span>
+                    <a href="tel:+94777786729" class="contact-link">
+                      <i class="bi bi-telephone"></i>
+                      Call +94 77 778 6729
+                    </a>
+                  </div>
                 </div>
-                </div>
+              </div>
+
+              <div class="visual-element">
+                <img src="assets/img/flash-deal.png" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
+                <!-- <div class="image-overlay">
+                  <div class="stat-item">
+                    <span class="stat-number">25%</span>
+                    <span class="stat-label">Off This Week</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Service Available</span>
+                  </div>
+                </div> -->
+              </div>
             </div>
+          </div>
         </div>
 
         <!-- Why Choose Us -->
@@ -253,14 +258,163 @@
     <!-- /Why Us Section -->
 
 
+    <!-- Gallery Slider Section -->
+    <section id="gallery-slider" class="gallery-slider section pt-0">
+      <div class="container section-title pb-3" data-aos="fade-up">
+        <h2>Our Fleet</h2>
+        <div><span>Comfortable</span> <span class="description-title">Airport Transfer Rides</span></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="gallery-container py-0">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "effect": "coverflow",
+                "grabCursor": true,
+                "centeredSlides": true,
+                "slidesPerView": "auto",
+                "coverflowEffect": {
+                  "rotate": 50,
+                  "stretch": 0,
+                  "depth": 100,
+                  "modifier": 1,
+                  "slideShadows": true
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 10
+                  },
+                  "768": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 20
+                  },
+                  "1024": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 30
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
+                      <img src="assets/img/navbar/1.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
+                      <img src="assets/img/navbar/2.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
+                      <img src="assets/img/navbar/3.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
+                      <img src="assets/img/navbar/4.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
+                      <img src="assets/img/navbar/5.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
+                      <img src="assets/img/navbar/6.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="gallery-item">
+                  <div class="gallery-img">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
+                      <img src="assets/img/navbar/7.png" class="img-fluid" alt="">
+                      <div class="gallery-overlay">
+                        <i class="bi bi-plus-circle"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Gallery Slider Section -->
+
+
     <!-- Featured Destinations Section -->
-    <section id="featured-destinations" class="featured-destinations section pt-0">
+    <section id="featured-destinations" class="featured-destinations section pt-3">
       <div class="container section-title" data-aos="fade-up">
         <h2>Featured Destinations</h2>
         <div><span>Most Popular</span> <span class="description-title">Destinations</span></div>
       </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up">
         <div class="row">
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="featured-destination">
@@ -278,7 +432,7 @@
 
           <div class="col-lg-6">
               <div class="row g-3">
-                <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                <div class="col-12" data-aos="fade-left">
                   <div class="compact-destination">
                     <div class="destination-image">
                       <img src="assets/img/travel/destination-7.jpg" alt="Mountain Adventure" class="img-fluid">
@@ -293,7 +447,7 @@
                   </div>
                 </div>
 
-                <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                <div class="col-12" data-aos="fade-left">
                   <div class="compact-destination">
                     <div class="destination-image">
                       <img src="assets/img/travel/destination-11.jpg" alt="Cultural Heritage" class="img-fluid">
@@ -307,7 +461,7 @@
                   </div>
                 </div>
 
-                <div class="col-12" data-aos="fade-left" data-aos-delay="500">
+                <div class="col-12" data-aos="fade-left">
                   <div class="compact-destination">
                     <div class="destination-image">
                       <img src="assets/img/travel/destination-16.jpg" alt="Safari Experience" class="img-fluid">

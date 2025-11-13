@@ -1899,21 +1899,25 @@ section,
 }
 
 .call-to-action .content-wrapper .badge-wrapper {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .call-to-action .content-wrapper .badge-wrapper .promo-badge {
-  display: inline-block;
   background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
   color: var(--contrast-color);
   padding: 8px 20px;
   border-radius: 25px;
-  font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   position: relative;
   overflow: hidden;
+  margin: 0;
+  margin-top: 14px;
 }
 
 .call-to-action .content-wrapper .badge-wrapper .promo-badge::before {
@@ -1925,6 +1929,58 @@ section,
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   animation: shimmer 2s infinite;
+}
+
+.flash-alert {
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 1.2rem;
+  animation: alert-glow 2s ease-in-out infinite;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.flash-alert:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+}
+
+.promo-badge {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-left: 10px;
+  animation: pulse-badge 2s infinite;
+  box-shadow: 0 0 0 rgba(255, 193, 7, 0.4);
+}
+
+/* Keyframes */
+@keyframes pulse-badge {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+  }
+}
+
+@keyframes alert-glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #ff4500, 0 0 10px #ff7043;
+  }
+  50% {
+    text-shadow: 0 0 15px #ff5722, 0 0 30px #ff9800;
+  }
 }
 
 .call-to-action .content-wrapper h2 {
@@ -1943,14 +1999,14 @@ section,
 .call-to-action .content-wrapper p {
   font-size: 1.2rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
-  margin-bottom: 2.5rem;
+  margin-bottom: 20px;
   line-height: 1.7;
 }
 
 .call-to-action .action-section .main-actions {
   display: flex;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 576px) {
@@ -5272,7 +5328,6 @@ section,
   position: relative;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease;
 }
 
@@ -5284,7 +5339,7 @@ section,
 .gallery-slider .gallery-img img {
   transition: transform 0.6s ease;
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 5/3;
   object-fit: cover;
 }
 
