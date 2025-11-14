@@ -36,14 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <title>SR Transfers | Login</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="icon" href="assets/img/logo.png" type="image/png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 <style>
     body {
         background: 
             linear-gradient(310deg, rgb(49 49 49 / 36%), rgb(2 47 85 / 60%)),
-            url('assets/images/bg-login.png') no-repeat center center fixed;
+            url('assets/img/bg-login.png') no-repeat center center fixed;
         background-size: cover;
         display: flex;
         justify-content: center;
