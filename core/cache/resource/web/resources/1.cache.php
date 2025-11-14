@@ -250,6 +250,7 @@
               </div>
               <div class="content-wrapper">
                 <div class="badge-wrapper">
+                  
                  
                   <span class="promo-badge">Limited Time Offer</span>
                 </div>
@@ -401,9 +402,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+   
                     </a>
                   </div>
                 </div>
@@ -413,9 +412,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                  
                     </a>
                   </div>
                 </div>
@@ -425,9 +422,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                      
                     </a>
                   </div>
                 </div>
@@ -437,9 +432,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+              
                     </a>
                   </div>
                 </div>
@@ -449,9 +442,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                     
                     </a>
                   </div>
                 </div>
@@ -461,9 +452,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                     
                     </a>
                   </div>
                 </div>
@@ -473,9 +462,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                    
                     </a>
                   </div>
                 </div>
@@ -848,7 +835,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 2,
-    'editedon' => 1763115347,
+    'editedon' => 1763116337,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1252,6 +1239,7 @@
               </div>
               <div class="content-wrapper">
                 <div class="badge-wrapper">
+                  
                  
                   <span class="promo-badge">Limited Time Offer</span>
                 </div>
@@ -1403,9 +1391,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+   
                     </a>
                   </div>
                 </div>
@@ -1415,9 +1401,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                  
                     </a>
                   </div>
                 </div>
@@ -1427,9 +1411,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                      
                     </a>
                   </div>
                 </div>
@@ -1439,9 +1421,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+              
                     </a>
                   </div>
                 </div>
@@ -1451,9 +1431,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                     
                     </a>
                   </div>
                 </div>
@@ -1463,9 +1441,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                     
                     </a>
                   </div>
                 </div>
@@ -1475,9 +1451,7 @@
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
                       <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
+                    
                     </a>
                   </div>
                 </div>
