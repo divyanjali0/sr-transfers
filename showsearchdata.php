@@ -143,7 +143,6 @@ try {
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-
         const pickupInput = document.getElementById("pickupLocation");
         const dropoffInput = document.getElementById("dropoffLocation");
         const returnPickup = document.getElementById("returnPickup");
@@ -244,7 +243,6 @@ try {
             if (mainDistance <= 0) return;
             distanceDisplay.style.display = "block";
 
-            // Store distances for later use in form submission
             distanceDisplay.dataset.mainDistance = mainDistance;
             distanceDisplay.dataset.returnDistance = returnDistance;
 
@@ -314,3 +312,6 @@ try {
         if(pickupInput.value && dropoffInput.value) calculateAll();
     });
 </script>
+
+
+<?php return ''; ?>

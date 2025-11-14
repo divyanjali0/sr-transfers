@@ -173,3 +173,5 @@ try {
         calculateAll(); 
     });
 </script>
+
+<?php return ''; ?>
