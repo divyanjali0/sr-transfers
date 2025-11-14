@@ -8713,3 +8713,230 @@ TESTIMONIALS
   display: flex;
   align-items: stretch;
 }
+
+.vehicle-card-fleet {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow : 0 6px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 15px;
+}
+
+@media (max-width: 767px) {
+    .vehicle-card-fleet {
+        display: block;
+    }
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.vehicle-card.selected {
+    border: 2px solid #000000;
+    box-shadow: 0 0 12px rgb(114 119 125);
+    transform: translateY(-2px);
+    background-color: #cccccc;
+}
+
+.vehicle-image img {
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.vehicle-card:hover .vehicle-image img {
+  transform: scale(1.05);
+}
+
+.vehicle-details {
+  flex: 1;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+
+.vehicle-card.selected {
+    border: 2px solid #000000;
+    box-shadow: 0 0 12px rgb(114 119 125);
+    transform: translateY(-2px);
+    background-color: #cccccc;
+}
+
+.vehicle-details h5 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.vehicle-details p {
+  color: #555;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.vehicle-details i {
+  color: #106fa9;
+  margin-right: 6px;
+}
+
+.vehicle-price {
+  min-width: 150px;
+}
+
+.vehicle-price h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.vehicle-price p {
+  font-size: 14px;
+  color: #28a745;
+  font-weight: 800;
+}
+
+.vehicle-price button {
+  border-radius: 8px;
+  font-weight: 600;
+  width: 100%;
+  background: linear-gradient(174deg, #0a3183, #000941a3);
+  border: none;
+  transition: all 0.3s ease;
+  color: white !important;
+}
+
+.vehicle-price button:hover {
+  background: linear-gradient(135deg, #0056d2, #003b91);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vehicle-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vehicle-image img {
+    width: 100%;
+    height: 130px;
+  }
+
+  .vehicle-price {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+#loadMoreBtn {
+    background-color: #3b6e74;
+    color: white !important;
+}
+
+
+#selectedVehicle .card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 7px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: none
+}
+
+/* Hover effect for desktop */
+#selectedVehicle .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+#selectedVehicle img {
+    border-radius: 10px;
+    width: 22rem;
+    height: auto;
+    object-fit: cover;
+}
+
+#selectedVehicle .vehicle-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    margin-bottom: 0 !important;
+}
+
+#selectedVehicle h5 {
+    margin-bottom: 4%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 767px) {
+    #selectedVehicle .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #selectedVehicle img {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
+
+#selectedVehicle .card > div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+/* On small screens, stack vertically */
+@media (max-width: 767px) {
+    #selectedVehicle .card > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 14px;
+    position: fixed;
+    z-index: 9999;
+    top: 20px;       
+    right: 20px;     
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}

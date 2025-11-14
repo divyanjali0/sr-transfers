@@ -17,7 +17,7 @@
                     <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
                         <div class="booking-form">
                             <h3 class="form-title">Schedule Your Ride</h3>
-                            <form action="[[~3]]" class="">
+                            <form action="[[~7]]" method="post">
                                 <!-- Pickup / Drop-off Row -->
                                 <div class="row g-2 align-items-center">
                                     <div class="col-md-6">
@@ -110,7 +110,6 @@
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- About Us Content -->
@@ -265,7 +264,6 @@
         <div><span>Comfortable</span> <span class="description-title">Airport Transfer Rides</span></div>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="gallery-container py-0">
           <div class="swiper init-swiper">
             <script type="application/json" class="swiper-config">
@@ -751,6 +749,7 @@
       </div>
     </section>
     <!-- /Testimonials Home Section -->
+     
   </main>
 
 </body>
