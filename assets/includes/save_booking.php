@@ -65,7 +65,7 @@ try {
     $bookingNumber = sprintf("SR/RENT-%s/%s/%04d", $year, $month, $lastId);
 
     $invoiceFileName = sprintf("%04d.pdf", $lastId);
-    $baseUrl = "http://localhost/transfers/";
+    $baseUrl = "http://localhost/sr-transfers/";
     $invoicePath = $baseUrl . "invoices/" . $invoiceFileName;
 
     $update = $conn->prepare("
