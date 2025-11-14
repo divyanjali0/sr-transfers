@@ -1125,10 +1125,10 @@ section,
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.why-us .feature-card:hover .feature-icon {
+/* .why-us .feature-card:hover .feature-icon {
   background: var(--accent-color);
   color: var(--contrast-color);
-}
+} */
 
 .why-us .feature-icon {
   width: 80px;
@@ -8947,4 +8947,9 @@ TESTIMONIALS
   height: auto;     /* Keep correct proportions */
   display: block;
   margin: 0 auto;   /* Center the image */
+}
+
+.ss {
+  width: 100px;
+  height: auto;
 }

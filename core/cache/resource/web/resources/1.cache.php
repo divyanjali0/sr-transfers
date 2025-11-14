@@ -300,7 +300,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                      <div class="feature-icon">
-            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
         </div>
                         <h4>Safe & Reliable</h4>
                         <p>Your safety is our top priority with experienced, professional chauffeurs</p>
@@ -310,7 +310,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                   <div class="feature-card">
                           <div class="feature-icon">
-            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
         </div>
                     <h4>Luxury Fleet</h4>
                     <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
@@ -320,7 +320,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="feature-card">
                         <div class="feature-icon">
-            <img src="assets/img/who_we/3.png" alt="24/7 Support" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
         </div>
                     <h4>24/7 Support</h4>
                     <p>Our friendly team is available around the clock for any assistance.</p>
@@ -330,7 +330,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
                   <div class="feature-card">
                          <div class="feature-icon">
-            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
         </div>
                     <h4>Meet & Greet Service</h4>
                     <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>
@@ -848,7 +848,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 2,
-    'editedon' => 1763114508,
+    'editedon' => 1763114842,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1302,7 +1302,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                      <div class="feature-icon">
-            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
         </div>
                         <h4>Safe & Reliable</h4>
                         <p>Your safety is our top priority with experienced, professional chauffeurs</p>
@@ -1312,7 +1312,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                   <div class="feature-card">
                           <div class="feature-icon">
-            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
         </div>
                     <h4>Luxury Fleet</h4>
                     <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
@@ -1322,7 +1322,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="feature-card">
                         <div class="feature-icon">
-            <img src="assets/img/who_we/3.png" alt="24/7 Support" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
         </div>
                     <h4>24/7 Support</h4>
                     <p>Our friendly team is available around the clock for any assistance.</p>
@@ -1332,7 +1332,7 @@
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
                   <div class="feature-card">
                          <div class="feature-icon">
-            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" style="width:50px; height:auto;">
+            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
         </div>
                     <h4>Meet & Greet Service</h4>
                     <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>

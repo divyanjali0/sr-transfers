@@ -154,6 +154,9 @@ try {
         const mapWrapper = document.getElementById("mapWrapper");
         const mapEl = document.getElementById("routeMap");
 
+        let directionsRendererMain;
+        let directionsRendererReturn;
+
         let map, directionsService, directionsRenderer;
         let mainDistance = 0, mainDuration = "";
         let returnDistance = 0, returnDuration = "";
@@ -162,8 +165,17 @@ try {
         function initMap() {
             map = new google.maps.Map(mapEl, { zoom: 7, center: { lat: 7.8731, lng: 80.7718 } });
             directionsService = new google.maps.DirectionsService();
-            directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: false });
-            directionsRenderer.setMap(map);
+            directionsRendererMain = new google.maps.DirectionsRenderer({
+                suppressMarkers: false,
+                polylineOptions: { strokeColor: "#1A73E8", strokeWeight: 5 }
+            });
+            directionsRendererMain.setMap(map);
+
+            directionsRendererReturn = new google.maps.DirectionsRenderer({
+                suppressMarkers: false,
+                polylineOptions: { strokeColor: "#34A853", strokeWeight: 5 }
+            });
+            directionsRendererReturn.setMap(map);
         }
 
         function initAutocomplete() {
@@ -200,16 +212,32 @@ try {
             });
         }
 
-        async function showRoute(origin, destination) {
+        async function showRouteMain(origin, destination) {
             if (!origin || !destination) return;
-            mapWrapper.classList.add("large");
-            google.maps.event.trigger(map, "resize");
             return new Promise(resolve => {
                 directionsService.route({
-                    origin, destination, travelMode: google.maps.TravelMode.DRIVING
+                    origin,
+                    destination,
+                    travelMode: google.maps.TravelMode.DRIVING
                 }, (result, status) => {
                     if (status === "OK") {
-                        directionsRenderer.setDirections(result);
+                        directionsRendererMain.setDirections(result);
+                    }
+                    resolve();
+                });
+            });
+        }
+
+        async function showRouteReturn(origin, destination) {
+            if (!origin || !destination) return;
+            return new Promise(resolve => {
+                directionsService.route({
+                    origin,
+                    destination,
+                    travelMode: google.maps.TravelMode.DRIVING
+                }, (result, status) => {
+                    if (status === "OK") {
+                        directionsRendererReturn.setDirections(result);
                     }
                     resolve();
                 });
@@ -223,7 +251,7 @@ try {
             const main = await getDistance(p1, d1);
             mainDistance = main.km;
             mainDuration = main.duration;
-            if (mainDistance>0) await showRoute(p1, d1);
+            if (mainDistance > 0) await showRouteMain(p1, d1);
 
             if (roundtripCheck.checked) {
                 const rp = returnPickup.value.trim();
@@ -231,6 +259,8 @@ try {
                 const ret = await getDistance(rp, rd);
                 returnDistance = ret.km;
                 returnDuration = ret.duration;
+                if (returnDistance > 0) await showRouteReturn(rp, rd);
+
             } else {
                 returnDistance = 0;
                 returnDuration = "";
@@ -243,7 +273,6 @@ try {
             if (mainDistance <= 0) return;
             distanceDisplay.style.display = "block";
 
-            // Store distances for later use in form submission
             distanceDisplay.dataset.mainDistance = mainDistance;
             distanceDisplay.dataset.returnDistance = returnDistance;
 
