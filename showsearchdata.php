@@ -91,9 +91,11 @@ $output = '
     </div>
 
     <div class="form-check" style="margin:12px 0;">
-        <input type="checkbox" class="form-check-input" id="roundtripCheck" name="roundtripCheck" '.($isRoundtrip ? "checked" : "").'>
-        <label for="roundtripCheck">Roundtrip</label>
+        <input type="checkbox" class="form-check-input" id="roundtripCheck" name="roundtripCheck" '.($isRoundtrip ? "checked" : "").' style="width: auto;">
+        <label for="roundtripCheck" style="margin-left:8px; font-weight:600">Round Trip</label>
     </div>
+
+    <hr>
 
     <div id="returnDetails" style="display:'.($isRoundtrip ? 'block' : 'none').'">
         <div class="row">
@@ -109,9 +111,11 @@ $output = '
 
         <div class="form-group" style="margin-top:10px;">
             <label for="returnDate">Return Date</label>
-            <input type="datetime-local" id="returnDate" name="returnDate" value="'.$returnDate.'">
+            <input type="datetime-local" id="returnDate" name="returnDate" value="'.$returnDate.'" style="width: 50%;">
         </div>
     </div>
+
+    <hr>
 
     [[!ShowAddons]]
 
@@ -241,7 +245,7 @@ $output = '
         }
 
         function updateTotalPrice() {
-            let totalKm = mainDistance + returnDistance;
+            let totalKm = mainDistance + (returnDistance || 0); 
             let total = totalKm * pricePerKm;
 
             document.querySelectorAll(".addon:checked").forEach(cb => {
@@ -251,20 +255,24 @@ $output = '
                 total += rate * qty;
             });
 
-            totalPriceInput.value = total ? "$ "+total.toFixed(2) : "";
+            totalPriceInput.value = total ? "$ " + total.toFixed(2) : "";
         }
 
         document.querySelectorAll(".select-vehicle-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
+            btn.addEventListener("click", async () => {
                 pricePerKm = parseFloat(btn.dataset.price);
-                document.querySelectorAll(".select-vehicle-btn").forEach(b=>b.classList.remove("active"));
+
+                document.querySelectorAll(".select-vehicle-btn").forEach(b => b.classList.remove("active"));
                 btn.classList.add("active");
+
                 document.querySelectorAll(".addon").forEach(cb => {
-                    cb.checked=false;
-                    const qtySel=document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-                    if(qtySel){qtySel.disabled=true;qtySel.value=1;}
+                    cb.checked = false;
+                    const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                    if(qtySel){ qtySel.disabled = true; qtySel.value = 1; }
                 });
-                updateTotalPrice();
+
+                await calculateAll();  
+                updateTotalPrice(); 
             });
         });
 
@@ -278,9 +286,7 @@ $output = '
             calculateAll();
         });
 
-        // Initial calculation if fields are pre-filled
         if(pickupInput.value && dropoffInput.value) calculateAll();
-
     });
 </script>
 ';
