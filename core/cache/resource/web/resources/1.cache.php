@@ -203,7 +203,7 @@
               </div>
 
               <div class="visual-element">
-                <img src="assets/img/flash-deal.png" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
+                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
                 <!-- <div class="image-overlay">
                   <div class="stat-item">
                     <span class="stat-number">25%</span>
@@ -333,7 +333,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
-                      <img src="assets/img/navbar/1.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -345,7 +345,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
-                      <img src="assets/img/navbar/2.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -357,7 +357,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
-                      <img src="assets/img/navbar/3.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -369,7 +369,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
-                      <img src="assets/img/navbar/4.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -381,7 +381,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
-                      <img src="assets/img/navbar/5.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -393,7 +393,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
-                      <img src="assets/img/navbar/6.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -405,7 +405,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
-                      <img src="assets/img/navbar/7.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -780,7 +780,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 1,
-    'editedon' => 1763022384,
+    'editedon' => 1763035320,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1136,7 +1136,7 @@
               </div>
 
               <div class="visual-element">
-                <img src="assets/img/flash-deal.png" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
+                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
                 <!-- <div class="image-overlay">
                   <div class="stat-item">
                     <span class="stat-number">25%</span>
@@ -1266,7 +1266,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
-                      <img src="assets/img/navbar/1.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1278,7 +1278,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
-                      <img src="assets/img/navbar/2.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1290,7 +1290,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
-                      <img src="assets/img/navbar/3.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1302,7 +1302,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
-                      <img src="assets/img/navbar/4.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1314,7 +1314,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
-                      <img src="assets/img/navbar/5.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1326,7 +1326,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
-                      <img src="assets/img/navbar/6.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -1338,7 +1338,7 @@
                 <div class="gallery-item">
                   <div class="gallery-img">
                     <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
-                      <img src="assets/img/navbar/7.png" class="img-fluid" alt="">
+                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -2176,9 +2176,6 @@
         ),
         'policies' => 
         array (
-          'web' => 
-          array (
-          ),
         ),
         'source' => 
         array (
@@ -2399,9 +2396,6 @@
         ),
         'policies' => 
         array (
-          'web' => 
-          array (
-          ),
         ),
         'source' => 
         array (
@@ -2594,9 +2588,6 @@
         ),
         'policies' => 
         array (
-          'web' => 
-          array (
-          ),
         ),
         'source' => 
         array (
@@ -2759,9 +2750,6 @@ return $output;',
         ),
         'policies' => 
         array (
-          'web' => 
-          array (
-          ),
         ),
         'source' => 
         array (
