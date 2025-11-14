@@ -12,7 +12,7 @@ try {
             
             // Vehicle image
             echo '<div class="vehicle-image">';
-            echo '<img src="assets/img/navbar/' . htmlspecialchars($vehicle['image']) . '" alt="' . htmlspecialchars($vehicle['name']) . '" style="width:100%; border-radius:10px;">';
+            echo '<img src="assets/img/vehicles/' . htmlspecialchars($vehicle['image']) . '" alt="' . htmlspecialchars($vehicle['name']) . '" style="width:100%; border-radius:10px;">';
             echo '</div>';
 
             // Vehicle details

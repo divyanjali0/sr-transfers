@@ -6,7 +6,7 @@
     <section id="travel-hero" class="travel-hero section dark-background">
         <div class="hero-background">
             <video autoplay="" muted="" loop="">
-                <source src="assets/img/travel/preview.mp4" type="video/mp4">
+                <source src="assets/video/preview.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
         </div>
@@ -113,61 +113,143 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- About Us Content -->
-        <div class="row align-items-center mb-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="content">
-              <h3>Explore the World with Confidence</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="stats-row">
-                <div class="stat-item">
-                  <span data-purecounter-start="0" data-purecounter-end="1200" data-purecounter-duration="2" class="purecounter">0</span>
-                  <div class="stat-label">Happy Travelers</div>
-                </div>
-                <div class="stat-item">
-                  <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="2" class="purecounter">0</span>
-                  <div class="stat-label">Countries Covered</div>
-                </div>
-                <div class="stat-item">
-                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2" class="purecounter">0</span>
-                  <div class="stat-label">Years Experience</div>
-                </div>
-              </div>
-            </div>
+        <div id="contentImageSlider" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <div class="row align-items-center mb-5">
+        
+        <!-- CONTENT -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="content">
+            <h3>Explore the World with Confidence</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate...</p>
+            <ul class="list-unstyled custom-list">
+              <li><i class="bi bi-check-circle-fill"></i> Professional and Experienced Drivers</li>
+              <li><i class="bi bi-check-circle-fill"></i> Wide Range of Well-Maintained Vehicles</li>
+              <li><i class="bi bi-check-circle-fill"></i> 24/7 Customer Support</li>
+            </ul>
           </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="about-image">
-              <img src="assets/img/travel/showcase-8.webp" alt="Travel Experience" class="img-fluid rounded-4">
-              <div class="experience-badge">
-                <div class="experience-number">15+</div>
-                <div class="experience-text">Years of Excellence</div>
-              </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-image position-relative">
+            <img class="intro" src="assets/img/intro/1.jpg"  alt="">
+            <div class="experience-badge">
+              <div class="experience-number">15+</div>
+              <div class="experience-text">Years of Excellence</div>
             </div>
           </div>
         </div>
+
+      </div>
+    </div>
+    <!-- END SLIDE 1 -->
+
+
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <div class="row align-items-center mb-5">
+
+        <div class="col-lg-6">
+          <div class="content">
+            <h3>Seamless Travel Solutions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <ul class="list-unstyled custom-list">
+              <li><i class="bi bi-check-circle-fill"></i> Reliable Service</li>
+              <li><i class="bi bi-check-circle-fill"></i> Affordable Prices</li>
+              <li><i class="bi bi-check-circle-fill"></i> Islandwide Support</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="about-image position-relative">
+            <img class="intro" src="assets/img/intro/2.jpg"  alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- END SLIDE 2 -->
+
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <div class="row align-items-center mb-5">
+
+        <div class="col-lg-6">
+          <div class="content">
+            <h3>Your Journey, Our Priority</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="intro" src="assets/img/intro/3.jpg"  alt="">
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- CONTROLS -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#contentImageSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#contentImageSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
         <!-- End About Us Content -->
 
         <div id="call-to-action" class="call-to-action section light-background" style="padding: 30px 0;">
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+               <div class="visual-element">
+                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
+                <!-- <div class="image-overlay">
+                  <div class="stat-item">
+                    <span class="stat-number">25%</span>
+                    <span class="stat-label">Off This Week</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Service Available</span>
+                  </div>
+                </div> -->
+              </div>
               <div class="content-wrapper">
                 <div class="badge-wrapper">
-                  <p class="mb-0 flash-alert">🔥 Flash Deal Alert!</p>
+                  
+                 
                   <span class="promo-badge">Limited Time Offer</span>
                 </div>
 
-                <h2>Save Big on Airport Transfers!</h2>
+                <h4>Save Big on Airport Transfers!</h4>
                 <p>
                   Book your ride now and enjoy exclusive discounts on airport and city transfers across Sri Lanka. 
                   Fast, reliable, and affordable — your next trip starts with savings!
                 </p>
 
-                <div class="action-section">
+               <!-- <div class="action-section">
                   <div class="main-actions">
-                    <!-- <a href="deals.html" class="btn btn-deals">
+                     <a href="deals.html" class="btn btn-deals">
                       <i class="bi bi-percent"></i>
                       View Flash Deals
-                    </a> -->
+                    </a> 
                     <a href="[[~2]]" class="btn btn-explore">
                       <i class="bi bi-calendar-check"></i>
                       Book Now
@@ -181,22 +263,10 @@
                       Call +94 77 778 6729
                     </a>
                   </div>
-                </div>
+                </div>-->
               </div>
 
-              <div class="visual-element">
-                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
-                <!-- <div class="image-overlay">
-                  <div class="stat-item">
-                    <span class="stat-number">25%</span>
-                    <span class="stat-label">Off This Week</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">24/7</span>
-                    <span class="stat-label">Service Available</span>
-                  </div>
-                </div> -->
-              </div>
+             
             </div>
           </div>
         </div>
@@ -213,9 +283,9 @@
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
-                        <div class="feature-icon">
-                          <i class="bi bi-people-fill"></i>
-                        </div>
+                     <div class="feature-icon">
+            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
+        </div>
                         <h4>Safe & Reliable</h4>
                         <p>Your safety is our top priority with experienced, professional chauffeurs</p>
                     </div>
@@ -223,9 +293,9 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                   <div class="feature-card">
-                    <div class="feature-icon">
-                      <i class="bi bi-shield-check"></i>
-                    </div>
+                          <div class="feature-icon">
+            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
+        </div>
                     <h4>Luxury Fleet</h4>
                     <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
                   </div>
@@ -233,9 +303,9 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="feature-card">
-                    <div class="feature-icon">
-                      <i class="bi bi-cash"></i>
-                    </div>
+                        <div class="feature-icon">
+            <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
+        </div>
                     <h4>24/7 Support</h4>
                     <p>Our friendly team is available around the clock for any assistance.</p>
                   </div>
@@ -243,9 +313,9 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
                   <div class="feature-card">
-                    <div class="feature-icon">
-                      <i class="bi bi-headset"></i>
-                    </div>
+                         <div class="feature-icon">
+            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
+        </div>
                     <h4>Meet & Greet Service</h4>
                     <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>
                   </div>
@@ -313,8 +383,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/1.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/1.png">
+                      <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -325,8 +395,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/2.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/2.png">
+                      <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -337,8 +407,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/3.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/3.png">
+                      <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -349,8 +419,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/4.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/4.png">
+                      <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -361,8 +431,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/5.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/5.png">
+                      <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -373,8 +443,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/6.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/6.png">
+                      <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -385,8 +455,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/navbar/7.png">
-                      <img src="assets/img/navbar/image.png" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/7.png">
+                      <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
