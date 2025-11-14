@@ -1,2 +1,2 @@
 <?php
-return '/Filesystem/assets/img/who_we';
+return '/Filesystem/assets/img';
