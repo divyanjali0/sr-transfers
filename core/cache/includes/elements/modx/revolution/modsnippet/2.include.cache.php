@@ -114,19 +114,10 @@ try {
         <div class="form-group">
             <label style="font-weight:600;">Select Add-ons</label>
             <div style="display:grid; gap:10px;">
-                <?php foreach ($addons as $a):
-                    $id = (int)$a['id'];
-                    $rate = (float)$a['rate'];
-                    $name = htmlspecialchars($a['addon_name']);
-                ?>
+                <?php foreach ($addons as $a): $id = (int)$a['id']; $rate = (float)$a['rate']; $name = htmlspecialchars($a['addon_name']); ?>
                 <label style="display:flex;align-items:center;justify-content:space-between;white-space:nowrap;">
                     <span style="display:flex;align-items:center;gap:8px;">
-                        <input type="checkbox" class="addon" 
-                               data-id="<?= $id ?>" 
-                               name="addons[]" 
-                               value="<?= $id ?>" 
-                               data-rate="<?= $rate ?>" 
-                               data-addon_name="<?= $name ?>">
+                        <input type="checkbox" class="addon" data-id="<?= $id ?>" name="addons[]" value="<?= $id ?>" data-rate="<?= $rate ?>" data-addon_name="<?= $name ?>">
                         <?= $name ?> (+$ <?= number_format($rate, 2) ?>)
                     </span>
                     <select name="addons_qty[<?= $id ?>]" class="qty" style="padding:3px 6px;border-radius:4px;width:20%;" disabled>
@@ -152,170 +143,176 @@ try {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl50Q8W4ZF2_EkOJ1lnRoVxO1IdjIupjM&libraries=places"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
 
-    const pickupInput = document.getElementById("pickupLocation");
-    const dropoffInput = document.getElementById("dropoffLocation");
-    const returnPickup = document.getElementById("returnPickup");
-    const returnDropoff = document.getElementById("returnDropoff");
-    const roundtripCheck = document.getElementById("roundtripCheck");
-    const returnDetails = document.getElementById("returnDetails");
-    const distanceDisplay = document.getElementById("distanceResult");
-    const totalPriceInput = document.getElementById("totalPrice");
-    const mapWrapper = document.getElementById("mapWrapper");
-    const mapEl = document.getElementById("routeMap");
+        const pickupInput = document.getElementById("pickupLocation");
+        const dropoffInput = document.getElementById("dropoffLocation");
+        const returnPickup = document.getElementById("returnPickup");
+        const returnDropoff = document.getElementById("returnDropoff");
+        const roundtripCheck = document.getElementById("roundtripCheck");
+        const returnDetails = document.getElementById("returnDetails");
+        const distanceDisplay = document.getElementById("distanceResult");
+        const totalPriceInput = document.getElementById("totalPrice");
+        const mapWrapper = document.getElementById("mapWrapper");
+        const mapEl = document.getElementById("routeMap");
 
-    let map, directionsService, directionsRenderer;
-    let mainDistance = 0, mainDuration = "";
-    let returnDistance = 0, returnDuration = "";
-    let pricePerKm = 0;
+        let map, directionsService, directionsRenderer;
+        let mainDistance = 0, mainDuration = "";
+        let returnDistance = 0, returnDuration = "";
+        let pricePerKm = 0;
 
-    function initMap() {
-        map = new google.maps.Map(mapEl, { zoom: 7, center: { lat: 7.8731, lng: 80.7718 } });
-        directionsService = new google.maps.DirectionsService();
-        directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: false });
-        directionsRenderer.setMap(map);
-    }
+        function initMap() {
+            map = new google.maps.Map(mapEl, { zoom: 7, center: { lat: 7.8731, lng: 80.7718 } });
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: false });
+            directionsRenderer.setMap(map);
+        }
 
-    function initAutocomplete() {
-        const options = { componentRestrictions: { country: "lk" } };
-        new google.maps.places.Autocomplete(pickupInput, options).addListener("place_changed", calculateAll);
-        new google.maps.places.Autocomplete(dropoffInput, options).addListener("place_changed", calculateAll);
-        if (returnPickup) new google.maps.places.Autocomplete(returnPickup, options).addListener("place_changed", calculateAll);
-        if (returnDropoff) new google.maps.places.Autocomplete(returnDropoff, options).addListener("place_changed", calculateAll);
-    }
+        function initAutocomplete() {
+            const options = { componentRestrictions: { country: "lk" } };
+            new google.maps.places.Autocomplete(pickupInput, options).addListener("place_changed", calculateAll);
+            new google.maps.places.Autocomplete(dropoffInput, options).addListener("place_changed", calculateAll);
+            if (returnPickup) new google.maps.places.Autocomplete(returnPickup, options).addListener("place_changed", calculateAll);
+            if (returnDropoff) new google.maps.places.Autocomplete(returnDropoff, options).addListener("place_changed", calculateAll);
+        }
 
-    initMap();
-    initAutocomplete();
+        initMap();
+        initAutocomplete();
 
-    async function getDistance(origin, destination) {
-        return new Promise(resolve => {
-            if (!origin || !destination) return resolve({ km:0, duration:"" });
-            const service = new google.maps.DistanceMatrixService();
-            service.getDistanceMatrix({
-                origins: [origin],
-                destinations: [destination],
-                travelMode: google.maps.TravelMode.DRIVING,
-                unitSystem: google.maps.UnitSystem.METRIC
-            }, (response, status) => {
-                if (status === "OK") {
-                    const elem = response.rows[0].elements[0];
-                    if (elem.status === "OK") {
-                        let km = parseFloat(elem.distance.text.replace(" km", ""));
-                        let dur = elem.duration.text;
-                        return resolve({ km, duration: dur });
+        async function getDistance(origin, destination) {
+            return new Promise(resolve => {
+                if (!origin || !destination) return resolve({ km:0, duration:"" });
+                const service = new google.maps.DistanceMatrixService();
+                service.getDistanceMatrix({
+                    origins: [origin],
+                    destinations: [destination],
+                    travelMode: google.maps.TravelMode.DRIVING,
+                    unitSystem: google.maps.UnitSystem.METRIC
+                }, (response, status) => {
+                    if (status === "OK") {
+                        const elem = response.rows[0].elements[0];
+                        if (elem.status === "OK") {
+                            let km = parseFloat(elem.distance.text.replace(" km", ""));
+                            let dur = elem.duration.text;
+                            return resolve({ km, duration: dur });
+                        }
                     }
-                }
-                resolve({ km:0, duration:"" });
+                    resolve({ km:0, duration:"" });
+                });
             });
-        });
-    }
-
-    async function showRoute(origin, destination) {
-        if (!origin || !destination) return;
-        mapWrapper.classList.add("large");
-        google.maps.event.trigger(map, "resize");
-        return new Promise(resolve => {
-            directionsService.route({
-                origin, destination, travelMode: google.maps.TravelMode.DRIVING
-            }, (result, status) => {
-                if (status === "OK") {
-                    directionsRenderer.setDirections(result);
-                }
-                resolve();
-            });
-        });
-    }
-
-    async function calculateAll() {
-        const p1 = pickupInput.value.trim();
-        const d1 = dropoffInput.value.trim();
-
-        const main = await getDistance(p1, d1);
-        mainDistance = main.km;
-        mainDuration = main.duration;
-        if (mainDistance>0) await showRoute(p1, d1);
-
-        if (roundtripCheck.checked) {
-            const rp = returnPickup.value.trim();
-            const rd = returnDropoff.value.trim();
-            const ret = await getDistance(rp, rd);
-            returnDistance = ret.km;
-            returnDuration = ret.duration;
-        } else {
-            returnDistance = 0;
-            returnDuration = "";
         }
 
-        updateDisplay();
-    }
-
-    function updateDisplay() {
-        if (mainDistance <= 0) return;
-        distanceDisplay.style.display = "block";
-        let html = `🚗 Main Trip: <strong>${mainDistance.toFixed(1)} km</strong> • ${mainDuration}`;
-        if (roundtripCheck.checked && returnDistance>0) {
-            html += `<br>🔁 Return Trip: <strong>${returnDistance.toFixed(1)} km</strong> • ${returnDuration}`;
-            html += `<br>📏 Total Distance: <strong>${(mainDistance+returnDistance).toFixed(1)} km</strong>`;
-        }
-        distanceDisplay.innerHTML = html;
-        updateTotalPrice();
-    }
-
-    function updateTotalPrice() {
-        let totalKm = mainDistance + (returnDistance || 0); 
-        let total = totalKm * pricePerKm;
-
-        document.querySelectorAll(".addon:checked").forEach(cb => {
-            const rate = parseFloat(cb.dataset.rate) || 0;
-            const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-            const qty = qtySel ? parseInt(qtySel.value) : 1;
-            total += rate * qty;
-        });
-
-        totalPriceInput.value = total ? "$ " + total.toFixed(2) : "";
-    }
-
-    // Vehicle selection buttons
-    document.querySelectorAll(".select-vehicle-btn").forEach(btn => {
-        btn.addEventListener("click", async () => {
-            pricePerKm = parseFloat(btn.dataset.price);
-            document.querySelectorAll(".select-vehicle-btn").forEach(b => b.classList.remove("active"));
-            btn.classList.add("active");
-            document.querySelectorAll(".addon").forEach(cb => {
-                cb.checked = false;
-                const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-                if(qtySel){ qtySel.disabled = true; qtySel.value = 1; }
+        async function showRoute(origin, destination) {
+            if (!origin || !destination) return;
+            mapWrapper.classList.add("large");
+            google.maps.event.trigger(map, "resize");
+            return new Promise(resolve => {
+                directionsService.route({
+                    origin, destination, travelMode: google.maps.TravelMode.DRIVING
+                }, (result, status) => {
+                    if (status === "OK") {
+                        directionsRenderer.setDirections(result);
+                    }
+                    resolve();
+                });
             });
-            await calculateAll();  
-            updateTotalPrice(); 
-        });
-    });
+        }
 
-    // Inputs change listeners
-    pickupInput.addEventListener("change", calculateAll);
-    dropoffInput.addEventListener("change", calculateAll);
-    if(returnPickup) returnPickup.addEventListener("change", calculateAll);
-    if(returnDropoff) returnDropoff.addEventListener("change", calculateAll);
+        async function calculateAll() {
+            const p1 = pickupInput.value.trim();
+            const d1 = dropoffInput.value.trim();
 
-    roundtripCheck.addEventListener("change", () => {
-        returnDetails.style.display = roundtripCheck.checked ? "block" : "none";
-        calculateAll();
-    });
+            const main = await getDistance(p1, d1);
+            mainDistance = main.km;
+            mainDuration = main.duration;
+            if (mainDistance>0) await showRoute(p1, d1);
 
-    // Add-ons listeners
-    document.querySelectorAll(".addon").forEach(cb => {
-        cb.addEventListener("change", () => {
-            const qtySelect = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-            if (qtySelect) qtySelect.disabled = !cb.checked;
+            if (roundtripCheck.checked) {
+                const rp = returnPickup.value.trim();
+                const rd = returnDropoff.value.trim();
+                const ret = await getDistance(rp, rd);
+                returnDistance = ret.km;
+                returnDuration = ret.duration;
+            } else {
+                returnDistance = 0;
+                returnDuration = "";
+            }
+
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            if (mainDistance <= 0) return;
+            distanceDisplay.style.display = "block";
+
+            // Store distances for later use in form submission
+            distanceDisplay.dataset.mainDistance = mainDistance;
+            distanceDisplay.dataset.returnDistance = returnDistance;
+
+            let html = `🚗 Main Trip: <strong>${mainDistance.toFixed(1)} km</strong> • ${mainDuration}`;
+            if (roundtripCheck.checked && returnDistance > 0) {
+                html += `<br>🔁 Return Trip: <strong>${returnDistance.toFixed(1)} km</strong> • ${returnDuration}`;
+                html += `<br>📏 Total Distance: <strong>${(mainDistance + returnDistance).toFixed(1)} km</strong>`;
+            }
+            distanceDisplay.innerHTML = html;
             updateTotalPrice();
-        });
-    });
-    document.querySelectorAll("select.qty").forEach(sel => {
-        sel.addEventListener("change", updateTotalPrice);
-    });
+        }
 
-    if(pickupInput.value && dropoffInput.value) calculateAll();
-});
+
+        function updateTotalPrice() {
+            let totalKm = mainDistance + (returnDistance || 0); 
+            let total = totalKm * pricePerKm;
+
+            document.querySelectorAll(".addon:checked").forEach(cb => {
+                const rate = parseFloat(cb.dataset.rate) || 0;
+                const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                const qty = qtySel ? parseInt(qtySel.value) : 1;
+                total += rate * qty;
+            });
+
+            totalPriceInput.value = total ? "$ " + total.toFixed(2) : "";
+        }
+
+        // Vehicle selection buttons
+        document.querySelectorAll(".select-vehicle-btn").forEach(btn => {
+            btn.addEventListener("click", async () => {
+                pricePerKm = parseFloat(btn.dataset.price);
+                document.querySelectorAll(".select-vehicle-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                document.querySelectorAll(".addon").forEach(cb => {
+                    cb.checked = false;
+                    const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                    if(qtySel){ qtySel.disabled = true; qtySel.value = 1; }
+                });
+                await calculateAll();  
+                updateTotalPrice(); 
+            });
+        });
+
+        // Inputs change listeners
+        pickupInput.addEventListener("change", calculateAll);
+        dropoffInput.addEventListener("change", calculateAll);
+        if(returnPickup) returnPickup.addEventListener("change", calculateAll);
+        if(returnDropoff) returnDropoff.addEventListener("change", calculateAll);
+
+        roundtripCheck.addEventListener("change", () => {
+            returnDetails.style.display = roundtripCheck.checked ? "block" : "none";
+            calculateAll();
+        });
+
+        // Add-ons listeners
+        document.querySelectorAll(".addon").forEach(cb => {
+            cb.addEventListener("change", () => {
+                const qtySelect = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                if (qtySelect) qtySelect.disabled = !cb.checked;
+                updateTotalPrice();
+            });
+        });
+        document.querySelectorAll("select.qty").forEach(sel => {
+            sel.addEventListener("change", updateTotalPrice);
+        });
+
+        if(pickupInput.value && dropoffInput.value) calculateAll();
+    });
 </script>
 return;

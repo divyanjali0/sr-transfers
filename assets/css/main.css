@@ -8940,3 +8940,11 @@ TESTIMONIALS
     opacity: 1;
     transform: translateY(0);
 }
+
+.intro {
+  width: 100%;      /* Full width inside the column */
+  max-width: 100%; /* Change image maximum width */
+  height: auto;     /* Keep correct proportions */
+  display: block;
+  margin: 0 auto;   /* Center the image */
+}

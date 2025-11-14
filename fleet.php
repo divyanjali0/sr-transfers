@@ -130,43 +130,35 @@
         document.addEventListener("DOMContentLoaded", () => {
 
             const distanceDisplay = document.getElementById("distanceResult");
+            const returnPickup = document.getElementById("returnPickup");
+            const returnDropoff = document.getElementById("returnDropoff");
 
-            function getDistanceInKm(text) {
-                if (!text) return 0;
-                if (text.includes("km")) return parseFloat(text.replace(" km",""));
-                if (text.includes("m")) return parseFloat(text.replace(" m","")) / 1000;
-                return 0;
-            }
-
+            // Update total price & collect add-ons
             function updateTotalPrice() {
-                if (!distanceDisplay?.innerText) return 0;
+                const mainDistance = parseFloat(distanceDisplay?.dataset.mainDistance || 0);
+                const returnDistance = parseFloat(distanceDisplay?.dataset.returnDistance || 0);
+                const pricePerKm = window.selectedVehiclePricePerKm || 0;
 
-                const distanceText = distanceDisplay.innerText;
-                let km = 0;
-                const match = distanceText.match(/Distance: ([\d,.]+ [km|m]+)/);
-                if (match) {
-                    if (match[1].includes("km")) km = parseFloat(match[1].replace(" km",""));
-                    else if (match[1].includes("m")) km = parseFloat(match[1].replace(" m","")) / 1000;
-                }
+                let total = (mainDistance + returnDistance) * pricePerKm;
 
-                // Base vehicle price
-                let total = km * (window.selectedVehiclePricePerKm || 0);
-
-                // Add add-ons
+                const addons = [];
                 document.querySelectorAll(".addon:checked").forEach(cb => {
-                    const rate = parseFloat(cb.dataset.rate) || 0;
                     const qtySelect = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
                     const qty = qtySelect ? parseInt(qtySelect.value) : 1;
-                    total += rate * qty;
+                    const rate = parseFloat(cb.dataset.rate || 0);
+                    const addonTotal = rate * qty;
+                    total += addonTotal;
+
+                    addons.push({ addon_name: cb.dataset.addon_name, quantity: qty, rate, total: addonTotal });
                 });
 
-                // Update display
                 const totalPriceInput = document.getElementById("totalPrice");
                 if (totalPriceInput) totalPriceInput.value = total ? "USD " + total.toFixed(2) : "";
 
-                return total; // ✅ Return total including add-ons
+                return { total, mainDistance, returnDistance, addons };
             }
 
+            // Vehicle selection listener
             document.body.addEventListener("click", function(e) {
                 if (!e.target.classList.contains("select-vehicle-btn")) return;
 
@@ -176,18 +168,19 @@
                 const vehicleCard = btn.closest(".vehicle-card");
                 const vehicleId = btn.dataset.id;
                 const name = btn.dataset.name;
-                const pricePerKm = parseFloat(btn.dataset.price); 
-                window.selectedVehiclePricePerKm = pricePerKm; 
+                const pricePerKm = parseFloat(btn.dataset.price || 0);
+                window.selectedVehiclePricePerKm = pricePerKm;
 
                 document.querySelectorAll(".vehicle-card").forEach(card => card.classList.remove("selected"));
                 if (vehicleCard) vehicleCard.classList.add("selected");
 
-                const pickupLocation = document.querySelector("#pickupLocation")?.value || "Colombo";
-                const dropoffLocation = document.querySelector("#dropoffLocation")?.value || "Kandy";
-                const travelDate = document.querySelector("#date")?.value || null;
+                const pickupLocation = document.querySelector("#pickupLocation")?.value || "";
+                const dropoffLocation = document.querySelector("#dropoffLocation")?.value || "";
+                const travelDate = document.querySelector("#date")?.value || "";
 
-                const totalPrice = updateTotalPrice(); 
+                const { total, mainDistance, returnDistance, addons } = updateTotalPrice();
 
+                // Render booking form
                 const container = document.getElementById("selectedVehicle");
                 container.innerHTML = `
                     <form class="booking-form" id="bookingForm">
@@ -195,30 +188,18 @@
                         <div class="form-group">
                             <input type="text" name="customerName" placeholder="Full Name" required>
                         </div>
-
                         <div class="form-group">
                             <input type="email" name="email" placeholder="Email Address" required>
                         </div>
-                        <div class="form-group" style="display: flex; align-items: center; gap: 10px; flex: 1;">
-
-                            <!-- Country dropdown -->
-                            <div style="flex: 0 0 40%;">
-                                [[!ShowCountries]]
-                            </div>
-
-                            <!-- Phone input -->
-                            <input type="tel" name="phone" placeholder="Phone Number" required style="flex: 1; padding: 10px; border: 1px solid #ccc; border-radius: 6px;">
+                        <div class="form-group" style="display: flex; gap: 10px; flex: 1;">
+                            <div style="flex: 0 0 40%;">[[!ShowCountries]]</div>
+                            <input type="tel" name="phone" placeholder="Phone Number" required style="flex: 1; padding: 10px; border-radius: 6px;">
                         </div>
-
                         <div class="form-row">
                             <div class="form-group" style="flex:1;">
                                 <input type="text" name="flightNumber" placeholder="Flight Number" required>
                             </div>
-                            <div class="form-group" style="flex:1;">
-                                <input type="time" name="arrivalTime" placeholder="Flight Arrival Time" required>
-                            </div>
                         </div>
-
                         <div class="form-row">
                             <div class="form-group" style="flex:1;">
                                 <input type="number" name="numPassengers" min="1" placeholder="Number of Passengers" required>
@@ -227,23 +208,33 @@
                                 <input type="number" name="numLuggage" min="0" placeholder="Number of Suitcases" required>
                             </div>
                         </div>
-
                         <button type="submit">Submit Booking</button>
                     </form>
                 `;
 
-                // Handle form submit
+                // Form submit handler
                 document.getElementById("bookingForm").addEventListener("submit", async function(ev) {
                     ev.preventDefault();
 
+                    // Get latest distances from your Google Maps distance script
+                    const mainDistance = parseFloat(distanceDisplay?.dataset.mainDistance || 0);
+                    const returnDistance = parseFloat(distanceDisplay?.dataset.returnDistance || 0);
+                    const pricePerKm = window.selectedVehiclePricePerKm || 0;
+
+                    // Compute main, return, total
+                    let mainPrice = mainDistance * pricePerKm;
+                    let returnPrice = returnDistance * pricePerKm;
+                    let total = mainPrice + returnPrice;
+
+                    // Collect add-ons again
                     const addons = [];
                     document.querySelectorAll(".addon:checked").forEach(cb => {
                         const qtySelect = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
                         const qty = qtySelect ? parseInt(qtySelect.value) : 1;
-                        addons.push({
-                            addon_name: cb.dataset.addon_name || cb.dataset.id,
-                            quantity: qty
-                        });
+                        const rate = parseFloat(cb.dataset.rate || 0);
+                        const addonTotal = rate * qty;
+                        total += addonTotal;
+                        addons.push({ addon_name: cb.dataset.addon_name, quantity: qty, rate, total: addonTotal });
                     });
 
                     const selectedCountryCode = this.country?.value || "";
@@ -251,20 +242,29 @@
 
                     const formData = {
                         vehicle_id: vehicleId,
-                        vehicle_category: name,
-                        price: parseFloat(updateTotalPrice()),
+                                        vehicle_category: name,
+                        price_per_km: pricePerKm,
+                        main_distance_km: mainDistance,
+                        main_price: mainPrice,
+                        return_distance_km: returnDistance,
+                        return_price: returnPrice,
+                        addons: addons,
+                        total_price: total,
                         customer_name: this.customerName.value,
                         email: this.email.value,
                         phone: fullPhone,
                         flight_number: this.flightNumber.value,
-                        arrival_time: this.arrivalTime.value,
                         number_of_passengers: this.numPassengers.value,
                         number_of_luggage: this.numLuggage.value,
-                        pickup_location: pickupLocation,
-                        dropoff_location: dropoffLocation,
-                        travel_datetime: travelDate,
-                        addons: addons 
+                        pickup_location: document.querySelector("#pickupLocation")?.value || "",
+                        dropoff_location: document.querySelector("#dropoffLocation")?.value || "",
+                        return_pickup_location: returnPickup?.value || "",
+                        return_dropoff_location: returnDropoff?.value || "",
+                        travel_datetime: document.querySelector("#date")?.value || "",
+                        return_datetime: document.querySelector("#returnDate")?.value || "",   
                     };
+
+                    console.log("Booking form data being submitted:", formData);
 
                     try {
                         const response = await fetch("assets/includes/save_booking.php", {
@@ -275,6 +275,7 @@
 
                         if (!response.ok) throw new Error(await response.text());
                         const result = await response.json();
+                        console.log("Server response:", result);
 
                         const showToast = (msg, success = true) => {
                             const toast = document.getElementById("toast");
@@ -285,109 +286,15 @@
                         };
 
                         if (result.success) {
-                            const bookingNumber = result.booking_number || "N/A";
                             showToast("✅ Booking saved successfully!");
-
-                            const { jsPDF } = window.jspdf;
-                            const doc = new jsPDF({ format: "a5", unit: "pt" });
-
-                            const pageWidth = doc.internal.pageSize.getWidth();
-                            const pageHeight = doc.internal.pageSize.getHeight();
-
-                            // === Header ===
-                            const marginX = 25;
-
-                            const imgUrl = "/transfers/images/logo.png";
-                            doc.addImage(imgUrl, "PNG", pageWidth / 2 - 35, 20, 70, 35);
-                            
-
-                            doc.setDrawColor(200, 0, 0);
-                            doc.setLineWidth(1);
-                            doc.line(marginX, 65, pageWidth - marginX, 65);
-
-                            doc.setFont("helvetica", "bold");
-                            doc.setFontSize(12);
-                            doc.setTextColor(0, 0, 0);
-                            doc.text("SR Transfers, Sri Lanka", pageWidth / 2, 80, { align: "center" });
-
-                            doc.setFont("helvetica", "normal");
-                            doc.setFontSize(9);
-                            doc.text("No. 37/15, Negombo Road, Seeduwa, Sri Lanka", pageWidth / 2, 95, { align: "center" });
-                            doc.text("Phone: +94 77 778 6729 | info@srilankarentacar.lk", pageWidth / 2, 110, { align: "center" });
-                            doc.text(`Invoice Number: ${bookingNumber}`, pageWidth / 2, 126, { align: "center" });
-
-                            doc.setDrawColor(0, 0, 0);
-                            doc.setLineWidth(0.8);
-                            doc.line(marginX, 130, pageWidth - marginX, 130);
-
-                            doc.setFont("helvetica", "bold");
-                            doc.setFontSize(14);
-                            doc.setTextColor(0, 0, 0); 
-                            doc.text("Invoice", pageWidth / 2, 145, { align: "center" }); 
-
-                            const tableColumn = ["Description", "Value"];
-                            const tableRows = Object.keys(formData)
-                            .filter(k => k !== "vehicle_id")
-                            .map(k => {
-                                let v = formData[k];
-                                if (k === "addons" && Array.isArray(v)) {
-                                v = v.map(a => `${a.addon_name} (x${a.quantity})`).join(", ");
-                                }
-                                if (k === "price" && v) v = `$ ${parseFloat(v).toFixed(2)}`;
-                                const label = k.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-                                return [label, v || ""];
-                            });
-
-                            doc.autoTable({
-                            head: [tableColumn],
-                            body: tableRows,
-                            startY: 155,
-                            theme: "grid",
-                            styles: { fontSize: 9, cellPadding: 4, textColor: 0 },
-                            headStyles: { fillColor: [194, 0, 0], textColor: 255, halign: "center", fontStyle: "bold" },
-                            columnStyles: {
-                                0: { cellWidth: 120 },
-                                1: { cellWidth: pageWidth - 120 - 2 * marginX }
-                            },
-                            margin: { left: marginX, right: marginX }
-                            });
-
-                            const tableEndY = doc.lastAutoTable.finalY + 10;
-
-                            doc.setFont("helvetica", "bold");
-                            doc.setFontSize(11);
-                            doc.setTextColor(200, 0, 0);
-                            doc.text(`Total Charge: $${parseFloat(formData.price || 0).toFixed(2)}`, marginX, tableEndY + 15);
-                            doc.setFontSize(9);
-                            doc.setTextColor(0, 0, 0);
-                            doc.text("**Please note: A waiting charge of $15 per hour will apply in addition to the total.", marginX, tableEndY + 30);
-
-                            doc.setFontSize(9);
-                            doc.setTextColor(0, 102, 0);
-                            doc.text("• Please note: This serves as your official booking confirmation.", marginX, tableEndY + 55);
-
-                            doc.setFontSize(10);
-                            doc.setTextColor(0, 0, 0);
-                            doc.text("Thank you for booking with SR Transfers!", pageWidth / 2, pageHeight - 25, { align: "center" });
-
-                            // === Save PDF ===
-                            doc.save(`${formData.customer_name}_invoice.pdf`);
-                            const pdfBlob = doc.output("blob");
-                            const formDataPdf = new FormData();
-                            formDataPdf.append("invoice", pdfBlob, `${bookingNumber}.pdf`);
-                            formDataPdf.append("booking_number", bookingNumber);
-
-                            await fetch("assets/includes/save_invoice.php", {
-                                method: "POST",
-                                body: formDataPdf
-                            });
                             this.reset();
                             setTimeout(() => location.reload(), 2000);
+                        } else {
+                            showToast("❌ Error: " + result.message, false);
                         }
- 
-                        else showToast("❌ Error: " + result.message, false);
+
                     } catch (err) {
-                        console.error(err);
+                        console.error("Error submitting booking:", err);
                         const showToast = (msg, success = true) => {
                             const toast = document.getElementById("toast");
                             toast.innerText = msg;
@@ -401,6 +308,7 @@
             });
         });
     </script>
+
 </main>
 </body>
 </html>

@@ -243,14 +243,20 @@ try {
         function updateDisplay() {
             if (mainDistance <= 0) return;
             distanceDisplay.style.display = "block";
+
+            // Store distances for later use in form submission
+            distanceDisplay.dataset.mainDistance = mainDistance;
+            distanceDisplay.dataset.returnDistance = returnDistance;
+
             let html = `🚗 Main Trip: <strong>${mainDistance.toFixed(1)} km</strong> • ${mainDuration}`;
-            if (roundtripCheck.checked && returnDistance>0) {
+            if (roundtripCheck.checked && returnDistance > 0) {
                 html += `<br>🔁 Return Trip: <strong>${returnDistance.toFixed(1)} km</strong> • ${returnDuration}`;
-                html += `<br>📏 Total Distance: <strong>${(mainDistance+returnDistance).toFixed(1)} km</strong>`;
+                html += `<br>📏 Total Distance: <strong>${(mainDistance + returnDistance).toFixed(1)} km</strong>`;
             }
             distanceDisplay.innerHTML = html;
             updateTotalPrice();
         }
+
 
         function updateTotalPrice() {
             let totalKm = mainDistance + (returnDistance || 0); 
