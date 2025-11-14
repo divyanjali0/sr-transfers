@@ -75,8 +75,6 @@ $output = '
             <input type="text" id="pickupLocation" name="pickupLocation" value="'.$pickup.'" required>
         </div>
 
-        <!-- SWAP BUTTON REMOVED -->
-
         <div class="col form-group">
             <label for="dropoffLocation">Dropoff Location <span class="text-danger">*</span></label>
             <input type="text" id="dropoffLocation" name="dropoffLocation" value="'.$dropoff.'" required>
@@ -126,173 +124,170 @@ $output = '
     <div class="map-wrapper" id="mapWrapper">
         <div id="routeMap" style="width:100%; height:100%;"></div>
     </div>
-
 </form>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl50Q8W4ZF2_EkOJ1lnRoVxO1IdjIupjM&libraries=places"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    const pickupInput = document.getElementById("pickupLocation");
-    const dropoffInput = document.getElementById("dropoffLocation");
-    const returnPickup = document.getElementById("returnPickup");
-    const returnDropoff = document.getElementById("returnDropoff");
-    const roundtripCheck = document.getElementById("roundtripCheck");
-    const returnDetails = document.getElementById("returnDetails");
-    const distanceDisplay = document.getElementById("distanceResult");
-    const totalPriceInput = document.getElementById("totalPrice");
-    const mapWrapper = document.getElementById("mapWrapper");
-    const routeMapEl = document.getElementById("routeMap");
+    document.addEventListener("DOMContentLoaded", function() {
+        const pickupInput = document.getElementById("pickupLocation");
+        const dropoffInput = document.getElementById("dropoffLocation");
+        const returnPickup = document.getElementById("returnPickup");
+        const returnDropoff = document.getElementById("returnDropoff");
+        const roundtripCheck = document.getElementById("roundtripCheck");
+        const returnDetails = document.getElementById("returnDetails");
+        const distanceDisplay = document.getElementById("distanceResult");
+        const totalPriceInput = document.getElementById("totalPrice");
+        const mapWrapper = document.getElementById("mapWrapper");
+        const routeMapEl = document.getElementById("routeMap");
 
-    let map, directionsService, directionsRenderer;
-    let lastDistanceText = "";
+        let map, directionsService, directionsRenderer;
+        let lastDistanceText = "";
 
-    function initMap() {
-        map = new google.maps.Map(routeMapEl, {
-            zoom: 7,
-            center: { lat: 7.8731, lng: 80.7718 }
-        });
-        directionsService = new google.maps.DirectionsService();
-        directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: false });
-        directionsRenderer.setMap(map);
-    }
-
-    function initAutocomplete() {
-        const options = { componentRestrictions: { country: "lk" } };
-
-        const p1 = new google.maps.places.Autocomplete(pickupInput, options);
-        const p2 = new google.maps.places.Autocomplete(dropoffInput, options);
-
-        p1.addListener("place_changed", calculateDistance);
-        p2.addListener("place_changed", calculateDistance);
-
-        if (returnPickup) {
-            const rp = new google.maps.places.Autocomplete(returnPickup, options);
-        }
-        if (returnDropoff) {
-            const rd = new google.maps.places.Autocomplete(returnDropoff, options);
+        function initMap() {
+            map = new google.maps.Map(routeMapEl, {
+                zoom: 7,
+                center: { lat: 7.8731, lng: 80.7718 }
+            });
+            directionsService = new google.maps.DirectionsService();
+            directionsRenderer = new google.maps.DirectionsRenderer({ suppressMarkers: false });
+            directionsRenderer.setMap(map);
         }
 
-        if (pickupInput.value.trim() && dropoffInput.value.trim()) {
-            calculateDistance();
-        }
-    }
+        function initAutocomplete() {
+            const options = { componentRestrictions: { country: "lk" } };
 
-    initMap();
-    initAutocomplete();
+            const p1 = new google.maps.places.Autocomplete(pickupInput, options);
+            const p2 = new google.maps.places.Autocomplete(dropoffInput, options);
 
-    /* SWAP FUNCTION REMOVED */
+            p1.addListener("place_changed", calculateDistance);
+            p2.addListener("place_changed", calculateDistance);
 
-    function showRouteOnMap(origin, destination) {
-        if (!origin || !destination) return;
-
-        mapWrapper.classList.add("large");
-        google.maps.event.trigger(map, "resize");
-
-        directionsService.route({
-            origin,
-            destination,
-            travelMode: google.maps.TravelMode.DRIVING
-        }, (result, status) => {
-            if (status === "OK") {
-                directionsRenderer.setDirections(result);
-
-                const bounds = new google.maps.LatLngBounds();
-                const route = result.routes[0];
-
-                if (route && route.overview_path) {
-                    route.overview_path.forEach(latlng => bounds.extend(latlng));
-                    map.fitBounds(bounds);
-                }
+            if (returnPickup) {
+                const rp = new google.maps.places.Autocomplete(returnPickup, options);
             }
-        });
-    }
+            if (returnDropoff) {
+                const rd = new google.maps.places.Autocomplete(returnDropoff, options);
+            }
 
-    function calculateDistance() {
-        const origin = pickupInput.value.trim();
-        const dest = dropoffInput.value.trim();
-        if (!origin || !dest) return;
+            if (pickupInput.value.trim() && dropoffInput.value.trim()) {
+                calculateDistance();
+            }
+        }
 
-        const service = new google.maps.DistanceMatrixService();
-        service.getDistanceMatrix({
-            origins: [origin],
-            destinations: [dest],
-            travelMode: google.maps.TravelMode.DRIVING,
-            unitSystem: google.maps.UnitSystem.METRIC,
-        }, (response, status) => {
-            if (status === "OK") {
-                const r = response.rows[0].elements[0];
-                if (r.status === "OK") {
-                    lastDistanceText = r.distance.text;
-                    distanceDisplay.innerHTML =
-                        `🚗 Distance: <strong>${lastDistanceText}</strong> • Est. time: <strong>${r.duration.text}</strong>`;
-                    distanceDisplay.style.display = "block";
+        initMap();
+        initAutocomplete();
+
+        function showRouteOnMap(origin, destination) {
+            if (!origin || !destination) return;
+
+            mapWrapper.classList.add("large");
+            google.maps.event.trigger(map, "resize");
+
+            directionsService.route({
+                origin,
+                destination,
+                travelMode: google.maps.TravelMode.DRIVING
+            }, (result, status) => {
+                if (status === "OK") {
+                    directionsRenderer.setDirections(result);
+
+                    const bounds = new google.maps.LatLngBounds();
+                    const route = result.routes[0];
+
+                    if (route && route.overview_path) {
+                        route.overview_path.forEach(latlng => bounds.extend(latlng));
+                        map.fitBounds(bounds);
+                    }
+                }
+            });
+        }
+
+        function calculateDistance() {
+            const origin = pickupInput.value.trim();
+            const dest = dropoffInput.value.trim();
+            if (!origin || !dest) return;
+
+            const service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix({
+                origins: [origin],
+                destinations: [dest],
+                travelMode: google.maps.TravelMode.DRIVING,
+                unitSystem: google.maps.UnitSystem.METRIC,
+            }, (response, status) => {
+                if (status === "OK") {
+                    const r = response.rows[0].elements[0];
+                    if (r.status === "OK") {
+                        lastDistanceText = r.distance.text;
+                        distanceDisplay.innerHTML =
+                            `🚗 Distance: <strong>${lastDistanceText}</strong> • Est. time: <strong>${r.duration.text}</strong>`;
+                        distanceDisplay.style.display = "block";
+
+                        updateTotalPrice();
+                        showRouteOnMap(origin, dest);
+                    }
+                }
+            });
+        }
+
+        function updateTotalPrice() {
+            if (!lastDistanceText) return;
+
+            let km = 0;
+            if (lastDistanceText.includes("km")) km = parseFloat(lastDistanceText.replace(" km", "").replace(",", ""));
+            else if (lastDistanceText.includes("m")) km = parseFloat(lastDistanceText.replace(" m", "")) / 1000;
+
+            let total = km * (window.selectedVehiclePricePerKm || 0);
+
+            document.querySelectorAll(".addon:checked").forEach(cb => {
+                const rate = parseFloat(cb.dataset.rate) || 0;
+                const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                const qty = qtySel ? parseInt(qtySel.value) : 1;
+                total += rate * qty;
+            });
+
+            totalPriceInput.value = total ? "$ " + total.toFixed(2) : "";
+        }
+
+        function attachUIListeners() {
+            document.querySelectorAll(".select-vehicle-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    window.selectedVehiclePricePerKm = parseFloat(btn.dataset.price) || 0;
+
+                    document.querySelectorAll(".select-vehicle-btn")
+                        .forEach(b => b.classList.remove("active"));
+                    btn.classList.add("active");
+
+                    document.querySelectorAll(".addon").forEach(cb => {
+                        cb.checked = false;
+                        const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                        if (qtySel) { qtySel.disabled = true; qtySel.value = 1; }
+                    });
 
                     updateTotalPrice();
-                    showRouteOnMap(origin, dest);
-                }
-            }
-        });
-    }
-
-    function updateTotalPrice() {
-        if (!lastDistanceText) return;
-
-        let km = 0;
-        if (lastDistanceText.includes("km")) km = parseFloat(lastDistanceText.replace(" km", "").replace(",", ""));
-        else if (lastDistanceText.includes("m")) km = parseFloat(lastDistanceText.replace(" m", "")) / 1000;
-
-        let total = km * (window.selectedVehiclePricePerKm || 0);
-
-        document.querySelectorAll(".addon:checked").forEach(cb => {
-            const rate = parseFloat(cb.dataset.rate) || 0;
-            const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-            const qty = qtySel ? parseInt(qtySel.value) : 1;
-            total += rate * qty;
-        });
-
-        totalPriceInput.value = total ? "$ " + total.toFixed(2) : "";
-    }
-
-    function attachUIListeners() {
-        document.querySelectorAll(".select-vehicle-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
-                window.selectedVehiclePricePerKm = parseFloat(btn.dataset.price) || 0;
-
-                document.querySelectorAll(".select-vehicle-btn")
-                    .forEach(b => b.classList.remove("active"));
-                btn.classList.add("active");
-
-                document.querySelectorAll(".addon").forEach(cb => {
-                    cb.checked = false;
-                    const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-                    if (qtySel) { qtySel.disabled = true; qtySel.value = 1; }
                 });
-
-                updateTotalPrice();
             });
-        });
 
-        document.querySelectorAll(".addon").forEach(cb => {
-            cb.addEventListener("change", () => {
-                const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
-                if (qtySel) qtySel.disabled = !cb.checked;
-                updateTotalPrice();
+            document.querySelectorAll(".addon").forEach(cb => {
+                cb.addEventListener("change", () => {
+                    const qtySel = document.querySelector(`select[name="addons_qty[${cb.dataset.id}]"]`);
+                    if (qtySel) qtySel.disabled = !cb.checked;
+                    updateTotalPrice();
+                });
             });
+
+            document.querySelectorAll(".qty").forEach(sel => sel.addEventListener("change", updateTotalPrice));
+        }
+
+        attachUIListeners();
+
+        pickupInput.addEventListener("change", calculateDistance);
+        dropoffInput.addEventListener("change", calculateDistance);
+
+        roundtripCheck.addEventListener("change", () => {
+            returnDetails.style.display = roundtripCheck.checked ? "block" : "none";
         });
-
-        document.querySelectorAll(".qty").forEach(sel => sel.addEventListener("change", updateTotalPrice));
-    }
-
-    attachUIListeners();
-
-    pickupInput.addEventListener("change", calculateDistance);
-    dropoffInput.addEventListener("change", calculateDistance);
-
-    roundtripCheck.addEventListener("change", () => {
-        returnDetails.style.display = roundtripCheck.checked ? "block" : "none";
     });
-});
 </script>
 ';
 
