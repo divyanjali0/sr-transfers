@@ -894,6 +894,7 @@ section,
   padding: 2rem;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 85%);
   backdrop-filter: blur(10px);
+  margin-bottom: 4%;
 }
 
 .travel-hero .booking-form-wrapper .booking-form .form-title {
