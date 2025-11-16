@@ -8958,3 +8958,50 @@ TESTIMONIALS
   width: 180px;
   height: auto;
 }
+
+  /* Wrapper */
+  .gallery-img-overlay {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  /* Dim the image */
+  .gallery-img-overlay img {
+    opacity: 0.85;
+    transition: 0.3s ease;
+  }
+
+  /* Button Overlay */
+  .vehicle-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: rgba(0,0,0,0.25); 
+  }
+
+  .vehicle-overlay-btn {
+    padding: 10px 22px;
+    background: #ffffff38;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.2s;
+    width: 100%;
+  }
+
+  /* Modal */
+  .modal-vehicle-img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .vehicle-feature {
+    margin-bottom: 6px;
+  }

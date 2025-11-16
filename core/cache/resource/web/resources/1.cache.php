@@ -346,16 +346,17 @@
         <h2>Our Fleet</h2>
         <div><span>Comfortable</span> <span class="description-title">Airport Transfer Rides</span></div>
       </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="gallery-container py-0">
           <div class="swiper init-swiper">
+
+            <!-- Swiper Configuration -->
             <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 800,
-                "autoplay": {
-                  "delay": 4000
-                },
+                "autoplay": { "delay": 4000 },
                 "effect": "coverflow",
                 "grabCursor": true,
                 "centeredSlides": true,
@@ -377,114 +378,221 @@
                   "prevEl": ".swiper-button-prev"
                 },
                 "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 10
-                  },
-                  "768": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 20
-                  },
-                  "1024": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  }
+                  "320": { "slidesPerView": 1, "spaceBetween": 10 },
+                  "768": { "slidesPerView": 2, "spaceBetween": 20 },
+                  "1024": { "slidesPerView": 3, "spaceBetween": 30 }
                 }
               }
             </script>
+
+
+            <!-- ========== SWIPER SLIDES ========== -->
             <div class="swiper-wrapper">
+
+              <!-- Vehicle 1 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/1.png">
-                      <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Luxury",
+                          "img":"assets/img/vehicles/1.png",
+                          "desc":"Perfect for business travelers and couples seeking premium comfort.",
+                          "features":["Leather Seats","USB Charging","Complimentary Water","Climate Control"],
+                          "capacity":"1–3 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 2 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/2.png">
-                      <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Standard",
+                          "img":"assets/img/vehicles/2.png",
+                          "desc":"Ideal for families and groups needing space and luxury.",
+                          "features":["Premium Leather","Rear AC","Spacious Seats","All-Terrain Safety"],
+                          "capacity":"1–3 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 3 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/3.png">
-                      <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Super Luxury Coach",
+                          "img":"assets/img/vehicles/3.png",
+                          "desc":"Perfect for corporate travel with extra luggage capacity.",
+                          "features":["Conference Seating","Tinted Windows","USB Ports","Large Trunk"],
+                          "capacity":"45 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 4 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/4.png">
-                      <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Executive",
+                          "img":"assets/img/vehicles/4.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–2 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/5.png">
-                      <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Executive",
+                          "img":"assets/img/vehicles/5.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–2 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/6.png">
-                      <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Large People Carrier",
+                          "img":"assets/img/vehicles/6.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–6 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/7.png">
-                      <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Mini Bus",
+                          "img":"assets/img/vehicles/7.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1-12 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="vehicleModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="vehicleTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <img id="vehicleImg" class="modal-vehicle-img mb-3">
+            <p id="vehicleDesc"></p>
+
+            <h6 class="mt-3">Features:</h6>
+            <ul id="vehicleFeatures"></ul>
+
+            <p class="mt-2"><strong>Capacity: </strong><span id="vehicleCapacity"></span></p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="[[~7]]" class="btn btn-primary">Book Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".vehicle-overlay-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const v = JSON.parse(btn.getAttribute("data-vehicle"));
+
+          document.getElementById("vehicleTitle").innerText = v.title;
+          document.getElementById("vehicleImg").src = v.img;
+          document.getElementById("vehicleDesc").innerText = v.desc;
+
+          const list = document.getElementById("vehicleFeatures");
+          list.innerHTML = "";
+          v.features.forEach(f => {
+            list.innerHTML += `<li class="vehicle-feature">${f}</li>`;
+          });
+
+          document.getElementById("vehicleCapacity").innerText = v.capacity;
+
+          new bootstrap.Modal(document.getElementById("vehicleModal")).show();
+        });
+      });
+    </script>
     <!-- /Gallery Slider Section -->
 
 
@@ -497,7 +605,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in">
+          <div class="col-lg-6">
             <div class="featured-destination">
               <div class="destination-overlay">
                 <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
@@ -563,227 +671,6 @@
     </section>
     <!-- /Featured Destinations Section -->
 
-    <!-- Featured Tours Section -->
-    <!-- <section id="featured-tours" class="featured-tours section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Tours</h2>
-        <div><span>Check Our</span> <span class="description-title">Featured Tours</span></div>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-1.webp" alt="Serene Beach Retreat" class="img-fluid" loading="lazy">
-                <div class="tour-badge">Top Rated</div>
-                <div class="tour-price">$2,150</div>
-              </div>
-              <div class="tour-content">
-                <h4>Serene Beach Retreat</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 8 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 6</span>
-                </div>
-                <p>Mauris ipsum neque, cursus ac ipsum at, iaculis facilisis ligula. Suspendisse non sapien vel enim cursus semper.</p>
-                <div class="tour-highlights">
-                  <span>Maldives</span>
-                  <span>Seychelles</span>
-                  <span>Bora Bora</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <span>4.8 (95)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-2.webp" alt="Arctic Expedition" class="img-fluid" loading="lazy">
-                <div class="tour-badge limited">Only 3 Spots!</div>
-                <div class="tour-price">$5,700</div>
-              </div>
-              <div class="tour-content">
-                <h4>Arctic Wilderness Expedition</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 10 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 8</span>
-                </div>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec dictum non massa nec fermentum.</p>
-                <div class="tour-highlights">
-                  <span>Greenland</span>
-                  <span>Iceland</span>
-                  <span>Norway</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span>4.6 (55)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-4.webp" alt="Desert Safari" class="img-fluid" loading="lazy">
-                <div class="tour-badge new">Newly Added</div>
-                <div class="tour-price">$1,400</div>
-              </div>
-              <div class="tour-content">
-                <h4>Sahara Desert Discovery</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 5 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Pellentesque euismod tincidunt turpis ac tristique. Phasellus vitae lacus in enim mollis facilisis vel quis ex. In hac habitasse platea dictumst.</p>
-                <div class="tour-highlights">
-                  <span>Morocco</span>
-                  <span>Egypt</span>
-                  <span>Dubai</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <span>4.9 (72)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-5.webp" alt="Coastal Explorer" class="img-fluid" loading="lazy">
-                <div class="tour-badge">Popular Choice</div>
-                <div class="tour-price">$1,980</div>
-              </div>
-              <div class="tour-content">
-                <h4>Mediterranean Coastal Cruise</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 9 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 15</span>
-                </div>
-                <p>Nullam lacinia justo eget ex sodales, vel finibus orci aliquet. Donec auctor, elit ut molestie gravida, magna mi molestie nisi.</p>
-                <div class="tour-highlights">
-                  <span>Greece</span>
-                  <span>Croatia</span>
-                  <span>Italy</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <span>4.7 (110)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-6.webp" alt="Rainforest Trek" class="img-fluid" loading="lazy">
-                <div class="tour-badge cultural">Eco-Friendly</div>
-                <div class="tour-price">$2,650</div>
-              </div>
-              <div class="tour-content">
-                <h4>Amazon Rainforest Trek</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 12 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Quisque dictum felis eu tortor mollis, quis tincidunt arcu pharetra. A pellentesque sit amet, consectetur adipiscing elit.</p>
-                <div class="tour-highlights">
-                  <span>Brazil</span>
-                  <span>Ecuador</span>
-                  <span>Peru</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span>4.5 (88)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-8.webp" alt="Patagonian Peaks" class="img-fluid" loading="lazy">
-                <div class="tour-badge adventure">Adventure Seekers</div>
-                <div class="tour-price">$3,950</div>
-              </div>
-              <div class="tour-content">
-                <h4>Patagonian Peaks &amp; Glaciers</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 14 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Vivamus eget semper neque. Ut porttitor mi at odio egestas, non vestibulum est malesuada. Nunc facilisis in felis eget efficitur.</p>
-                <div class="tour-highlights">
-                  <span>Argentina</span>
-                  <span>Chile</span>
-                  <span>Ushuaia</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <span>4.9 (60)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
-          <a href="tours.html" class="btn-view-all">View All Tours</a>
-        </div>
-      </div>
-    </section> -->
-    <!-- /Featured Tours Section -->
 
     <!-- Testimonials Home Section -->
     <section id="testimonials-home" class="testimonials-home section">
@@ -841,7 +728,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 2,
-    'editedon' => 1763301780,
+    'editedon' => 1763309167,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1341,16 +1228,17 @@
         <h2>Our Fleet</h2>
         <div><span>Comfortable</span> <span class="description-title">Airport Transfer Rides</span></div>
       </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="gallery-container py-0">
           <div class="swiper init-swiper">
+
+            <!-- Swiper Configuration -->
             <script type="application/json" class="swiper-config">
               {
                 "loop": true,
                 "speed": 800,
-                "autoplay": {
-                  "delay": 4000
-                },
+                "autoplay": { "delay": 4000 },
                 "effect": "coverflow",
                 "grabCursor": true,
                 "centeredSlides": true,
@@ -1372,114 +1260,221 @@
                   "prevEl": ".swiper-button-prev"
                 },
                 "breakpoints": {
-                  "320": {
-                    "slidesPerView": 1,
-                    "spaceBetween": 10
-                  },
-                  "768": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 20
-                  },
-                  "1024": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  }
+                  "320": { "slidesPerView": 1, "spaceBetween": 10 },
+                  "768": { "slidesPerView": 2, "spaceBetween": 20 },
+                  "1024": { "slidesPerView": 3, "spaceBetween": 30 }
                 }
               }
             </script>
+
+
+            <!-- ========== SWIPER SLIDES ========== -->
             <div class="swiper-wrapper">
+
+              <!-- Vehicle 1 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/1.png">
-                      <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Luxury",
+                          "img":"assets/img/vehicles/1.png",
+                          "desc":"Perfect for business travelers and couples seeking premium comfort.",
+                          "features":["Leather Seats","USB Charging","Complimentary Water","Climate Control"],
+                          "capacity":"1–3 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 2 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/2.png">
-                      <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Standard",
+                          "img":"assets/img/vehicles/2.png",
+                          "desc":"Ideal for families and groups needing space and luxury.",
+                          "features":["Premium Leather","Rear AC","Spacious Seats","All-Terrain Safety"],
+                          "capacity":"1–3 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 3 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/3.png">
-                      <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Super Luxury Coach",
+                          "img":"assets/img/vehicles/3.png",
+                          "desc":"Perfect for corporate travel with extra luggage capacity.",
+                          "features":["Conference Seating","Tinted Windows","USB Ports","Large Trunk"],
+                          "capacity":"45 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Vehicle 4 -->
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/4.png">
-                      <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Executive",
+                          "img":"assets/img/vehicles/4.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–2 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/5.png">
-                      <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Executive",
+                          "img":"assets/img/vehicles/5.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–2 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/6.png">
-                      <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Large People Carrier",
+                          "img":"assets/img/vehicles/6.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1–6 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="swiper-slide">
                 <div class="gallery-item">
-                  <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/vehicles/7.png">
-                      <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
-                      <div class="gallery-overlay">
-                        <i class="bi bi-plus-circle"></i>
-                      </div>
-                    </a>
+                  <div class="gallery-img gallery-img-overlay">
+                    <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
+                    <div class="vehicle-overlay">
+                      <button class="vehicle-overlay-btn"
+                        data-vehicle=\'{
+                          "title":"Mini Bus",
+                          "img":"assets/img/vehicles/7.png",
+                          "desc":"A reliable and comfortable option for group airport transfers.",
+                          "features":["High Roof","AC","Large Seats","Smooth Ride"],
+                          "capacity":"1-12 passengers"
+                        }\'>
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+
           </div>
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="vehicleModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="vehicleTitle"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <img id="vehicleImg" class="modal-vehicle-img mb-3">
+            <p id="vehicleDesc"></p>
+
+            <h6 class="mt-3">Features:</h6>
+            <ul id="vehicleFeatures"></ul>
+
+            <p class="mt-2"><strong>Capacity: </strong><span id="vehicleCapacity"></span></p>
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="index.php?id=7" class="btn btn-primary">Book Now</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".vehicle-overlay-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const v = JSON.parse(btn.getAttribute("data-vehicle"));
+
+          document.getElementById("vehicleTitle").innerText = v.title;
+          document.getElementById("vehicleImg").src = v.img;
+          document.getElementById("vehicleDesc").innerText = v.desc;
+
+          const list = document.getElementById("vehicleFeatures");
+          list.innerHTML = "";
+          v.features.forEach(f => {
+            list.innerHTML += `<li class="vehicle-feature">${f}</li>`;
+          });
+
+          document.getElementById("vehicleCapacity").innerText = v.capacity;
+
+          new bootstrap.Modal(document.getElementById("vehicleModal")).show();
+        });
+      });
+    </script>
     <!-- /Gallery Slider Section -->
 
 
@@ -1492,7 +1487,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in">
+          <div class="col-lg-6">
             <div class="featured-destination">
               <div class="destination-overlay">
                 <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
@@ -1558,227 +1553,6 @@
     </section>
     <!-- /Featured Destinations Section -->
 
-    <!-- Featured Tours Section -->
-    <!-- <section id="featured-tours" class="featured-tours section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Tours</h2>
-        <div><span>Check Our</span> <span class="description-title">Featured Tours</span></div>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-1.webp" alt="Serene Beach Retreat" class="img-fluid" loading="lazy">
-                <div class="tour-badge">Top Rated</div>
-                <div class="tour-price">$2,150</div>
-              </div>
-              <div class="tour-content">
-                <h4>Serene Beach Retreat</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 8 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 6</span>
-                </div>
-                <p>Mauris ipsum neque, cursus ac ipsum at, iaculis facilisis ligula. Suspendisse non sapien vel enim cursus semper.</p>
-                <div class="tour-highlights">
-                  <span>Maldives</span>
-                  <span>Seychelles</span>
-                  <span>Bora Bora</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <span>4.8 (95)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-2.webp" alt="Arctic Expedition" class="img-fluid" loading="lazy">
-                <div class="tour-badge limited">Only 3 Spots!</div>
-                <div class="tour-price">$5,700</div>
-              </div>
-              <div class="tour-content">
-                <h4>Arctic Wilderness Expedition</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 10 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 8</span>
-                </div>
-                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec dictum non massa nec fermentum.</p>
-                <div class="tour-highlights">
-                  <span>Greenland</span>
-                  <span>Iceland</span>
-                  <span>Norway</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span>4.6 (55)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-4.webp" alt="Desert Safari" class="img-fluid" loading="lazy">
-                <div class="tour-badge new">Newly Added</div>
-                <div class="tour-price">$1,400</div>
-              </div>
-              <div class="tour-content">
-                <h4>Sahara Desert Discovery</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 5 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Pellentesque euismod tincidunt turpis ac tristique. Phasellus vitae lacus in enim mollis facilisis vel quis ex. In hac habitasse platea dictumst.</p>
-                <div class="tour-highlights">
-                  <span>Morocco</span>
-                  <span>Egypt</span>
-                  <span>Dubai</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <span>4.9 (72)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-5.webp" alt="Coastal Explorer" class="img-fluid" loading="lazy">
-                <div class="tour-badge">Popular Choice</div>
-                <div class="tour-price">$1,980</div>
-              </div>
-              <div class="tour-content">
-                <h4>Mediterranean Coastal Cruise</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 9 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 15</span>
-                </div>
-                <p>Nullam lacinia justo eget ex sodales, vel finibus orci aliquet. Donec auctor, elit ut molestie gravida, magna mi molestie nisi.</p>
-                <div class="tour-highlights">
-                  <span>Greece</span>
-                  <span>Croatia</span>
-                  <span>Italy</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                    <span>4.7 (110)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-6.webp" alt="Rainforest Trek" class="img-fluid" loading="lazy">
-                <div class="tour-badge cultural">Eco-Friendly</div>
-                <div class="tour-price">$2,650</div>
-              </div>
-              <div class="tour-content">
-                <h4>Amazon Rainforest Trek</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 12 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Quisque dictum felis eu tortor mollis, quis tincidunt arcu pharetra. A pellentesque sit amet, consectetur adipiscing elit.</p>
-                <div class="tour-highlights">
-                  <span>Brazil</span>
-                  <span>Ecuador</span>
-                  <span>Peru</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                    <span>4.5 (88)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="tour-card">
-              <div class="tour-image">
-                <img src="assets/img/travel/tour-8.webp" alt="Patagonian Peaks" class="img-fluid" loading="lazy">
-                <div class="tour-badge adventure">Adventure Seekers</div>
-                <div class="tour-price">$3,950</div>
-              </div>
-              <div class="tour-content">
-                <h4>Patagonian Peaks &amp; Glaciers</h4>
-                <div class="tour-meta">
-                  <span class="duration"><i class="bi bi-clock"></i> 14 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
-                </div>
-                <p>Vivamus eget semper neque. Ut porttitor mi at odio egestas, non vestibulum est malesuada. Nunc facilisis in felis eget efficitur.</p>
-                <div class="tour-highlights">
-                  <span>Argentina</span>
-                  <span>Chile</span>
-                  <span>Ushuaia</span>
-                </div>
-                <div class="tour-action">
-                  <a href="booking.html" class="btn-book">Book Now</a>
-                  <div class="tour-rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <span>4.9 (60)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
-          <a href="tours.html" class="btn-view-all">View All Tours</a>
-        </div>
-      </div>
-    </section> -->
-    <!-- /Featured Tours Section -->
 
     <!-- Testimonials Home Section -->
     <section id="testimonials-home" class="testimonials-home section">
