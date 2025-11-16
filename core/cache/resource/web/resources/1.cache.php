@@ -214,13 +214,8 @@
                 <div class="col-lg-6">
                   <img class="intro" src="assets/img/intro/3.jpg"  alt="">
                 </div>
-
               </div>
             </div>
-
-
-
-
           </div>
 
           <!-- CONTROLS -->
@@ -231,9 +226,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#contentImageSlider" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
           </button>
-
         </div>
-
         <!-- End About Us Content -->
 
         <div id="call-to-action" class="call-to-action section light-background" style="padding: 30px 0;">
@@ -302,21 +295,21 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card">
-                     <div class="feature-icon">
-            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
-        </div>
-                        <h4>Safe & Reliable</h4>
-                        <p>Your safety is our top priority with experienced, professional chauffeurs</p>
+              <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                        <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
                     </div>
+                    <h4>Safe & Reliable</h4>
+                    <p>Your safety is our top priority with experienced, professional chauffeurs</p>
+                  </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                   <div class="feature-card">
-                          <div class="feature-icon">
-            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
-        </div>
+                    <div class="feature-icon">
+                        <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
+                    </div>
                     <h4>Luxury Fleet</h4>
                     <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
                   </div>
@@ -324,9 +317,9 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="feature-card">
-                        <div class="feature-icon">
-            <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
-        </div>
+                    <div class="feature-icon">
+                      <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
+                    </div>
                     <h4>24/7 Support</h4>
                     <p>Our friendly team is available around the clock for any assistance.</p>
                   </div>
@@ -334,19 +327,18 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
                   <div class="feature-card">
-                         <div class="feature-icon">
-            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
-        </div>
+                    <div class="feature-icon">
+                      <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
+                    </div>
                     <h4>Meet & Greet Service</h4>
                     <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>
                   </div>
                 </div>
             </div>
+          </div>
         </div>
-      </div>
     </section>
     <!-- /Why Us Section -->
-
 
     <!-- Gallery Slider Section -->
     <section id="gallery-slider" class="gallery-slider section pt-0">
@@ -498,14 +490,14 @@
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section pt-3">
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Featured Destinations</h2>
         <div><span>Most Popular</span> <span class="description-title">Destinations</span></div>
       </div>
 
-      <div class="container" data-aos="fade-up">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="zoom-in">
             <div class="featured-destination">
               <div class="destination-overlay">
                 <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
@@ -564,14 +556,10 @@
                     </div>
                   </div>
                 </div>
-
               </div>
           </div>
-
         </div>
-
       </div>
-
     </section>
     <!-- /Featured Destinations Section -->
 
@@ -853,7 +841,7 @@
     'createdby' => 1,
     'createdon' => 1762926553,
     'editedby' => 2,
-    'editedon' => 1763300833,
+    'editedon' => 1763301780,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1221,13 +1209,8 @@
                 <div class="col-lg-6">
                   <img class="intro" src="assets/img/intro/3.jpg"  alt="">
                 </div>
-
               </div>
             </div>
-
-
-
-
           </div>
 
           <!-- CONTROLS -->
@@ -1238,9 +1221,7 @@
           <button class="carousel-control-next" type="button" data-bs-target="#contentImageSlider" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
           </button>
-
         </div>
-
         <!-- End About Us Content -->
 
         <div id="call-to-action" class="call-to-action section light-background" style="padding: 30px 0;">
@@ -1309,21 +1290,21 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-card">
-                     <div class="feature-icon">
-            <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
-        </div>
-                        <h4>Safe & Reliable</h4>
-                        <p>Your safety is our top priority with experienced, professional chauffeurs</p>
+              <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                  <div class="feature-icon">
+                        <img src="assets/img/who_we/1.png" alt="Safe & Reliable" class="ss">
                     </div>
+                    <h4>Safe & Reliable</h4>
+                    <p>Your safety is our top priority with experienced, professional chauffeurs</p>
+                  </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
                   <div class="feature-card">
-                          <div class="feature-icon">
-            <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
-        </div>
+                    <div class="feature-icon">
+                        <img src="assets/img/who_we/2.png" alt="Luxury Fleet" class="ss">
+                    </div>
                     <h4>Luxury Fleet</h4>
                     <p>Choose from our well-maintained, chauffeur-driven premium vehicles.</p>
                   </div>
@@ -1331,9 +1312,9 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                   <div class="feature-card">
-                        <div class="feature-icon">
-            <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
-        </div>
+                    <div class="feature-icon">
+                      <img src="assets/img/who_we/3.png" alt="24/7 Support" class="ss">
+                    </div>
                     <h4>24/7 Support</h4>
                     <p>Our friendly team is available around the clock for any assistance.</p>
                   </div>
@@ -1341,19 +1322,18 @@
 
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
                   <div class="feature-card">
-                         <div class="feature-icon">
-            <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
-        </div>
+                    <div class="feature-icon">
+                      <img src="assets/img/who_we/4.png" alt="Meet & Greet Service" class="ss">
+                    </div>
                     <h4>Meet & Greet Service</h4>
                     <p>Our chauffeurs will welcome you at the airport and escort you with care.</p>
                   </div>
                 </div>
             </div>
+          </div>
         </div>
-      </div>
     </section>
     <!-- /Why Us Section -->
-
 
     <!-- Gallery Slider Section -->
     <section id="gallery-slider" class="gallery-slider section pt-0">
@@ -1505,14 +1485,14 @@
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section pt-3">
-      <div class="container section-title" data-aos="fade-up">
+      <div class="container section-title">
         <h2>Featured Destinations</h2>
         <div><span>Most Popular</span> <span class="description-title">Destinations</span></div>
       </div>
 
-      <div class="container" data-aos="fade-up">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-6" data-aos="zoom-in">
             <div class="featured-destination">
               <div class="destination-overlay">
                 <img src="assets/img/travel/destination-3.jpg" alt="Tropical Paradise" class="img-fluid">
@@ -1571,14 +1551,10 @@
                     </div>
                   </div>
                 </div>
-
               </div>
           </div>
-
         </div>
-
       </div>
-
     </section>
     <!-- /Featured Destinations Section -->
 
