@@ -115,104 +115,101 @@
         <!-- About Us Content -->
         <div id="contentImageSlider" class="carousel slide" data-bs-ride="carousel">
 
-  <div class="carousel-inner">
+          <div class="carousel-inner">
 
-    <!-- SLIDE 1 -->
-    <div class="carousel-item active">
-      <div class="row align-items-center mb-5">
-        
-        <!-- CONTENT -->
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-          <div class="content">
-            <h3>Explore the World with Confidence</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate...</p>
-            <ul class="list-unstyled custom-list">
-              <li><i class="bi bi-check-circle-fill"></i> Professional and Experienced Drivers</li>
-              <li><i class="bi bi-check-circle-fill"></i> Wide Range of Well-Maintained Vehicles</li>
-              <li><i class="bi bi-check-circle-fill"></i> 24/7 Customer Support</li>
-            </ul>
-          </div>
-        </div>
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center mb-5">
+                
+                <!-- CONTENT -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                  <div class="content">
+                    <h3>Explore the World with Confidence</h3>
+                    <p class="mb-0">Enjoy hassle-free airport transfers with reliable, comfortable, and punctual service every time.</p>
+                    <p>Whether you're arriving or departing, we ensure a smooth, safe, and stress-free journey to your destination.</p>
+                    <ul class="list-unstyled custom-list">
+                      <li><i class="bi bi-check-circle-fill"></i> Professional and Experienced Drivers</li>
+                      <li><i class="bi bi-check-circle-fill"></i> Wide Range of Well-Maintained Vehicles</li>
+                      <li><i class="bi bi-check-circle-fill"></i> 24/7 Customer Support</li>
+                    </ul>
+                  </div>
+                </div>
 
-        <!-- IMAGE -->
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-          <div class="about-image position-relative">
-            <img class="intro" src="assets/img/intro/1.jpg"  alt="">
-            <div class="experience-badge">
-              <div class="experience-number">15+</div>
-              <div class="experience-text">Years of Excellence</div>
+                <!-- IMAGE -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                  <div class="about-image position-relative">
+                    <img class="intro" src="assets/img/intro/1.jpg"  alt="">
+                    <div class="experience-badge">
+                      <div class="experience-number">15+</div>
+                      <div class="experience-text">Years of Excellence</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- END SLIDE 1 -->
+
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center mb-5">
+
+                <div class="col-lg-6">
+                  <div class="content">
+                    <h3>Seamless Travel Solutions</h3>
+                    <p>Experience smooth and stress-free airport transfers with timely pickups, comfortable vehicles, and friendly service from start to finish.</p>
+                    <ul class="list-unstyled custom-list">
+                      <li><i class="bi bi-check-circle-fill"></i> Reliable Service</li>
+                      <li><i class="bi bi-check-circle-fill"></i> Affordable Prices</li>
+                      <li><i class="bi bi-check-circle-fill"></i> Islandwide Support</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="about-image position-relative">
+                    <img class="intro" src="assets/img/intro/2.jpg"  alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- END SLIDE 2 -->
+
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+              <div class="row align-items-center mb-5">
+
+                <div class="col-lg-6">
+                  <div class="content">
+                    <h3>Your Journey, Our Priority</h3>
+                    <p>We ensure every ride is safe, comfortable, and perfectly timed to match your travel needs.</p>
+                    <ul class="list-unstyled custom-list">
+                      <li><i class="bi bi-check-circle-fill"></i> On-time Airport Pickups & Drop-offs</li>
+                      <li><i class="bi bi-check-circle-fill"></i> Clean, Comfortable Vehicles</li>
+                      <li><i class="bi bi-check-circle-fill"></i> Friendly & Professional Drivers</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <img class="intro" src="assets/img/intro/3.jpg"  alt="">
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- CONTROLS -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#contentImageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#contentImageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-
-      </div>
-    </div>
-    <!-- END SLIDE 1 -->
-
-
-
-    <!-- SLIDE 2 -->
-    <div class="carousel-item">
-      <div class="row align-items-center mb-5">
-
-        <div class="col-lg-6">
-          <div class="content">
-            <h3>Seamless Travel Solutions</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <ul class="list-unstyled custom-list">
-              <li><i class="bi bi-check-circle-fill"></i> Reliable Service</li>
-              <li><i class="bi bi-check-circle-fill"></i> Affordable Prices</li>
-              <li><i class="bi bi-check-circle-fill"></i> Islandwide Support</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="about-image position-relative">
-            <img class="intro" src="assets/img/intro/2.jpg"  alt="">
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <!-- END SLIDE 2 -->
-
-
-    <!-- SLIDE 3 -->
-    <div class="carousel-item">
-      <div class="row align-items-center mb-5">
-
-        <div class="col-lg-6">
-          <div class="content">
-            <h3>Your Journey, Our Priority</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <img class="intro" src="assets/img/intro/3.jpg"  alt="">
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-  </div>
-
-  <!-- CONTROLS -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#contentImageSlider" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button" data-bs-target="#contentImageSlider" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-
-</div>
-
         <!-- End About Us Content -->
 
         <div id="call-to-action" class="call-to-action section light-background" style="padding: 30px 0;">

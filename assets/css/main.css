@@ -1006,7 +1006,6 @@ section,
 .why-us .content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 1.5rem;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
@@ -1028,6 +1027,10 @@ section,
   font-weight: 700;
   color: var(--accent-color);
   font-family: var(--heading-font);
+}
+
+.custom-list {
+  line-height: 2rem;
 }
 
 .why-us .stat-item .stat-label {
@@ -2002,6 +2005,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   margin-bottom: 20px;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .call-to-action .action-section .main-actions {
