@@ -1152,6 +1152,7 @@ section,
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  margin-top: 12%;
 }
 
 .why-us .feature-card p {
@@ -9002,6 +9003,14 @@ TESTIMONIALS
     border-radius: 10px;
   }
 
+  @media (min-width: 992px) {
+  .modal-vehicle-img {
+    height: 22rem; 
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+}
+
   .vehicle-feature {
     margin-bottom: 6px;
   }
@@ -9049,15 +9058,20 @@ TESTIMONIALS
   z-index: 20;
 }
 
-.img-fluid {
+/* .img-fluid {
   height: 20rem;
   object-fit: cover;
-}
+} */
 
 /* Tabs */
 .modal-tabs {
   display: flex;
   border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 22px;
 }
 
 .tab-btn {

@@ -487,7 +487,7 @@
                           "img":"assets/img/vehicles/6.png",
                           "desc":"A reliable and comfortable option for group airport transfers.",
                           "features":["High Roof","AC","Large Seats","Smooth Ride"],
-                          "capacity":"1–6 passengers"
+                          "capacity":"1-6 passengers"
                         }'>
                         View Details
                       </button>
@@ -516,12 +516,9 @@
                 </div>
               </div>
             </div>
-
-
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-
           </div>
         </div>
       </div>
@@ -543,7 +540,7 @@
             <h6 class="mt-3">Features:</h6>
             <ul id="vehicleFeatures"></ul>
 
-            <p class="mt-2"><strong>Capacity: </strong><span id="vehicleCapacity"></span></p>
+            <p class="mt-2 mb-0"><strong>Capacity: </strong><span id="vehicleCapacity"></span></p>
           </div>
 
           <div class="modal-footer">
