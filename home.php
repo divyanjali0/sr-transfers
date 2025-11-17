@@ -378,7 +378,11 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
                       <div class="vehicle-overlay">
-                        <div class="passenger-count">Pax : 1 Large | 2 Medium</div>
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 3</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>
                         <button class="vehicle-overlay-btn"
                           data-vehicle='{
                             "title":"Luxury",
@@ -400,8 +404,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 1 Large | 2 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 3</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"Standard",
                           "img":"assets/img/vehicles/2.png",
@@ -421,8 +429,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 6 Large | 6 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 45</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"Super Luxury Coach",
                           "img":"assets/img/vehicles/3.png",
@@ -442,8 +454,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 1 Large | 2 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 2</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"Executive",
                           "img":"assets/img/vehicles/4.png",
@@ -463,8 +479,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 2 Large | 2 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 6</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"People Carrier",
                           "img":"assets/img/vehicles/5.png",
@@ -484,8 +504,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 5 Large | 2 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 6</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"Large People Carrier",
                           "img":"assets/img/vehicles/6.png",
@@ -505,8 +529,12 @@
                   <div class="gallery-img gallery-img-overlay">
                     <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
-                      <div class="passenger-count">Pax : 6 Large | 6 Medium</div>
-                      <button class="vehicle-overlay-btn"
+                        <div class="vehicle-info">
+                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
+                          <div class="info-item">• Passengers : 12</div>
+                          <div class="info-item">• Free Cancellation</div>
+                        </div>                      
+                        <button class="vehicle-overlay-btn"
                         data-vehicle='{
                           "title":"Mini Bus",
                           "img":"assets/img/vehicles/7.png",
@@ -528,69 +556,6 @@
         </div>
       </div>
     </section>
-
-    <style>
-      /* Image zoom on hover */
-.gallery-img-overlay:hover img {
-  transform: scale(1.05);
-  opacity: 1;
-}
-
-/* Move button upward on hover */
-.gallery-img-overlay:hover .vehicle-overlay-btn {
-  transform: translateY(-20px);
-}
-
-/* Passenger count badge */
-.passenger-count {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 1);
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: 0.3s ease;
-}
-
-/* Show on hover */
-.gallery-img-overlay:hover .passenger-count {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-/* Button default state */
-.vehicle-overlay-btn {
-  padding: 10px 22px;
-  background: #ffffff38;
-  color: #fff;
-  border: none;
-  font-size: 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  transition: 0.3s ease;
-  width: 100%;
-  position: relative;
-  z-index: 2;
-}
-
-/* Passenger count appears above the button */
-.vehicle-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  align-items: center;
-  padding-bottom: 20px;
-}
-
-      </style>
 
     <div class="modal fade" id="vehicleModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -641,7 +606,6 @@
       });
     </script>
     <!-- /Gallery Slider Section -->
-
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section pt-3">

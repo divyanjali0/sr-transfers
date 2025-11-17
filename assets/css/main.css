@@ -9196,3 +9196,86 @@ TESTIMONIALS
 #destinationModal .modal-body {
   margin-top: 15px;
 }
+
+.vehicle-info {
+  position: absolute;
+  background: rgb(0 0 0 / 45%);
+  padding: 12px 18px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  z-index: 3;
+}
+
+.gallery-img-overlay:hover .vehicle-info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.gallery-img-overlay:hover img {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.gallery-img-overlay:hover .vehicle-overlay-btn {
+  transform: translateY(-100px);
+}
+
+.passenger-count, .cancellation, .suitcases {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 1);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s ease;
+}
+
+.gallery-img-overlay:hover .passenger-count, .cancellation, .suitcases {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.vehicle-overlay-btn {
+  padding: 10px 22px;
+  background: #ffffff38;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.vehicle-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
