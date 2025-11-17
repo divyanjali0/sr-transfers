@@ -1,6 +1,6 @@
 <body class="faq-page">
     <main class="main">
-        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-3.png);">
         <div class="container position-relative">
             <h1>Frequently Asked Questions</h1>
             <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>

@@ -14,9 +14,19 @@
    */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
-    const selectHeader = document.querySelector('#wrapper');
-    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+    const selectHeader = document.querySelector('#wrapper'); // Or update to your actual header selector
+
+    if (!selectHeader || !selectBody) return; // Safety check
+
+    if (
+      !selectHeader.classList.contains('scroll-up-sticky') &&
+      !selectHeader.classList.contains('sticky-top') &&
+      !selectHeader.classList.contains('fixed-top')
+    ) return;
+
+    window.scrollY > 100
+      ? selectBody.classList.add('scrolled')
+      : selectBody.classList.remove('scrolled');
   }
 
   document.addEventListener('scroll', toggleScrolled);
@@ -28,10 +38,14 @@
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
+    const body = document.querySelector('body');
+    if (!body || !mobileNavToggleBtn) return; // Safety check
+
+    body.classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
   }
+
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   }
@@ -45,7 +59,6 @@
         mobileNavToogle();
       }
     });
-
   });
 
   /**
