@@ -7332,7 +7332,7 @@ section,
 # Faq Section
 --------------------------------------------------------------*/
 .faq .faq-sidebar {
-  position: sticky;
+  /* position: sticky; */
   top: 100px;
 }
 
@@ -8686,7 +8686,7 @@ HEADER
 }
 
 .header.scrolled {
-    background-color: #8d8d8d84 !important;
+    background-color: rgb(2 39 57 / 96%) !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
 

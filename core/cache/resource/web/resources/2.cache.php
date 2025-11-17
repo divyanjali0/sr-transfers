@@ -244,8 +244,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -262,14 +260,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Jul 01 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
  <!-- Scroll Top -->
@@ -294,12 +284,19 @@
     <!-- Topbar -->
     <div class="topbar text-center">
         <p class="mb-0">
-            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-                &nbsp;|&nbsp;
-            <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
-                &nbsp;|&nbsp;
-            <i class="fa fa-envelope" style="color:orange;"></i> info@srilankarentacar.lk
-        </p>
+  <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="color:white; text-decoration: none;">
+    <i class="fa fa-map-marker" style="color:orange; margin-right:2px;"></i> SR Transfers, Seeduwa | Sri Lanka
+  </a>
+  &nbsp;|&nbsp;
+  <a href="tel:+94777786729" style="color:white; text-decoration: none;">
+    <i class="fa fa-phone" style="color:orange; margin-right:2px;"></i> +94 77 778 6729
+  </a>
+  &nbsp;|&nbsp;
+  <a href="mailto:info@srilankarentacar.lk" style="color:white; text-decoration: none;">
+    <i class="fa fa-envelope" style="color:orange; margin-right:2px;"></i> info@srilankarentacar.lk
+  </a>
+</p>
+
     </div>
 
     <!-- Navbar -->
@@ -680,8 +677,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -698,14 +693,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Jul 01 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
  <!-- Scroll Top -->
@@ -736,12 +723,19 @@
     <!-- Topbar -->
     <div class="topbar text-center">
         <p class="mb-0">
-            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-                &nbsp;|&nbsp;
-            <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
-                &nbsp;|&nbsp;
-            <i class="fa fa-envelope" style="color:orange;"></i> info@srilankarentacar.lk
-        </p>
+  <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="color:white; text-decoration: none;">
+    <i class="fa fa-map-marker" style="color:orange; margin-right:2px;"></i> SR Transfers, Seeduwa | Sri Lanka
+  </a>
+  &nbsp;|&nbsp;
+  <a href="tel:+94777786729" style="color:white; text-decoration: none;">
+    <i class="fa fa-phone" style="color:orange; margin-right:2px;"></i> +94 77 778 6729
+  </a>
+  &nbsp;|&nbsp;
+  <a href="mailto:info@srilankarentacar.lk" style="color:white; text-decoration: none;">
+    <i class="fa fa-envelope" style="color:orange; margin-right:2px;"></i> info@srilankarentacar.lk
+  </a>
+</p>
+
     </div>
 
     <!-- Navbar -->
@@ -930,8 +924,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -948,14 +940,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Jul 01 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
  <!-- Scroll Top -->
@@ -994,8 +978,6 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -1012,14 +994,6 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Tour
-  * Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-  * Updated: Jul 01 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
  <!-- Scroll Top -->
@@ -1072,12 +1046,19 @@
     <!-- Topbar -->
     <div class="topbar text-center">
         <p class="mb-0">
-            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-                &nbsp;|&nbsp;
-            <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
-                &nbsp;|&nbsp;
-            <i class="fa fa-envelope" style="color:orange;"></i> info@srilankarentacar.lk
-        </p>
+  <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="color:white; text-decoration: none;">
+    <i class="fa fa-map-marker" style="color:orange; margin-right:2px;"></i> SR Transfers, Seeduwa | Sri Lanka
+  </a>
+  &nbsp;|&nbsp;
+  <a href="tel:+94777786729" style="color:white; text-decoration: none;">
+    <i class="fa fa-phone" style="color:orange; margin-right:2px;"></i> +94 77 778 6729
+  </a>
+  &nbsp;|&nbsp;
+  <a href="mailto:info@srilankarentacar.lk" style="color:white; text-decoration: none;">
+    <i class="fa fa-envelope" style="color:orange; margin-right:2px;"></i> info@srilankarentacar.lk
+  </a>
+</p>
+
     </div>
 
     <!-- Navbar -->
@@ -1171,12 +1152,19 @@
     <!-- Topbar -->
     <div class="topbar text-center">
         <p class="mb-0">
-            <i class="fa fa-map-marker" style="color:orange;"></i> SR Transfers, Seeduwa | Sri Lanka
-                &nbsp;|&nbsp;
-            <i class="fa fa-phone" style="color:orange;"></i> +94 77 778 6729
-                &nbsp;|&nbsp;
-            <i class="fa fa-envelope" style="color:orange;"></i> info@srilankarentacar.lk
-        </p>
+  <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="color:white; text-decoration: none;">
+    <i class="fa fa-map-marker" style="color:orange; margin-right:2px;"></i> SR Transfers, Seeduwa | Sri Lanka
+  </a>
+  &nbsp;|&nbsp;
+  <a href="tel:+94777786729" style="color:white; text-decoration: none;">
+    <i class="fa fa-phone" style="color:orange; margin-right:2px;"></i> +94 77 778 6729
+  </a>
+  &nbsp;|&nbsp;
+  <a href="mailto:info@srilankarentacar.lk" style="color:white; text-decoration: none;">
+    <i class="fa fa-envelope" style="color:orange; margin-right:2px;"></i> info@srilankarentacar.lk
+  </a>
+</p>
+
     </div>
 
     <!-- Navbar -->
