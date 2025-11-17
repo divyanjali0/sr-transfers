@@ -1029,8 +1029,13 @@ section,
   font-family: var(--heading-font);
 }
 
+.content p {
+  text-align: justify;
+}
+
 .custom-list {
   line-height: 2rem;
+  text-align: justify;
 }
 
 .why-us .stat-item .stat-label {

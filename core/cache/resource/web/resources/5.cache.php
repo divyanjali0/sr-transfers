@@ -2,12 +2,12 @@
   'resourceClass' => 'MODX\\Revolution\\modDocument',
   'resource' => 
   array (
-    'id' => 6,
+    'id' => 5,
     'type' => 'document',
-    'pagetitle' => 'FAQ',
+    'pagetitle' => 'Contact',
     'longtitle' => '',
     'description' => '',
-    'alias' => 'faq',
+    'alias' => 'contact',
     'link_attributes' => '',
     'published' => 1,
     'pub_date' => 0,
@@ -15,202 +15,186 @@
     'parent' => 0,
     'isfolder' => 0,
     'introtext' => '',
-    'content' => '<body class="faq-page">
+    'content' => '<body class="contact-page">
+
     <main class="main">
-        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-3.png);">
-        <div class="container position-relative">
-            <h1>Frequently Asked Questions</h1>
-            <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
-            <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="[[~1]]">Home</a></li>
-                    <li class="current">Frequently Asked Questions</li>
-                </ol>
-            </nav>
-        </div>
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-4.png);">
+            <div class="container position-relative">
+                <h1>Contact</h1>
+                <p>Book your ride with SR Transfers — safe, reliable, and hassle-free transport across Sri Lanka. Reach out today!</p>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="[[~1]]">Home</a></li>
+                        <li class="current">Contact</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
 
-        <!-- Faq Section -->
-        <section id="faq" class="faq section">
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row align-items-start gy-4">
-                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-sidebar">
-                            <div class="faq-image">
-                                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
+                <div class="row gy-4 mb-5">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-box">
+                        <div class="icon-box">
+                        <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="info-content">
+                        <h4>Our Office</h4>
+                        <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="text-decoration: none; color: inherit;">
+                            SR Transfers (Pvt) Ltd<br>
+                            371-5,<br>
+                            Negombo - Colombo Main Rd,<br>
+                            Seeduwa Sri Lanka
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info-box">
+                            <div class="icon-box">
+                            <i class="bi bi-envelope"></i>
                             </div>
-                            <div class="contact-box">
-                                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
-                                <a href="[[~5]]" class="btn-contact">Connect with Support</a>
+                            <div class="info-content">
+                            <h4>Email Us</h4>
+                            <a href="mailto:info@srilankarentacar.lk">info@srilankarentacar.lk</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <div class="faq-tabs">
-                            <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Booking & Reservations</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Payments & Policies</button>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="faqTabsContent-faq">
-                                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                                    <div class="accordion" id="generalAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                How do I book a transfer?
-                                            </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    You can book a transfer easily through our website by selecting your pickup location, destination, date, and preferred vehicle type.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    What types of vehicles are available?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                            <div class="accordion-body">
-                                                We offer a range of vehicles including sedans, SUVs, vans, and luxury cars to suit your travel needs. You can choose your preferred vehicle when booking your transfer.
-                                            </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                                            <h3 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Can I cancel or reschedule my booking?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#generalAccordion-faq">
-                                            <div class="accordion-body">
-                                                Yes, you can cancel or reschedule your booking. Please contact our support team at least 24 hours before your scheduled pickup to avoid any cancellation fees.
-                                            </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                                            <h3 class="accordion-header" id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    Is my personal data safe with SR Transfers?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Yes. We take data privacy seriously. Your personal and payment information is securely stored and used only for booking purposes. We never share your data with third parties.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                                            <h3 class="accordion-header" id="headingFive">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                    How do I contact the driver or support team?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Once your booking is confirmed, you will receive the driver’s contact details. For any assistance, our support team is available via phone, email, or the “Connect with Support” button on our website.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                                    <div class="accordion" id="accountAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    How far in advance should I book my transfer?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    We recommend booking your transfer at least 24 hours in advance to ensure vehicle availability and timely confirmation. However, same-day bookings are accepted based on availability.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Can I change my pickup time or location after booking?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Yes, you can modify your pickup time or location by contacting our support team. Please inform us at least 12 hours before your scheduled pickup to update your booking without any extra charges.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                                    <div class="accordion" id="paymentAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    What payment methods do you accept?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    We currently accept <strong>cash payments only</strong>. Please make your payment directly to the driver at the end of your transfer.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    What is your cancellation and refund policy?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    You can cancel your booking at least <strong>24 hours before</strong> your scheduled pickup time with no charges. Since we accept cash payments only, no online refund process is required. If you cancel after the driver has been dispatched, a small service fee may apply.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info-box">
+                            <div class="icon-box">
+                            <i class="bi bi-phone"></i>
                             </div>
+                            <div class="info-content">
+                            <h4>Contact Us</h4>
+                            <a href="tel:+94777786729">+94 77 778 6729</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9719503939377!2d79.87315007581863!3d7.129241115826212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f1b39f14eb6f%3A0x5a33982010ddd7e6!2sSR%20Transfers%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1762930732266!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="container form-container-overlap">
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-10">
+                        <div class="contact-form-wrapper">
+                            <h2 class="text-center mb-4">Get in Touch</h2>
+                            <div id="successMessage" class="alert alert-success text-center" style="display: none;">
+                                Your message has been sent successfully!
+                            </div>
+                            <form id="contactForm" action="https://formspree.io/f/xpwyrpej"    method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-person"></i>
+                                                <input type="text" class="form-control" name="name" placeholder="First Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-envelope"></i>
+                                                <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-text-left"></i>
+                                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-chat-dots message-icon"></i>
+                                                <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="_subject" value="SR Transfers - Contact Form">
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        const form = document.getElementById(\'contactForm\');
+        const successMessage = document.getElementById(\'successMessage\');
+
+        form.addEventListener(\'submit\', async function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+
+            try {
+                const resp = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        \'Accept\': \'application/json\'
+                    }
+                });
+
+                if (resp.ok) {
+                    // Show success message
+                    successMessage.style.display = \'block\';
+                    form.reset();
+                    successMessage.scrollIntoView({ behavior: \'smooth\', block: \'nearest\' });
+
+                    setTimeout(() => {
+                        successMessage.style.display = \'none\';
+                    }, 5000);
+                } else {
+                    let errText = \'Error sending message. Please try again later.\';
+                    try {
+                        const errJson = await resp.json();
+                        if (errJson && errJson.error) errText = errJson.error;
+                    } catch (e) {}
+                    alert(errText);
+                }
+            } catch (err) {
+                alert(\'Network error — please check your connection and try again.\');
+                console.error(err);
+            }
+        });
+    </script>
 </body>',
     'richtext' => 1,
     'template' => 2,
-    'menuindex' => 5,
+    'menuindex' => 4,
     'searchable' => 1,
     'cacheable' => 1,
     'createdby' => 1,
-    'createdon' => 1762929996,
+    'createdon' => 1762929628,
     'editedby' => 1,
-    'editedon' => 1763356718,
+    'editedon' => 1763356815,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
-    'publishedon' => 1762930200,
+    'publishedon' => 1762929600,
     'publishedby' => 1,
     'menutitle' => '',
     'content_dispo' => 0,
@@ -375,188 +359,172 @@
 </script>
 
 
-<body class="faq-page">
+<body class="contact-page">
+
     <main class="main">
-        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-3.png);">
-        <div class="container position-relative">
-            <h1>Frequently Asked Questions</h1>
-            <p>Got questions? We’ve got answers! Learn everything you need to know about SR Transfers — bookings, routes, and more.</p>
-            <nav class="breadcrumbs">
-                <ol>
-                    <li><a href="index.php?id=1">Home</a></li>
-                    <li class="current">Frequently Asked Questions</li>
-                </ol>
-            </nav>
-        </div>
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-4.png);">
+            <div class="container position-relative">
+                <h1>Contact</h1>
+                <p>Book your ride with SR Transfers — safe, reliable, and hassle-free transport across Sri Lanka. Reach out today!</p>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.php?id=1">Home</a></li>
+                        <li class="current">Contact</li>
+                    </ol>
+                </nav>
+            </div>
         </div>
 
-        <!-- Faq Section -->
-        <section id="faq" class="faq section">
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
             <div class="container" data-aos="fade-up" data-aos-delay="100">
-                <div class="row align-items-start gy-4">
-                    <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <div class="faq-sidebar">
-                            <div class="faq-image">
-                                <img src="assets/img/illustration/illustration-5.webp" alt="FAQ Image" class="img-fluid" loading="lazy">
+                <div class="row gy-4 mb-5">
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-box">
+                        <div class="icon-box">
+                        <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="info-content">
+                        <h4>Our Office</h4>
+                        <a href="https://maps.app.goo.gl/AKUi53HtWCemqH8DA" target="_blank" style="text-decoration: none; color: inherit;">
+                            SR Transfers (Pvt) Ltd<br>
+                            371-5,<br>
+                            Negombo - Colombo Main Rd,<br>
+                            Seeduwa Sri Lanka
+                        </a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info-box">
+                            <div class="icon-box">
+                            <i class="bi bi-envelope"></i>
                             </div>
-                            <div class="contact-box">
-                                <h3><i class="bi bi-headset"></i> Need Assistance?</h3>
-                                <p>Have questions about bookings, routes, or pricing? Our team at SR Transfers is here to help you with prompt and reliable support.</p>
-                                <a href="index.php?id=5" class="btn-contact">Connect with Support</a>
+                            <div class="info-content">
+                            <h4>Email Us</h4>
+                            <a href="mailto:info@srilankarentacar.lk">info@srilankarentacar.lk</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-7">
-                        <div class="faq-tabs">
-                            <ul class="nav nav-pills mb-4" id="faqTabs-faq" role="tablist" data-aos="fade-up" data-aos-delay="100">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="general-tab-faq" data-bs-toggle="pill" data-bs-target="#general-faq-faq" type="button" role="tab" aria-controls="general-faq-faq" aria-selected="true">General Inquiries</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="account-tab-faq" data-bs-toggle="pill" data-bs-target="#account-faq-faq" type="button" role="tab" aria-controls="account-faq-faq" aria-selected="false">Booking & Reservations</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="payment-tab-faq" data-bs-toggle="pill" data-bs-target="#payment-faq-faq" type="button" role="tab" aria-controls="payment-faq-faq" aria-selected="false">Payments & Policies</button>
-                                </li>
-                            </ul>
-
-                            <div class="tab-content" id="faqTabsContent-faq">
-                                <div class="tab-pane fade show active" id="general-faq-faq" role="tabpanel" aria-labelledby="general-tab-faq">
-                                    <div class="accordion" id="generalAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                How do I book a transfer?
-                                            </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    You can book a transfer easily through our website by selecting your pickup location, destination, date, and preferred vehicle type.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    What types of vehicles are available?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                            <div class="accordion-body">
-                                                We offer a range of vehicles including sedans, SUVs, vans, and luxury cars to suit your travel needs. You can choose your preferred vehicle when booking your transfer.
-                                            </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                                            <h3 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Can I cancel or reschedule my booking?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#generalAccordion-faq">
-                                            <div class="accordion-body">
-                                                Yes, you can cancel or reschedule your booking. Please contact our support team at least 24 hours before your scheduled pickup to avoid any cancellation fees.
-                                            </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                                            <h3 class="accordion-header" id="headingFour">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                    Is my personal data safe with SR Transfers?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Yes. We take data privacy seriously. Your personal and payment information is securely stored and used only for booking purposes. We never share your data with third parties.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                                            <h3 class="accordion-header" id="headingFive">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                                    How do I contact the driver or support team?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Once your booking is confirmed, you will receive the driver’s contact details. For any assistance, our support team is available via phone, email, or the “Connect with Support” button on our website.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="account-faq-faq" role="tabpanel" aria-labelledby="account-tab-faq">
-                                    <div class="accordion" id="accountAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    How far in advance should I book my transfer?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    We recommend booking your transfer at least 24 hours in advance to ensure vehicle availability and timely confirmation. However, same-day bookings are accepted based on availability.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Can I change my pickup time or location after booking?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    Yes, you can modify your pickup time or location by contacting our support team. Please inform us at least 12 hours before your scheduled pickup to update your booking without any extra charges.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tab-pane fade" id="payment-faq-faq" role="tabpanel" aria-labelledby="payment-tab-faq">
-                                    <div class="accordion" id="paymentAccordion-faq">
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                                            <h3 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    What payment methods do you accept?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    We currently accept <strong>cash payments only</strong>. Please make your payment directly to the driver at the end of your transfer.
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                                            <h3 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    What is your cancellation and refund policy?
-                                                </button>
-                                            </h3>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#generalAccordion-faq">
-                                                <div class="accordion-body">
-                                                    You can cancel your booking at least <strong>24 hours before</strong> your scheduled pickup time with no charges. Since we accept cash payments only, no online refund process is required. If you cancel after the driver has been dispatched, a small service fee may apply.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-info-box">
+                            <div class="icon-box">
+                            <i class="bi bi-phone"></i>
                             </div>
+                            <div class="info-content">
+                            <h4>Contact Us</h4>
+                            <a href="tel:+94777786729">+94 77 778 6729</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9719503939377!2d79.87315007581863!3d7.129241115826212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2f1b39f14eb6f%3A0x5a33982010ddd7e6!2sSR%20Transfers%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1762930732266!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="container form-container-overlap">
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-10">
+                        <div class="contact-form-wrapper">
+                            <h2 class="text-center mb-4">Get in Touch</h2>
+                            <div id="successMessage" class="alert alert-success text-center" style="display: none;">
+                                Your message has been sent successfully!
+                            </div>
+                            <form id="contactForm" action="https://formspree.io/f/xpwyrpej"    method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-person"></i>
+                                                <input type="text" class="form-control" name="name" placeholder="First Name" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-envelope"></i>
+                                                <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-text-left"></i>
+                                                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <div class="input-with-icon">
+                                                <i class="bi bi-chat-dots message-icon"></i>
+                                                <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="_subject" value="SR Transfers - Contact Form">
+
+                                    <div class="col-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        const form = document.getElementById(\'contactForm\');
+        const successMessage = document.getElementById(\'successMessage\');
+
+        form.addEventListener(\'submit\', async function(e) {
+            e.preventDefault();
+            const data = new FormData(form);
+
+            try {
+                const resp = await fetch(form.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        \'Accept\': \'application/json\'
+                    }
+                });
+
+                if (resp.ok) {
+                    // Show success message
+                    successMessage.style.display = \'block\';
+                    form.reset();
+                    successMessage.scrollIntoView({ behavior: \'smooth\', block: \'nearest\' });
+
+                    setTimeout(() => {
+                        successMessage.style.display = \'none\';
+                    }, 5000);
+                } else {
+                    let errText = \'Error sending message. Please try again later.\';
+                    try {
+                        const errJson = await resp.json();
+                        if (errJson && errJson.error) errText = errJson.error;
+                    } catch (e) {}
+                    alert(errText);
+                }
+            } catch (err) {
+                alert(\'Network error — please check your connection and try again.\');
+                console.error(err);
+            }
+        });
+    </script>
 </body>
   <footer id="footer" class="footer position-relative dark-background">
 
