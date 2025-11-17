@@ -195,6 +195,29 @@ h6 {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
 
+.logo-default {
+  width: 120px;
+  transition: 0.3s ease;
+}
+
+.logo-scrolled {
+  width: 120px;
+  position: absolute;
+  left: 6%;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+/* When header is scrolled */
+.header.scrolled .logo-default {
+  opacity: 0;
+}
+
+.header.scrolled .logo-scrolled {
+  opacity: 1;
+}
+
+
 @media (max-width: 1200px) {
   .header .header-container {
     padding: 10px 5px 10px 15px;
@@ -894,7 +917,7 @@ section,
   padding: 2rem;
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 85%);
   backdrop-filter: blur(10px);
-  margin-bottom: 4%;
+  margin-bottom: -10%;
 }
 
 .travel-hero .booking-form-wrapper .booking-form .form-title {
