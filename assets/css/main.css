@@ -1029,6 +1029,11 @@ section,
   font-family: var(--heading-font);
 }
 
+#modal-image {
+  height: 20rem;
+  object-fit: cover ;
+}
+
 .content p {
   text-align: justify;
 }
