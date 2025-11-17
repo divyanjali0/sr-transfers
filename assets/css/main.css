@@ -9146,3 +9146,30 @@ TESTIMONIALS
 }
 .carousel-prev { left: 10px; }
 .carousel-next { right: 10px; }
+
+
+#destinationModal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: flex-start; 
+  overflow-y: auto;        
+  background: rgba(0,0,0,0.6);
+  padding: 40px 0;         
+  z-index: 9999;
+}
+
+#destinationModal .modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  max-height: none;      
+  overflow: visible;    
+}
+
+#destinationModal .modal-body {
+  margin-top: 15px;
+}

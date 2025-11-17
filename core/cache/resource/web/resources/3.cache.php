@@ -240,8 +240,6 @@
         <ul id="modal-attractions"></ul>
         <h4>Things to Do</h4>
         <ul id="modal-things"></ul>
-        <h4>Nearby Destinations</h4>
-        <ul id="modal-nearby"></ul>
         <h4>Weather Summary</h4>
         <p id="modal-weather"></p>
         <a href="[[~7]]" id="plan-trip-btn" class="btn btn-primary w-100 mt-3">Plan Your Trip</a>
@@ -295,10 +293,6 @@
         "Go shopping at One Galle Face",
         "Take a tuk-tuk city tour"
       ],
-      nearby: [
-        { name: "Negombo", distance: "38 km" },
-        { name: "Kalutara", distance: "43 km" }
-      ],
       weather: "Warm & humid year-round, with occasional rain.",
       mapCoords: { lat: 6.9271, lng: 79.8612 },
       planLink: "[[~7]]"
@@ -326,10 +320,6 @@
         "Explore tea museums",
         "Take a scenic walk around the lake"
       ],
-      nearby: [
-        { name: "Peradeniya", distance: "6 km" },
-        { name: "Knuckles Range", distance: "30 km" }
-      ],
       weather: "Mild and pleasant; cooler evenings.",
       mapCoords: { lat: 7.2906, lng: 80.6337 },
       planLink: "[[~7]]"
@@ -355,10 +345,6 @@
         "Climb Sigiriya Rock",
         "Explore ancient frescoes",
         "Cycle through the village"
-      ],
-      nearby: [
-        { name: "Dambulla", distance: "18 km" },
-        { name: "Habarana", distance: "12 km" }
       ],
       weather: "Hot and dry climate; ideal for outdoor activities.",
       mapCoords: { lat: 7.9570, lng: 80.7603 },
@@ -387,10 +373,6 @@
         "Hike Horton Plains & World\'s End",
         "Explore colonial buildings"
       ],
-      nearby: [
-        { name: "Ella", distance: "56 km" },
-        { name: "Hakgala", distance: "10 km" }
-      ],
       weather: "Cold and misty; warm clothing recommended.",
       mapCoords: { lat: 6.9497, lng: 80.7891 },
       planLink: "[[~7]]"
@@ -416,10 +398,6 @@
         "Photography tours",
         "Camping under the stars",
         "Jeep safaris"
-      ],
-      nearby: [
-        { name: "Kataragama", distance: "17 km" },
-        { name: "Tissamaharama", distance: "20 km" }
       ],
       weather: "Hot, dry climate; peak wildlife visibility in dry months.",
       mapCoords: { lat: 6.3669, lng: 81.4994 },
@@ -448,10 +426,6 @@
         "Beach relaxation",
         "Visit art galleries"
       ],
-      nearby: [
-        { name: "Hikkaduwa", distance: "20 km" },
-        { name: "Mirissa", distance: "35 km" }
-      ],
       weather: "Warm and sunny; occasional coastal winds.",
       mapCoords: { lat: 6.0329, lng: 80.2168 },
       planLink: "[[~7]]"
@@ -477,10 +451,6 @@
         "Visit sacred temples",
         "Explore ancient irrigation systems"
       ],
-      nearby: [
-        { name: "Mihintale", distance: "13 km" },
-        { name: "Wilpattu", distance: "45 km" }
-      ],
       weather: "Hot but dry; perfect for exploring historical sites.",
       mapCoords: { lat: 8.3114, lng: 80.4037 },
       planLink: "[[~7]]"
@@ -505,10 +475,6 @@
         "Snorkeling at Pigeon Island",
         "Whale watching",
         "Sunbathing on Nilaveli Beach"
-      ],
-      nearby: [
-        { name: "Kuchchaveli", distance: "34 km" },
-        { name: "Pulmoddai", distance: "54 km" }
       ],
       weather: "Hot, sunny, and perfect for water activities.",
       mapCoords: { lat: 8.5874, lng: 81.2152 },
@@ -536,10 +502,6 @@
         "Ziplining & adventure activities",
         "Visit cafes with valley views"
       ],
-      nearby: [
-        { name: "Demodara", distance: "9 km" },
-        { name: "Bandarawela", distance: "10 km" }
-      ],
       weather: "Cool mornings, warm afternoons, light showers possible.",
       mapCoords: { lat: 6.8667, lng: 81.0469 },
       planLink: "[[~7]]"
@@ -565,7 +527,6 @@
       document.getElementById("modal-best-time").innerText = data.bestTime || "N/A";
       document.getElementById("modal-attractions").innerHTML = data.attractions ? data.attractions.map(a => `<li>${a}</li>`).join(\'\') : \'\';
       document.getElementById("modal-things").innerHTML = data.thingsToDo ? data.thingsToDo.map(t => `<li>${t}</li>`).join(\'\') : \'\';
-      document.getElementById("modal-nearby").innerHTML = data.nearby ? data.nearby.map(n => `<li>${n.name} (${n.distance})</li>`).join(\'\') : \'\';
       document.getElementById("modal-weather").innerText = data.weather || "N/A";
 
       // Map Tab Click
@@ -616,7 +577,7 @@
     'createdby' => 1,
     'createdon' => 1762928116,
     'editedby' => 1,
-    'editedon' => 1763355339,
+    'editedon' => 1763363034,
     'deleted' => 0,
     'deletedon' => 0,
     'deletedby' => 0,
@@ -1007,8 +968,6 @@
         <ul id="modal-attractions"></ul>
         <h4>Things to Do</h4>
         <ul id="modal-things"></ul>
-        <h4>Nearby Destinations</h4>
-        <ul id="modal-nearby"></ul>
         <h4>Weather Summary</h4>
         <p id="modal-weather"></p>
         <a href="index.php?id=7" id="plan-trip-btn" class="btn btn-primary w-100 mt-3">Plan Your Trip</a>
@@ -1062,10 +1021,6 @@
         "Go shopping at One Galle Face",
         "Take a tuk-tuk city tour"
       ],
-      nearby: [
-        { name: "Negombo", distance: "38 km" },
-        { name: "Kalutara", distance: "43 km" }
-      ],
       weather: "Warm & humid year-round, with occasional rain.",
       mapCoords: { lat: 6.9271, lng: 79.8612 },
       planLink: "index.php?id=7"
@@ -1093,10 +1048,6 @@
         "Explore tea museums",
         "Take a scenic walk around the lake"
       ],
-      nearby: [
-        { name: "Peradeniya", distance: "6 km" },
-        { name: "Knuckles Range", distance: "30 km" }
-      ],
       weather: "Mild and pleasant; cooler evenings.",
       mapCoords: { lat: 7.2906, lng: 80.6337 },
       planLink: "index.php?id=7"
@@ -1122,10 +1073,6 @@
         "Climb Sigiriya Rock",
         "Explore ancient frescoes",
         "Cycle through the village"
-      ],
-      nearby: [
-        { name: "Dambulla", distance: "18 km" },
-        { name: "Habarana", distance: "12 km" }
       ],
       weather: "Hot and dry climate; ideal for outdoor activities.",
       mapCoords: { lat: 7.9570, lng: 80.7603 },
@@ -1154,10 +1101,6 @@
         "Hike Horton Plains & World\'s End",
         "Explore colonial buildings"
       ],
-      nearby: [
-        { name: "Ella", distance: "56 km" },
-        { name: "Hakgala", distance: "10 km" }
-      ],
       weather: "Cold and misty; warm clothing recommended.",
       mapCoords: { lat: 6.9497, lng: 80.7891 },
       planLink: "index.php?id=7"
@@ -1183,10 +1126,6 @@
         "Photography tours",
         "Camping under the stars",
         "Jeep safaris"
-      ],
-      nearby: [
-        { name: "Kataragama", distance: "17 km" },
-        { name: "Tissamaharama", distance: "20 km" }
       ],
       weather: "Hot, dry climate; peak wildlife visibility in dry months.",
       mapCoords: { lat: 6.3669, lng: 81.4994 },
@@ -1215,10 +1154,6 @@
         "Beach relaxation",
         "Visit art galleries"
       ],
-      nearby: [
-        { name: "Hikkaduwa", distance: "20 km" },
-        { name: "Mirissa", distance: "35 km" }
-      ],
       weather: "Warm and sunny; occasional coastal winds.",
       mapCoords: { lat: 6.0329, lng: 80.2168 },
       planLink: "index.php?id=7"
@@ -1244,10 +1179,6 @@
         "Visit sacred temples",
         "Explore ancient irrigation systems"
       ],
-      nearby: [
-        { name: "Mihintale", distance: "13 km" },
-        { name: "Wilpattu", distance: "45 km" }
-      ],
       weather: "Hot but dry; perfect for exploring historical sites.",
       mapCoords: { lat: 8.3114, lng: 80.4037 },
       planLink: "index.php?id=7"
@@ -1272,10 +1203,6 @@
         "Snorkeling at Pigeon Island",
         "Whale watching",
         "Sunbathing on Nilaveli Beach"
-      ],
-      nearby: [
-        { name: "Kuchchaveli", distance: "34 km" },
-        { name: "Pulmoddai", distance: "54 km" }
       ],
       weather: "Hot, sunny, and perfect for water activities.",
       mapCoords: { lat: 8.5874, lng: 81.2152 },
@@ -1303,10 +1230,6 @@
         "Ziplining & adventure activities",
         "Visit cafes with valley views"
       ],
-      nearby: [
-        { name: "Demodara", distance: "9 km" },
-        { name: "Bandarawela", distance: "10 km" }
-      ],
       weather: "Cool mornings, warm afternoons, light showers possible.",
       mapCoords: { lat: 6.8667, lng: 81.0469 },
       planLink: "index.php?id=7"
@@ -1332,7 +1255,6 @@
       document.getElementById("modal-best-time").innerText = data.bestTime || "N/A";
       document.getElementById("modal-attractions").innerHTML = data.attractions ? data.attractions.map(a => `<li>${a}</li>`).join(\'\') : \'\';
       document.getElementById("modal-things").innerHTML = data.thingsToDo ? data.thingsToDo.map(t => `<li>${t}</li>`).join(\'\') : \'\';
-      document.getElementById("modal-nearby").innerHTML = data.nearby ? data.nearby.map(n => `<li>${n.name} (${n.distance})</li>`).join(\'\') : \'\';
       document.getElementById("modal-weather").innerText = data.weather || "N/A";
 
       // Map Tab Click
