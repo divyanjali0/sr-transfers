@@ -9005,3 +9005,120 @@ TESTIMONIALS
   .vehicle-feature {
     margin-bottom: 6px;
   }
+
+
+  .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.small-modal {
+  width: 600px;
+  max-width: 92%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  animation: modalShow 0.35s ease;
+  position: relative;
+}
+
+@keyframes modalShow {
+  from { opacity: 0; transform: translateY(30px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 22px;
+  background: #fff;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 20;
+}
+
+.img-fluid {
+  height: 20rem;
+  object-fit: cover;
+}
+
+/* Tabs */
+.modal-tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  background: #f4f4f4;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: #fff;
+  border-bottom: 3px solid #007bff;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content h2 {
+    font-weight: 600;
+}
+
+.tab-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.tab-content.active {
+  display: block;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #008cad;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.85);
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
