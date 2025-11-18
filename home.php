@@ -11,7 +11,7 @@
             <div class="hero-overlay"></div>
         </div>
 
-        <div class="container position-relative" style="bottom: 20%;">
+        <div class="container position-relative" style="bottom: 26%;">
             <div class="row">
                 <div class="col-lg-7 col-xl-5">
                     <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
@@ -376,25 +376,34 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Luxury</div>
                     <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
-                      <div class="vehicle-overlay">
+                    <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 3</div>
-                          <div class="info-item">• Free Cancellation</div>
-                        </div>
-                        <button class="vehicle-overlay-btn"
-                          data-vehicle='{
-                            "title":"Luxury",
-                            "img":"assets/img/vehicles/1.png",
-                            "desc":"Perfect for business travelers and couples seeking premium comfort.",
-                            "features":["Leather Seats","USB Charging","Complimentary Water","Climate Control"],
-                            "capacity":"1–3 passengers"
-                          }'>
-                          View Details
-                        </button>
-                      </div>
+                            <div class="info-item">
+                                <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            </div>
 
+                            <div class="info-item">
+                                <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 3
+                            </div>
+
+                            <div class="info-item">
+                                <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            </div>
+                        </div>
+
+                        <button class="vehicle-overlay-btn"
+                            data-vehicle='{
+                                "title":"Luxury",
+                                "img":"assets/img/vehicles/1.png",
+                                "desc":"Perfect for business travelers and couples seeking premium comfort.",
+                                "features":["Leather Seats","USB Charging","Complimentary Water","Climate Control"],
+                                "capacity":"1–3 passengers"
+                                }'>
+                            View Details
+                        </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -402,12 +411,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Standard</div>
                     <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 3</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 3
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -427,12 +443,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Super Luxury Coach</div>
                     <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 45</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 45
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -452,12 +475,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Executive</div>
                     <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 2</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 2
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -477,12 +507,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">People Carrier</div>
                     <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 6</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 6
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -502,12 +539,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Large People Carrier</div>
                     <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 6</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 6
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -527,12 +571,19 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
+                    <div class="vehicle-name">Mini Bus</div>
                     <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
-                          <div class="info-item">• Pax : 1 Large | 2 Medium</div>
-                          <div class="info-item">• Passengers : 12</div>
-                          <div class="info-item">• Free Cancellation</div>
+                          <div class="info-item">
+                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 12
+                          </div>
+                          <div class="info-item">
+                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                          </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
@@ -556,6 +607,115 @@
         </div>
       </div>
     </section>
+
+    <style>
+        .vehicle-name {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgb(241 241 241 / 88%);
+            color: #fff;
+            padding: 6px 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            z-index: 4;
+            width: 100%;
+            color: #000080;
+            text-align: center;
+        }
+
+        .gallery-img-overlay:hover .vehicle-name {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+      .vehicle-info {
+        position: absolute;
+        background: rgb(241 241 241 / 88%);
+        padding: 12px 18px;
+        border-radius: 10px;
+        width: 100%;
+        text-align: left;
+        color: #fff;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.35s ease;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 14px;
+        z-index: 3;
+      }
+
+      .gallery-img-overlay:hover .vehicle-info {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+
+      .info-item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 700;
+        color: #000080;
+      }
+
+      .gallery-img-overlay:hover img {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+
+      .gallery-img-overlay:hover .vehicle-overlay-btn {
+        transform: translateY(-100px);
+      }
+
+      .passenger-count, .cancellation, .suitcases {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0, 0, 0, 1);
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.3s ease;
+      }
+
+      .gallery-img-overlay:hover .passenger-count, .cancellation, .suitcases {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+
+      .vehicle-overlay-btn {
+        padding: 10px 22px;
+        background: #ffffff38;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: 0.3s ease;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+
+      .vehicle-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+      }
+    </style>
 
     <div class="modal fade" id="vehicleModal" tabindex="-1">
       <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -606,6 +766,7 @@
       });
     </script>
     <!-- /Gallery Slider Section -->
+
 
     <!-- Featured Destinations Section -->
     <section id="featured-destinations" class="featured-destinations section pt-3">
