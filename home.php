@@ -216,7 +216,8 @@
           <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
                <div class="visual-element">
-                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image" loading="lazy">
+                <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image d-none d-md-block" loading="lazy">
+                <img src="assets/img/flash-deal-sm.jpg" alt="Airport Transfer Flash Deal" class="hero-image d-block d-md-none" loading="lazy">
                 <!-- <div class="image-overlay">
                   <div class="stat-item">
                     <span class="stat-number">25%</span>

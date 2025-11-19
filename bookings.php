@@ -85,6 +85,7 @@
                                     <th>Vehicle</th>
                                     <th>Flight No</th>
                                     <th>View Invoice</th>
+                                    <!-- <th>Actions</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -106,6 +107,14 @@
                                                 </a>
                                             <?php else: ?>
                                                 <span class="text-muted">Not generated</span>
+                                            <?php endif; ?>
+
+                                            <!-- DELETE button for admin only -->
+                                            <?php if (!empty($_SESSION['user_role']) && $_SESSION['user_role'] === 'admin'): ?>
+                                                <button class="btn btn-sm btn-danger deleteBookingBtn mt-1"
+                                                        data-id="<?= $b['id'] ?>">
+                                                    Delete
+                                                </button>
                                             <?php endif; ?>
                                         </td>
                                     </tr>
@@ -140,6 +149,34 @@
             }
         }, 1000);
     });
+
+    $(document).on('click', '.deleteBookingBtn', function () {
+    const bookingId = $(this).data('id');
+
+    if (!confirm("Are you sure you want to DELETE this booking? This action cannot be undone.")) {
+        return;
+    }
+
+    $.ajax({
+        url: "assets/includes/delete_booking.php",
+        type: "POST",
+        data: { id: bookingId },
+        success: function (response) {
+            const res = JSON.parse(response);
+
+            if (res.success) {
+                alert("Booking deleted successfully.");
+                location.reload(); // reload table
+            } else {
+                alert("Error: " + res.message);
+            }
+        },
+        error: function () {
+            alert("Request failed.");
+        }
+    });
+});
+
 </script>
 </body>
 </html>

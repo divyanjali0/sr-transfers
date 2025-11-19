@@ -10,7 +10,7 @@ if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
         $targetFile = $uploadDir . $fileName;
 
         if (move_uploaded_file($_FILES['invoice']['tmp_name'], $targetFile)) {
-            $baseUrl = "https://srilankatransfer.lk/"; 
+            $baseUrl = "http://localhost/sr-transfers/"; 
             $fullPath = $baseUrl . '/invoices/' . $fileName;
 
             $stmt = $conn->prepare("UPDATE bookings SET invoice_file = :file WHERE booking_number = :num");
