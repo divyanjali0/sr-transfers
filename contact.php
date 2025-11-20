@@ -125,7 +125,6 @@
                                     <!-- reCAPTCHA v3 hidden field -->
                                     <input type="hidden" name="recaptchaResponse" id="recaptchaResponse">
 
-                                    <!-- to match your PHP: isset($_POST['submit']) -->
                                     <input type="hidden" name="submit" value="1">
 
                                     <div class="col-12 text-center">
@@ -177,7 +176,6 @@
                 alert("Network error — please check your connection and try again.");
                 console.error(err);
             } finally {
-                // Re-enable button after request completes
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = "SEND MESSAGE";
             }

@@ -215,6 +215,13 @@
                 // Form submit handler
                 document.getElementById("bookingForm").addEventListener("submit", async function(ev) {
                     ev.preventDefault();
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerText = "Submitting...";
+                        submitBtn.style.backgroundColor = "#6c757d"; 
+                    }
+
                     if (
                         !document.querySelector("#pickupLocation")?.value.trim() ||
                         !document.querySelector("#dropoffLocation")?.value.trim() ||
@@ -279,8 +286,6 @@
                         return_datetime: document.querySelector("#returnDate")?.value || "",   
                     };
 
-                    console.log("Booking form data being submitted:", formData);
-
                     try {
                         const response = await fetch("assets/includes/save_booking.php", {
                             method: "POST",
@@ -310,24 +315,24 @@
 
                             const pageWidth = doc.internal.pageSize.getWidth();
                             const marginX = 25;
-                            let currentY = 30; 
+                            let currentY = 15; 
 
                             // === Header ===
                             const imgUrl = "assets/img/logo-pdf.png";
                             doc.addImage(imgUrl, "PNG", pageWidth / 2 - 35, currentY, 70, 35);
-                            currentY += 45; 
+                            currentY += 38; 
 
-                            doc.setDrawColor(200, 0, 0);
+                            doc.setDrawColor(0, 0, 128);
                             doc.setLineWidth(1);
                             doc.line(marginX, currentY, pageWidth - marginX, currentY);
                             currentY += 12; 
 
-                            doc.setFont("helvetica", "bold");
+                            doc.setFont("cambria", "bold");
                             doc.setFontSize(11);
                             doc.text("SR Transfers, Sri Lanka", pageWidth / 2, currentY, { align: "center" });
                             currentY += 12;
 
-                            doc.setFont("helvetica", "normal");
+                            doc.setFont("cambria", "normal");
                             doc.setFontSize(8);
                             doc.text("No. 37/15, Negombo Road, Seeduwa, Sri Lanka", pageWidth / 2, currentY, { align: "center" });
                             currentY += 12;
@@ -336,16 +341,16 @@
                             doc.text(`Invoice Number: ${bookingNumber}`, pageWidth / 2, currentY, { align: "center" });
                             currentY += 10;
 
-                            doc.setDrawColor(0, 0, 0);
+                            doc.setDrawColor(0, 0, 128);
                             doc.setLineWidth(0.8);
                             doc.line(marginX, currentY, pageWidth - marginX, currentY);
                             currentY += 12; 
 
                             // === Invoice title ===
-                            doc.setFont("helvetica", "bold");
+                            doc.setFont("cambria", "bold");
                             doc.setFontSize(13);
                             doc.text("Invoice", pageWidth / 2, currentY, { align: "center" });
-                            currentY += 14; 
+                            currentY += 6; 
 
                             // === Table ===
                             const tableColumn = ["Description", "Value"];
@@ -368,8 +373,9 @@
                                 body: tableRows,
                                 startY: currentY,
                                 theme: "grid",
-                                styles: { fontSize: 8, cellPadding: 2 },
-                                headStyles: { fillColor: [10, 105, 168], textColor: 255, halign: "center", fontStyle: "bold" },
+
+                                styles: { fontSize: 8, cellPadding: 2, font: "cambria",  textColor: [0, 0, 0] },
+                                headStyles: { fillColor: [10, 105, 168], textColor: 255, halign: "center", fontStyle: "bold", font: "cambria" },
                                 columnStyles: {
                                     0: { cellWidth: 100 },
                                     1: { cellWidth: pageWidth - 100 - 2 * marginX }
@@ -378,46 +384,78 @@
                                 tableLineWidth: 0.5
                             });
 
-                            let tableEndY = doc.lastAutoTable.finalY + 10;
-
+                            let tableEndY = doc.lastAutoTable.finalY + 20;
                             currentY = tableEndY;
-
-                            const note1 = "• First hour of waiting is free; thereafter, $15/hour waiting fee applies.";
-                            const note2 = "• One of our Airport Representatives will be at the arrival hall (in front of the Information Center) holding a signboard with your name near Exit Gate S1.";
-                            const note3 = "• Please contact our airport representative at +94 76 669 9877. He will hand you over to the driver.";
 
                             const maxWidth = pageWidth - 2 * marginX;
 
-                            doc.setFontSize(9);
-                            doc.setTextColor(0, 102, 0); 
-                            const n1 = doc.splitTextToSize(note1, maxWidth);
-                            doc.text(n1, marginX, currentY);
-                            currentY += n1.length * 11 + 8; // spacing
-
-                            // === Note 2 ===
-                            doc.setTextColor(0, 0, 0);
-                            const n2 = doc.splitTextToSize(note2, maxWidth);
-                            doc.text(n2, marginX, currentY);
-                            currentY += n2.length * 11 + 8;
-
-                            // === Note 3 ===
-                            const n3 = doc.splitTextToSize(note3, maxWidth);
-                            doc.text(n3, marginX, currentY);
-                            currentY += n3.length * 11 + 12;
-
-                            // === Total charge ===
-                            doc.setFont("helvetica", "bold");
+                            // =========================
+                            // SECTION TITLE
+                            // =========================
+                            doc.setFont("cambria", "bold");
                             doc.setFontSize(10);
-                            doc.setTextColor(200, 0, 0);
-                            doc.text(`Total Charge: $${parseFloat(formData.total_price || 0).toFixed(2)}`, marginX, currentY);
-                            currentY += 14;
+                            doc.setTextColor(0, 0, 0);
+                            doc.text("TERMS & CONDITIONS", marginX, currentY);
+                            currentY += 10;
 
-                            // === Confirmation ===
-                            doc.setFontSize(8);
-                            doc.setTextColor(0, 102, 0);
-                            doc.text("• This serves as your official booking confirmation.", marginX, currentY);
+                            // underline
+                            doc.setDrawColor(0, 0, 0);
+                            doc.setLineWidth(0.6);
+                            doc.line(marginX, currentY, pageWidth - marginX, currentY);
+                            currentY += 12;
+
+                            doc.setFont("cambria", "normal");
+                            doc.setFontSize(9);
+
+                            function bullet(text) {
+                                const bulletPoint = "• ";
+                                const wrapped = doc.splitTextToSize(text, maxWidth - 10);
+
+                                // red bullet
+                                doc.setTextColor(220, 0, 0);
+                                doc.text(bulletPoint, marginX, currentY);
+
+                                // black text
+                                doc.setTextColor(0, 0, 0);
+                                doc.text(wrapped, marginX + 10, currentY);
+
+                                currentY += wrapped.length * 11 + 6;
+                            }
+
+                            bullet("Complimentary Waiting Time: First hour of waiting is free of charge. Thereafter, a waiting fee of $15 per hour applies.");
+                            bullet("Airport Meet & Greet: One of our Airport Representatives will be at the arrival hall (in front of the Information Center) holding a signboard with your name near Exit Gate SL.");
+                            bullet("Contact Information: Please contact our airport representative at +94 76 669 9877. They will hand you over to the driver.");
+
+                            currentY += 8;
+                            doc.setDrawColor(0, 0, 0);
+                            doc.setLineWidth(0.6);
+                            doc.line(marginX, currentY, pageWidth - marginX, currentY);
+                            currentY += 18;
+
+                            // =========================
+                            // TOTAL CHARGE
+                            // =========================
+                            doc.setFont("cambria", "bold");
+                            doc.setFontSize(10);
+                            doc.setTextColor(0, 0, 0);
+                            doc.text("TOTAL CHARGE : ", marginX, currentY);
+
+                            doc.setTextColor(200, 0, 0);
+                            doc.text(`$ ${parseFloat(formData.total_price || 0).toFixed(2)}`, pageWidth - marginX, currentY, {
+                                align: "right"
+                            });
+
+                            currentY += 20;
+
+                            doc.setFont("cambria", "bold");
+                            doc.setFontSize(9);
+                            doc.setTextColor(3, 26, 56);
+                            // doc.text("This serves as your official booking confirmation.", marginX, currentY);
+
+                            currentY += 20;
 
                             // === Footer ===
+                            doc.setFont("cambria", "bold");
                             doc.setFontSize(9);
                             doc.setTextColor(0, 0, 0);
                             doc.text("Thank you for booking with SR Transfers!", pageWidth / 2, doc.internal.pageSize.getHeight() - 20, { align: "center" });
@@ -448,6 +486,11 @@
                             setTimeout(() => toast.className = toast.className.replace("show",""), 1000);
                         };
                         showToast("⚠️ Something went wrong while submitting the booking.", false);
+                    }  finally {
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.innerText = "Submit Booking";
+                        }
                     }
                 });
             });

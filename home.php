@@ -377,7 +377,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Luxury</div>
+                    <div class="vehicle-name">Private Bussiness</div>
                     <img src="assets/img/vehicles/1.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -396,7 +396,7 @@
 
                         <button class="vehicle-overlay-btn"
                             data-vehicle='{
-                                "title":"Luxury",
+                                "title":"Private Bussiness",
                                 "img":"assets/img/vehicles/1.png",
                                 "desc":"Perfect for business travelers and couples seeking premium comfort.",
                                 "features":["Leather Seats","USB Charging","Complimentary Water","Climate Control"],
@@ -412,7 +412,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Standard</div>
+                    <div class="vehicle-name">Private Express</div>
                     <img src="assets/img/vehicles/2.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -428,7 +428,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"Standard",
+                          "title":"Private Express",
                           "img":"assets/img/vehicles/2.png",
                           "desc":"Ideal for families and groups needing space and luxury.",
                           "features":["Premium Leather","Rear AC","Spacious Seats","All-Terrain Safety"],
@@ -444,7 +444,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Super Luxury Coach</div>
+                    <div class="vehicle-name">Private Coach (45 Seater)</div>
                     <img src="assets/img/vehicles/3.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -460,7 +460,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"Super Luxury Coach",
+                          "title":"Private Coach (45 Seater)",
                           "img":"assets/img/vehicles/3.png",
                           "desc":"Perfect for corporate travel with extra luggage capacity.",
                           "features":["Conference Seating","Tinted Windows","USB Ports","Large Trunk"],
@@ -476,7 +476,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Executive</div>
+                    <div class="vehicle-name">Private SUV</div>
                     <img src="assets/img/vehicles/4.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -492,7 +492,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"Executive",
+                          "title":"Private SUV",
                           "img":"assets/img/vehicles/4.png",
                           "desc":"A reliable and comfortable option for group airport transfers.",
                           "features":["High Roof","AC","Large Seats","Smooth Ride"],
@@ -508,7 +508,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">People Carrier</div>
+                    <div class="vehicle-name">Private MPV</div>
                     <img src="assets/img/vehicles/5.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -524,7 +524,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"People Carrier",
+                          "title":"Private MPV",
                           "img":"assets/img/vehicles/5.png",
                           "desc":"A reliable and comfortable option for group airport transfers.",
                           "features":["High Roof","AC","Large Seats","Smooth Ride"],
@@ -540,7 +540,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Large People Carrier</div>
+                    <div class="vehicle-name">Private Van</div>
                     <img src="assets/img/vehicles/6.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -556,7 +556,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"Large People Carrier",
+                          "title":"Private Van",
                           "img":"assets/img/vehicles/6.png",
                           "desc":"A reliable and comfortable option for group airport transfers.",
                           "features":["High Roof","AC","Large Seats","Smooth Ride"],
@@ -572,7 +572,7 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img gallery-img-overlay">
-                    <div class="vehicle-name">Mini Bus</div>
+                    <div class="vehicle-name">Private Mini Bus</div>
                     <img src="assets/img/vehicles/7.png" class="img-fluid" alt="">
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
@@ -588,7 +588,7 @@
                         </div>                      
                         <button class="vehicle-overlay-btn"
                         data-vehicle='{
-                          "title":"Mini Bus",
+                          "title":"Private Mini Bus",
                           "img":"assets/img/vehicles/7.png",
                           "desc":"A reliable and comfortable option for group airport transfers.",
                           "features":["High Roof","AC","Large Seats","Smooth Ride"],
