@@ -73,7 +73,7 @@
   ),
   1 => 
   array (
-    'text' => 'Access',
+    'text' => 'Access Permissions',
     'parent' => 'usernav',
     'action' => '',
     'description' => '',

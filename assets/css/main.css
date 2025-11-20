@@ -2157,7 +2157,7 @@ section,
 
 .call-to-action .visual-element {
   position: relative;
-  border-radius: 25px;
+  border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
@@ -8660,7 +8660,7 @@ HEADER
     }
 
     .fleet-item {
-        width: 180px;
+        width: 130px;
         margin: auto;
     }
 
@@ -9280,8 +9280,8 @@ TESTIMONIALS
 /* whatsapp stylings */
 .wa-button {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 1rem;
+    right: 4rem;
     width: 55px;
     height: 55px;
     background: #25D366;

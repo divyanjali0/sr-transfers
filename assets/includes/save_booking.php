@@ -1,16 +1,23 @@
 <?php
-include_once 'db_connect.php';
+
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/error.log');
+
 header('Content-Type: application/json');
+ob_start();
+
+include_once __DIR__ . '/../../config.php';
+include_once __DIR__ . '/../../classes/EmailSender.php';
+include_once __DIR__ . '/db_connect.php';
 
 try {
     $data = json_decode(file_get_contents("php://input"), true);
-
     if (!$data) {
-        echo json_encode(['success' => false, 'message' => 'Invalid input']);
-        exit;
+        throw new Exception("Invalid input: JSON data missing or malformed.");
     }
 
-    // Prepare add-ons string
     $addonsArray = array_map(fn($a) => $a['addon_name'].' x'.$a['quantity'].' ($'.$a['total'].')', $data['addons'] ?? []);
     $addonsString = implode(", ", $addonsArray);
 
@@ -65,8 +72,8 @@ try {
     $bookingNumber = sprintf("SR/RENT-%s/%s/%04d", $year, $month, $lastId);
 
     $invoiceFileName = sprintf("%04d.pdf", $lastId);
-    $baseUrl = "http://localhost/sr-transfers/";
-    $invoicePath = $baseUrl . "/invoices/" . $invoiceFileName;
+    $baseUrl = "http://localhost/sr-transfers/"; 
+    $invoicePath = $baseUrl . "invoices/" . $invoiceFileName;
 
     $update = $conn->prepare("
         UPDATE bookings 
@@ -79,13 +86,48 @@ try {
         ':id' => $lastId
     ]);
 
+    // SEND EMAIL NOTIFICATION
+    $emailSender = new EmailSender();
+
+    $adminEmail = "navodyadivyanjali2@gmail.com"; 
+
+    $emailContentAdmin = "
+        <h2>New Booking Received</h2>
+        <p><b>Booking Number:</b> $bookingNumber</p>
+        <p><b>Name:</b> {$data['customer_name']}</p>
+        <p><b>Email:</b> {$data['email']}</p>
+        <p><b>Phone:</b> {$data['phone']}</p>
+        <p><b>Pickup:</b> {$data['pickup_location']}</p>
+        <p><b>Dropoff:</b> {$data['dropoff_location']}</p>
+        <p><b>Travel Date & Time:</b> {$data['travel_datetime']}</p>
+        <p><b>Total Price:</b> $ {$data['total_price']}</p>
+        <p>Invoice link: <a href='{$invoicePath}'>$invoicePath</a></p>
+    ";
+
+    try {
+        ob_start(); 
+        error_log("Sending booking notification email to admin: $adminEmail");
+        $emailSender->sendEmail($adminEmail, "New Booking Received - $bookingNumber", $emailContentAdmin);
+
+        ob_end_clean(); 
+    } catch (Exception $e) {
+        error_log("PHPMailer Error: " . $e->getMessage());
+    }
+
     echo json_encode([
         'success' => true,
         'message' => 'Booking saved successfully',
         'booking_number' => $bookingNumber,
         'invoice_file' => $invoicePath
     ]);
+    exit;
 
 } catch (PDOException $e) {
-    echo json_encode(['success' => false, 'message' => $e->getMessage()]);
+    error_log("PDO Exception: " . $e->getMessage());
+    echo json_encode(['success' => false, 'message' => 'Database error occurred.']);
+    exit;
+} catch (Exception $e) {
+    error_log("General Exception: " . $e->getMessage());
+    echo json_encode(['success' => false, 'message' => 'An unexpected error occurred.']);
+    exit;
 }

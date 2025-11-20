@@ -217,7 +217,7 @@
             <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
                <div class="visual-element">
                 <img src="assets/img/flash-deal.jpg" alt="Airport Transfer Flash Deal" class="hero-image d-none d-md-block" loading="lazy">
-                <img src="assets/img/flash-deal-sm.jpg" alt="Airport Transfer Flash Deal" class="hero-image d-block d-md-none" loading="lazy">
+                <!-- <img src="assets/img/flash-deal-sm.jpg" alt="Airport Transfer Flash Deal" class="hero-image d-block d-md-none" loading="lazy"> -->
                 <!-- <div class="image-overlay">
                   <div class="stat-item">
                     <span class="stat-number">25%</span>
@@ -382,15 +382,15 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                             <div class="info-item">
-                                <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                                <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                             </div>
 
                             <div class="info-item">
-                                <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 3
+                                <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 3
                             </div>
 
                             <div class="info-item">
-                                <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                                <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                             </div>
                         </div>
 
@@ -417,13 +417,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 3
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 3
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -449,13 +449,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 45
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 45
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -481,13 +481,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 2
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 2
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -513,13 +513,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 6
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 6
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -545,13 +545,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 6
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 6
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -577,13 +577,13 @@
                     <div class="vehicle-overlay">
                         <div class="vehicle-info">
                           <div class="info-item">
-                            <i class="fa fa-suitcase" style="color:#0f3f2f; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
+                            <i class="fa fa-suitcase" style="color:#25D366; margin-right:6px;"></i>Pax : 1 Large | 2 Medium
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-users" style="color:#0f3f2f; margin-right:6px;"></i>Passengers : 12
+                            <i class="fa fa-users" style="color:#25D366; margin-right:6px;"></i>Passengers : 12
                           </div>
                           <div class="info-item">
-                            <i class="fa fa-check-circle" style="color:#0f3f2f; margin-right:6px;"></i>Free Cancellation
+                            <i class="fa fa-check-circle" style="color:#25D366; margin-right:6px;"></i>Free Cancellation
                           </div>
                         </div>                      
                         <button class="vehicle-overlay-btn"
@@ -660,8 +660,8 @@
         display: flex;
         align-items: center;
         gap: 6px;
-        font-weight: 700;
-        color: #000080;
+        font-weight: 500;
+        color: #010b40;
       }
 
       .gallery-img-overlay:hover img {
