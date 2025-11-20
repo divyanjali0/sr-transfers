@@ -28,8 +28,8 @@ try {
             flight_number, number_of_passengers, number_of_luggage,
             pickup_location, dropoff_location, return_pickup_location, return_dropoff_location,
             travel_datetime, return_datetime,
-            price_per_km, main_distance_km, main_price,
-            return_distance_km, return_price, total_price, addons
+            price_per_km, first_trip_distance, first_trip_charge,
+            second_trip_distance, second_trip_charge, total_price, addons
         )
         VALUES 
         (
@@ -37,8 +37,8 @@ try {
             :flight_number, :number_of_passengers, :number_of_luggage,
             :pickup, :dropoff, :return_pickup, :return_dropoff,
             :travel_datetime, :return_datetime,
-            :price_per_km, :main_distance_km, :main_price,
-            :return_distance_km, :return_price, :total_price, :addons
+            :price_per_km, :first_trip_distance, :first_trip_charge,
+            :second_trip_distance, :second_trip_charge, :total_price, :addons
         )
     ");
 
@@ -58,10 +58,10 @@ try {
         ':travel_datetime'  => $data['travel_datetime'] ?? null,
         ':return_datetime'  => $data['return_datetime'] ?? null,  
         ':price_per_km'     => $data['price_per_km'] ?? 0,
-        ':main_distance_km' => $data['main_distance_km'] ?? 0,
-        ':main_price'       => $data['main_price'] ?? 0,
-        ':return_distance_km' => $data['return_distance_km'] ?? 0,
-        ':return_price'     => $data['return_price'] ?? 0,
+        ':first_trip_distance' => $data['first_trip_distance'] ?? 0,
+        ':first_trip_charge'       => $data['first_trip_charge'] ?? 0,
+        ':second_trip_distance' => $data['second_trip_distance'] ?? 0,
+        ':second_trip_charge'     => $data['second_trip_charge'] ?? 0,
         ':total_price'      => $data['total_price'] ?? 0,
         ':addons'           => $addonsString
     ]);
